@@ -1,1 +1,49 @@
+body{
+    background-color: #c4a05c;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+header{
+    background-color: hsl(39, 97%, 27%);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+#Encabezado a{
+    text-decoration: none;
+    background-color: hsl(36, 32%, 47%);
+    color: white;
+    border:  2px solid hsl(39, 97%, 27%) ;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: inline-block;
+    margin-left: 100px;
+    
+}
+
+#Encabezado ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    gap: 15px;
+}
+
+#Prueba1{
+    color: white;
+}
+
+#Prueba2{
+    color: white;
+}
+
+#Prueba3{
+    color: white;
+}
+
+#Prueba4{
+    color: white;
+}
