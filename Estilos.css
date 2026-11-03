@@ -11,6 +11,14 @@ header{
     
 }
 
+#PieDePagina{
+    background-color: hsl(39, 97%, 27%);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
 #Encabezado a{
     text-decoration: none;
     background-color: hsl(36, 32%, 47%);
