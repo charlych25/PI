@@ -1,73 +1,115 @@
-body{
-    background-color: #c4a05c;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-header{
-    background-color: hsl(39, 97%, 27%);
-    padding: 40px;
-    color: white;
-    text-align: center;
-    
-}
-
-#Logo{
-    display: flex;
-    margin-left: 625px;
+img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
-#PieDePagina{
-    background-color: hsl(39, 97%, 27%);
+body {
+    background-color: #F8FAFC;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #334155;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05); 
+}
+
+header {
+    background-color: #0F172A;
     padding: 40px;
     color: white;
     text-align: center;
-    text-decoration: none;
+    position: relative;
 }
 
-#Encabezado a{
-    text-decoration: none;
-    background-color: hsl(36, 32%, 47%);
-    color: white;
-    border:  2px solid hsl(39, 97%, 27%) ;
-    border-radius: 4px;
-    padding: 9px 15px;
-    display: inline-block;
-    margin-left: 80px;
-    
+#Logo {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 #Encabezado ul {
     display: flex;
+    justify-content: center;
+    gap: 20px;
     list-style-type: none;
-    margin: 10px;
-    
+    padding: 0;
+    margin: 30px 0;
 }
 
-#Volver{
+#Encabezado a {
     text-decoration: none;
-    background-color: hsl(36, 32%, 47%);
+    background-color: #F97316;
     color: white;
-    border:  2px solid hsl(39, 97%, 27%) ;
-    border-radius: 4px;
-    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
     display: inline-block;
-   
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-#Prueba1{
-    color: white;
+#Encabezado a:hover {
+    background-color: #EA580C;
 }
 
-#Prueba2{
-    color: white;
+#Prueba1, #Prueba2, #Prueba3, #Prueba4 {
+    color: #334155; 
+    padding: 20px; 
 }
 
-#Prueba3{
+#Volver {
+    text-decoration: none;
+    background-color: #F97316;
     color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-#Prueba4{
+#Volver:hover {
+    background-color: #EA580C;
+}
+
+#PieDePagina {
+    background-color: #0F172A;
+    padding: 40px;
     color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header, #PieDePagina {
+        padding: 20px;
+    }
+
+    #Logo {
+        position: static;
+        margin: 0 auto 15px auto;
+        display: block;
+    }
+
+    #Encabezado ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 20px;
+    }
+
+    #Encabezado a {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
 }
