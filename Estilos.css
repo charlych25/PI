@@ -11,6 +11,13 @@ header{
     
 }
 
+#Logo{
+    display: flex;
+    margin-left: 625px;
+    max-width: 100%;
+    height: auto;
+}
+
 #PieDePagina{
     background-color: hsl(39, 97%, 27%);
     padding: 40px;
@@ -25,19 +32,28 @@ header{
     color: white;
     border:  2px solid hsl(39, 97%, 27%) ;
     border-radius: 4px;
-    padding: 8px 12px;
+    padding: 9px 15px;
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 80px;
     
 }
 
 #Encabezado ul {
     display: flex;
-    justify-content: center;
     list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    gap: 15px;
+    margin: 10px;
+    
+}
+
+#Volver{
+    text-decoration: none;
+    background-color: hsl(36, 32%, 47%);
+    color: white;
+    border:  2px solid hsl(39, 97%, 27%) ;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: inline-block;
+   
 }
 
 #Prueba1{
