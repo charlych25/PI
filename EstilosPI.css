@@ -63,7 +63,7 @@ header h1 {
 }
 
 #Entornos:hover{
-    background-color: #0F172A;
+    background-color: hsla(222, 47%, 11%, 0);
 }
 
 #Logo {
