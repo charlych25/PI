@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
     max-width: 1500px;
     width: 90%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.05); 
+    box-shadow: 0 0 50px rgba(0,0,0,0.1); 
 }
 
 header {
@@ -28,6 +28,23 @@ header {
     color: white;
     text-align: center;
     position: relative;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px #0F172A;
+}
+
+header h1 {
+    font-size: 2.5rem; 
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.subtitulo {
+    font-size: 1.2rem;
+    font-weight: normal; 
+    color: #F97316; 
+    letter-spacing: normal;
 }
 
 #Entornos{
@@ -43,6 +60,10 @@ header {
     top: 20px;
     right: 20px;
     position: absolute;
+}
+
+#Entornos:hover{
+    background-color: #0F172A;
 }
 
 #Logo {
@@ -71,10 +92,11 @@ header {
     display: inline-block;
     font-weight: bold;
     transition: background-color 0.3s;
+    box-shadow: 0 1px 6px #0F172A; 
 }
 
 #Encabezado a:hover {
-    background-color: #EA580C;
+    background-color: #0F172A;
 }
 
 #Prueba1, #Prueba2, #Prueba3, #Prueba4 {
@@ -83,16 +105,16 @@ header {
 }
 
 #Volver {
-    text-decoration: none;
-    background-color: #F97316;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0F172A;
     color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    display: block;
-    width: fit-content;
-    margin: 40px auto;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
     font-weight: bold;
+    box-shadow: 0 4px 6px #0F172A;
     transition: background-color 0.3s;
 }
 
