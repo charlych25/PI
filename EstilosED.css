@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -152,6 +156,7 @@ header {
     margin-bottom: 30px;
     border-radius: 4px;
 }
+
 
 details.caja-test {
     background-color: #f1f5f9;

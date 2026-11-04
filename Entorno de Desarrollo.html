@@ -57,7 +57,14 @@
     </ul>
 
     <h3>Perfiles Profesionales:</h3>
-    <p>Intervienen roles como el Jefe de Proyecto (Project Manager), Analista, Arquitecto, Programador, Tester (QA), Administrador de Sistemas y Administrador de Bases de Datos.</p>
+    <ul>
+        <li><b>Jefe de Proyecto (Project Manager):</b> Máximo responsable, gestiona la planificación, ejecución y control.</li>
+        <li><b>Analista:</b> Se comunica con los expertos del dominio para entender y definir los requisitos.</li>
+        <li><b>Arquitecto:</b> Define la estructura general y la tecnología a utilizar.</li>
+        <li><b>Programador:</b> Escribe el código basándose en el diseño detallado.</li>
+        <li><b>Tester (QA):</b> Diseña y ejecuta pruebas para detectar fallos antes del lanzamiento.</li>
+        <li><b>Administradores:</b> De Sistemas (gestionan la infraestructura) y de Bases de Datos (optimizan el almacenamiento).</li>
+    </ul>
 </div>
 <hr>
 
@@ -77,6 +84,17 @@
     <h2>Guía de Entornos de Desarrollo (IDEs)</h2>
     <p>Todos los IDEs agrupan un editor de texto, compilador y depurador (debugger). A continuación, analizamos los más importantes. <i>(Haz clic para desplegar)</i></p>
     
+    <div style="background-color: #e2e8f0; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+        <h3>⚠️ Requisitos previos comunes:</h3>
+        <ul>
+            <li>Equipo con 4–8 GB de RAM recomendados y al menos 2 GB libres de disco.</li>
+            <li>Para Eclipse, IntelliJ IDEA y NetBeans es obligatorio instalar previamente un <b>JDK (Java Development Kit)</b> actualizado.</li>
+            <li>Se recomienda instalar <b>Git</b> para el trabajo colaborativo.</li>
+        </ul>
+        <h3>💻 Ejecutar desde la terminal:</h3>
+        <p>Una vez generado el archivo ejecutable (.jar) en cualquier IDE, puedes ejecutarlo sin depender del entorno abriendo la terminal, navegando a la carpeta correspondiente y usando el comando nativo: <br><code>java -jar nombre_programa.jar</code></p>
+    </div>
+
     <!-- DESPLEGABLE VS CODE -->
     <details>
         <summary>Visual Studio / VS Code</summary>
@@ -123,6 +141,7 @@
             <p><b>Actualizaciones:</b> <i>Settings > Appearance & Behavior > System Settings > Updates</i>.</p>
             <p><b>Ventajas:</b> Autocompletado superior, interfaz moderna.</p>
             <p><b>Desventajas:</b> Alto consumo de recursos, versión completa de pago.</p>
+            <p><b>Generar Ejecutable:</b> <i>File > Project Structure > Artifacts</i>, configurar nuevo artefacto JAR indicando la Main Class. Luego compilar en <i>Build > Build Artifacts</i>.</p>
         </div>
     </details>
 
@@ -138,6 +157,7 @@
             <p><b>Ventajas:</b> Excelente editor visual para interfaces gráficas.</p>
             <p><b>Desventajas:</b> Interfaz desfasada, uso en declive.</p>
             <p><b>Exportar a Eclipse:</b> <i>File > Export Project > To ZIP</i>. Luego en Eclipse: Importar <i>Archive File</i> (solo carpeta src).</p>
+            <p><b>Generar Ejecutable:</b> Al compilar y construir el proyecto (botón Build), se genera automáticamente un archivo <code>.jar</code> dentro de la carpeta <i>dist</i> de tu directorio de trabajo.</p>
         </div>
     </details>
 </div>
@@ -455,7 +475,7 @@
     </details>
 </div>
 
-<a href="Entorno de Desarrollo.html" id="Volver">Volver al inicio</a>
+<a href="Entorno de Desarrollo.html" id="Volver">⬆️ Subir</a>
 <footer id="PieDePagina">
     <p>&copy; 2026 Jamie Robert, Manuel Pardo, Marcelo Marlon, Charly.</p>
 </footer>
