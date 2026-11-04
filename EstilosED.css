@@ -136,7 +136,7 @@ header {
 }
 
 .seccion-contenido p {
-    text-align: justify; /* Requisito de la rúbrica */
+    text-align: justify;
 }
 
 .seccion-contenido h2 {
@@ -145,13 +145,39 @@ header {
     padding-bottom: 5px;
 }
 
-/* --- MAGIA DEL TEST INTERACTIVO --- */
 .caja-test {
     background-color: #f1f5f9;
     border-left: 5px solid #F97316;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 4px;
+}
+
+details.caja-test {
+    background-color: #f1f5f9;
+    border-left: 5px solid #F97316;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+details.caja-test summary {
+    font-size: 1.17em; 
+    font-weight: bold;
+    color: #0F172A;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.formulario-test {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #cbd5e1;
+}
+
+.formulario-test:first-of-type {
+    border-top: none;
 }
 
 .opcion-test {
@@ -164,7 +190,6 @@ header {
     padding: 5px;
 }
 
-/* Ocultamos los mensajes por defecto */
 .feedback {
     display: none;
     margin-top: 5px;
@@ -176,7 +201,6 @@ header {
 .feedback.correcto { background-color: #dcfce7; color: #166534; }
 .feedback.incorrecto { background-color: #fee2e2; color: #991b1b; }
 
-/* Mostramos el mensaje solo cuando el radio button está marcado */
 input[type="radio"]:checked ~ .feedback {
     display: block;
 }

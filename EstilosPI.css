@@ -128,3 +128,13 @@ header {
         padding: 15px;
     }
 }
+
+#Prueba1 h2, 
+#Prueba2 h2, 
+#Prueba3 h2, 
+#Prueba4 h2 {
+    color: #0F172A;
+    border-bottom: 2px solid #F97316;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
