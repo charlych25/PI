@@ -1,52 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <link href="EstilosED.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de Denis y Carlos</title>
+    <title>StagCode Support - Entornos de Desarrollo</title>
+    <!-- Estilo extra para los desplegables de los IDEs -->
+    <style>
+        details {
+            background: #fff;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        summary {
+            font-weight: bold;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #F97316;
+        }
+        .ide-content {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
 
-
 <header>
-    <h1>Entornos de Desarrollo</h1><!--Luego ponemos un nombre que este acorde con nuestra "Empresa"-->
-    <img src="Buen logo.png" width="100px" id="Logo">
+    <h1>CodeDesk</h1>
+    <img src="Buen logo.png" width="100px" id="Logo" alt="Logo">
     <a href="Proyecto intermodular.html" id="Proyecto">Proyecto Intermodular</a>
 </header>
 
-
 <div id="Encabezado">
     <ul>
-        <li><a href="#Prueba1">Prueba1</a></li><!--Luego cambiaremos los nombre por los que corresponden-->
-        <li><a href="#Prueba2">Prueba2</a></li>
-        <li><a href="#Prueba3">Prueba3</a></li>
-        <li><a href="#Prueba4">Prueba4</a></li>
+        <li><a href="#ingenieria">Ingeniería del Software</a></li>
+        <li><a href="#metodologias">Ciclos y Metodologías</a></li>
+        <li><a href="#ides">Herramientas IDE</a></li>
+        <li><a href="#evaluacion">Tests de Evaluación</a></li>
     </ul>
 </div>
+<hr>
 
+<div id="ingenieria" class="seccion-contenido">
+    <h2>Ingeniería del Software y Fases de Desarrollo</h2>
+    <p>La <b>ingeniería del software</b> es la aplicación práctica del conocimiento científico al diseño y construcción de programas. A diferencia de la simple escritura de código, aplica un enfoque estructurado para garantizar la calidad, controlar el proceso, facilitar el mantenimiento y satisfacer requisitos.</p>
+    
+    <h3>Fases del Ciclo de Vida:</h3>
+    <ul>
+        <li><b>Análisis de Requisitos:</b> Recolección de información. Resultado: Documento de especificación.</li>
+        <li><b>Diseño:</b> Arquitectura del sistema, diseño UI/UX y modelado de base de datos.</li>
+        <li><b>Implementación:</b> Programación pura utilizando IDEs y control de versiones.</li>
+        <li><b>Pruebas:</b> Evaluación para detectar bugs (unitarias, integración, sistema).</li>
+        <li><b>Despliegue:</b> Instalación en el entorno de producción.</li>
+        <li><b>Mantenimiento:</b> Corrección de errores y adición de funcionalidades.</li>
+    </ul>
 
-<div id="Prueba1">
-    <h2>Prueba1</h2>
-    <p>Texto de prueba para ver como se ve.</p>
+    <h3>Perfiles Profesionales:</h3>
+    <p>Intervienen roles como el Jefe de Proyecto (Project Manager), Analista, Arquitecto, Programador, Tester (QA), Administrador de Sistemas y Administrador de Bases de Datos.</p>
 </div>
-<img src="Lenguaje de marcas.jpg">
+<hr>
 
-<div id="Prueba2">
-    <h2>Prueba2</h2>
-    <p>Texto de prueba para ver como se ve.</p>
+<div id="metodologias" class="seccion-contenido">
+    <h2>Modelos de Ciclo de Vida y Metodologías</h2>
+    <p>Un ciclo de vida determina el orden en el que se deben llevar a cabo las tareas. Los principales modelos son:</p>
+    <ul>
+        <li><b>Modelo en Cascada (Clásico):</b> Flujo secuencial. Para pasar a la siguiente fase se deben cumplir ciertos objetivos y revisiones.</li>
+        <li><b>Incremental y Evolutivo:</b> Modelos modernos que permiten entregas progresivas.</li>
+    </ul>
+    <h3>Metodologías RUP y Ágil</h3>
+    <p>El RUP (Rational Unified Process) es una metodología formal. Las metodologías Ágiles (como Scrum) se basan en el Manifiesto Ágil y buscan adaptación rápida al cambio y colaboración continua.</p>
 </div>
-<img src="Lenguaje de marcas.jpg">
+<hr>
 
-<div id="Prueba3">
-    <h2>Prueba3</h2>
-    <p>Texto de prueba para ver como se ve.</p>
+<div id="ides" class="seccion-contenido">
+    <h2>Guía de Entornos de Desarrollo (IDEs)</h2>
+    <p>Todos los IDEs agrupan un editor de texto, compilador y depurador (debugger). A continuación, analizamos los más importantes. <i>(Haz clic para desplegar)</i></p>
+    
+    <!-- DESPLEGABLE VS CODE -->
+    <details>
+        <summary>Visual Studio / VS Code</summary>
+        <div class="ide-content">
+            <p><b>Instalación:</b> Descargar desde su web oficial. Marcar la opción "Abrir con Code" y agregar al PATH.</p>
+            <p><b>Módulos (Extensiones):</b> Abrir vista con <code>Ctrl + Shift + X</code>, buscar (ej. Extension Pack for Java) e Instalar. Para eliminar, hacer clic en el engranaje y seleccionar Uninstall.</p>
+            <p><b>Personalización y Atajos:</b> Cambiar tema con <code>Ctrl + K, Ctrl + T</code>. Formatear código (<code>Shift + Alt + F</code>).</p>
+            <p><b>Actualizaciones:</b> En Ajustes, buscar <code>update mode</code> (default, start, manual).</p>
+            <p><b>Ventajas:</b> Muy ligero, excelente para web y miles de extensiones.</p>
+            <p><b>Desventajas:</b> VS Code no es un IDE puro, requiere extensiones para Java.</p>
+        </div>
+    </details>
+
+    <!-- DESPLEGABLE ECLIPSE -->
+    <details>
+        <summary>Eclipse</summary>
+        <div class="ide-content">
+            <p><b>Instalación:</b> Requiere JDK. Descargar <i>Eclipse IDE for Java Developers</i> desde eclipse.org.</p>
+            <p><b>Módulos:</b> Instalar desde <i>Help > Install New Software</i> o <i>Eclipse Marketplace</i>. Para eliminar: <i>Help > About Eclipse > Installation Details</i>.</p>
+            <p><b>Personalización y Atajos:</b> Tema en <i>Window > Preferences > General > Appearance</i>. Syso autocompletar (<code>Ctrl + Espacio</code>), Formatear (<code>Ctrl + Shift + F</code>).</p>
+            <p><b>Actualizaciones:</b> En <i>Window > Preferences > Install/Update > Automatic Updates</i>.</p>
+            <p><b>Ventajas:</b> Listo para Java, gestión sólida de proyectos.</p>
+            <p><b>Desventajas:</b> Interfaz anticuada, pesado con muchos proyectos.</p>
+            <p><b>Generar Ejecutable:</b> Clic derecho en proyecto > Export > Java > Runnable JAR file.</p>
+        </div>
+    </details>
+
+    <!-- DESPLEGABLE INTELLIJ -->
+    <details>
+        <summary>IntelliJ IDEA</summary>
+        <div class="ide-content">
+            <p><b>Instalación:</b> Descargar edición Community (gratis) o Ultimate.</p>
+            <p><b>Módulos:</b> En <i>Settings > Plugins > Marketplace</i>. Para eliminar, pestaña Installed y Uninstall.</p>
+            <p><b>Personalización y Atajos:</b> Tema en <i>File > Settings > Appearance & Behavior</i>. Solucionar errores (<code>Alt + Enter</code>), Generar código (<code>Alt + Insert</code>).</p>
+            <p><b>Actualizaciones:</b> <i>Settings > Appearance & Behavior > System Settings > Updates</i>.</p>
+            <p><b>Ventajas:</b> Autocompletado superior, interfaz moderna.</p>
+            <p><b>Desventajas:</b> Alto consumo de recursos, versión completa de pago.</p>
+        </div>
+    </details>
+
+    <!-- DESPLEGABLE NETBEANS -->
+    <details>
+        <summary>NetBeans</summary>
+        <div class="ide-content">
+            <p><b>Instalación:</b> Desde apache.org, requiere JDK.</p>
+            <p><b>Módulos:</b> En <i>Tools > Plugins</i>. Pestaña Available Plugins para instalar, pestaña Installed para eliminar.</p>
+            <p><b>Ventajas:</b> Excelente editor visual para interfaces gráficas.</p>
+            <p><b>Desventajas:</b> Interfaz desfasada, uso en declive.</p>
+            <p><b>Exportar a Eclipse:</b> <i>File > Export Project > To ZIP</i>. Luego en Eclipse: Importar <i>Archive File</i> (solo carpeta src).</p>
+        </div>
+    </details>
 </div>
-<img src="Lenguaje de marcas.jpg">
+<hr>
 
-<div id="Prueba4">
-    <h2>Prueba4</h2>
-    <p>Texto de prueba para ver como se ve.</p>
+<div id="evaluacion" class="seccion-contenido">
+    <h2>Tests de Evaluación</h2>
+    
+    <!-- TEST DE ROLES PROFESIONALES -->
+    <div class="caja-test">
+        <h3>Test: Roles Profesionales en el Desarrollo</h3>
+        
+        <p><b>1. ¿Cuál de las siguientes afirmaciones describe mejor el cometido del 'Jefe de proyecto'?</b></p>
+        <div class="opcion-test">
+            <input type="radio" id="r1a" name="rol1">
+            <label for="r1a">A) Es el encargado de definir las líneas maestras del diseño.</label>
+            <div class="feedback incorrecto">❌ Incorrecto. Ese es el Arquitecto.</div>
+        </div>
+        <div class="opcion-test">
+            <input type="radio" id="r1b" name="rol1">
+            <label for="r1b">B) Se trata del máximo responsable de que el proyecto salga adelante (planificación y control).</label>
+            <div class="feedback correcto">✅ ¡Correcto!</div>
+        </div>
+
+        <p><b>2. ¿A quiénes se hace referencia con el término 'Expertos del dominio'?</b></p>
+        <div class="opcion-test">
+            <input type="radio" id="r2a" name="rol2">
+            <label for="r2a">A) A las personas que trabajan en la empresa para la que se desarrolla la aplicación y conocen los requisitos.</label>
+            <div class="feedback correcto">✅ ¡Correcto!</div>
+        </div>
+        <div class="opcion-test">
+            <input type="radio" id="r2b" name="rol2">
+            <label for="r2b">B) A los programadores senior.</label>
+            <div class="feedback incorrecto">❌ Incorrecto.</div>
+        </div>
+
+        <p><b>3. ¿Cuál es la función principal del rol de 'Programador'?</b></p>
+        <div class="opcion-test">
+            <input type="radio" id="r3a" name="rol3">
+            <label for="r3a">A) Escribir el código fuente partiendo del diseño detallado.</label>
+            <div class="feedback correcto">✅ ¡Correcto!</div>
+        </div>
+        <div class="opcion-test">
+            <input type="radio" id="r3b" name="rol3">
+            <label for="r3b">B) Probar los programas para garantizar la calidad.</label>
+            <div class="feedback incorrecto">❌ Incorrecto. Eso lo hace el tester (probador).</div>
+        </div>
+        
+        <p><b>4. Sobre la distribución de roles, ¿cuál es correcta?</b></p>
+        <div class="opcion-test">
+            <input type="radio" id="r4a" name="rol4">
+            <label for="r4a">A) Cada rol debe ser desempeñado por una sola persona obligatoriamente.</label>
+            <div class="feedback incorrecto">❌ Incorrecto.</div>
+        </div>
+        <div class="opcion-test">
+            <input type="radio" id="r4b" name="rol4">
+            <label for="r4b">B) Cada rol puede ser desempeñado por una o varias personas, e incluso una persona puede tener varios roles.</label>
+            <div class="feedback correcto">✅ ¡Correcto!</div>
+        </div>
+    </div>
 </div>
 
 <a href="Entorno de Desarrollo.html" id="Volver">Volver al inicio</a>

@@ -128,3 +128,60 @@ header {
         padding: 15px;
     }
 }
+
+.seccion-contenido {
+    padding: 20px 40px;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.seccion-contenido p {
+    text-align: justify; /* Requisito de la rúbrica */
+}
+
+.seccion-contenido h2 {
+    color: #0F172A;
+    border-bottom: 2px solid #F97316;
+    padding-bottom: 5px;
+}
+
+/* --- MAGIA DEL TEST INTERACTIVO --- */
+.caja-test {
+    background-color: #f1f5f9;
+    border-left: 5px solid #F97316;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.opcion-test {
+    margin-bottom: 10px;
+}
+
+.opcion-test label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Ocultamos los mensajes por defecto */
+.feedback {
+    display: none;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.feedback.correcto { background-color: #dcfce7; color: #166534; }
+.feedback.incorrecto { background-color: #fee2e2; color: #991b1b; }
+
+/* Mostramos el mensaje solo cuando el radio button está marcado */
+input[type="radio"]:checked ~ .feedback {
+    display: block;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #F97316;
+}
