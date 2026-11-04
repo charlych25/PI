@@ -36,6 +36,9 @@ header {
     display: inline-block;
     font-weight: bold;
     transition: background-color 0.3s;
+    top: 20px;
+    right: 20px;
+    position: absolute;
 }
 
 #Logo {
