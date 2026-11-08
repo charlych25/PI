@@ -69,14 +69,59 @@
 <hr>
 
 <div id="metodologias" class="seccion-contenido">
-    <h2><b>Modelos de Ciclo de Vida y Metodologías</b></h2>
-    <p>Un ciclo de vida determina el orden en el que se deben llevar a cabo las tareas. Los principales modelos son:</p>
-    <ul>
-        <li><b>Modelo en Cascada (Clásico):</b> Flujo secuencial. Para pasar a la siguiente fase se deben cumplir ciertos objetivos y revisiones.</li>
-        <li><b>Incremental y Evolutivo:</b> Modelos modernos que permiten entregas progresivas.</li>
-    </ul>
-    <h3>Metodologías RUP y Ágil</h3>
-    <p>El RUP (Rational Unified Process) es una metodología formal. Las metodologías Ágiles (como Scrum) se basan en el Manifiesto Ágil y buscan adaptación rápida al cambio y colaboración continua.</p>
+    <h3>Modelos de Ciclo de Vida del Software</h3>
+<p>El ciclo de vida define el orden de las tareas y los criterios para avanzar entre fases. La elección correcta es vital para el éxito del proyecto.</p>
+
+<ul>
+    <li><b>Modelo en Cascada (Clásico):</b> Enfoque sistemático y secuencial (Análisis ➔ Diseño ➔ Programación ➔ Pruebas ➔ Mantenimiento). 
+        <br><em>Ventajas:</em> Fácil de planificar. 
+        <br><em>Inconvenientes:</em> El cliente no ve resultados hasta el final y los cambios tardíos son muy costosos. Ideal solo cuando los requisitos son totalmente estables.
+        <img src="Modelo en cascada.png">
+    </li>
+    <li><b>Modelo Incremental:</b> Divide el software en entregas parciales para que el cliente disponga de versiones funcionales antes de finalizar todo el proyecto.</li>
+    <img src="Modelo incremental.png">
+    <li><b>Modelos Evolutivos (Prototipos y Espiral):</b> Permiten que el software evolucione con el tiempo, integrando prototipos de prueba y un exhaustivo análisis de riesgos en cada iteración.</li>
+    <img src="Modelo evolutivo.png">
+    <img src="Modelo en espiral.png">
+</ul>
+</div>
+<hr>
+
+<div id="rup-agil" class="seccion-contenido">
+    <h2>Metodologías: RUP y Desarrollo Ágil</h2>
+    <p>Las metodologías establecen el <em>cómo</em> llevar a cabo las tareas de desarrollo apoyándose en herramientas CASE.</p>
+
+    <details style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
+        <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Proceso Unificado de Rational (RUP)</summary>
+        <div style="margin-top: 10px;">
+            <p>Se describe en dos dimensiones:</p>
+            <ul>
+                <li><b>Dimensión Temporal (Fases):</b> 
+                    <br>1. <i>Comienzo (Inception):</i> Viabilidad y alcance.
+                    <br>2. <i>Elaboración (Elaboration):</i> Arquitectura base y eliminación de riesgos.
+                    <br>3. <i>Construcción (Construction):</i> Desarrollo iterativo e incremental del producto.
+                    <br>4. <i>Transición (Transition):</i> Puesta en producción y entrega al usuario.
+                </li>
+                <li><b>Dimensión Estática:</b> 
+                    <br>Define los roles (trabajadores), las actividades, los productos intermedios (artifacts) y los flujos de trabajo (ingeniería y apoyo).
+                    <img src="RUP.png">
+                </li>
+            </ul>
+        </div>
+    </details>
+
+    <details style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
+        <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Modelos de Desarrollo Ágil y Scrum / XP</summary>
+        <div style="margin-top: 10px;">
+            <p>Basados en el <b>Manifiesto Ágil (2001)</b>, valoran a los individuos y su interacción por encima de los procesos y priorizan el software funcional frente a la documentación exhaustiva.</p>
+            <img src="Agil.png">
+            <ul>
+                <li><b>Programación Extrema (XP):</b> Destaca por la simplicidad, la retroalimentación continua y prácticas como la <em>programación por parejas</em> y las historias de usuario.</li>
+                <li><b>Scrum:</b> Marco basado en la transparencia, inspección y adaptación. Organiza el trabajo en ciclos cortos llamados <b>sprints</b>, con reuniones diarias de 15 minutos, planificación (*sprint planning*) y revisiones (*sprint review*).</li>
+                <img src="SCRUM.png">
+            </ul>
+        </div>
+    </details>
 </div>
 <hr>
 
