@@ -28,6 +28,7 @@
 
 <header>
     <h1>CodeDesk <span class="subtitulo">| Entornos de Desarrollo</span></h1>
+    <!-- [IMAGEN: LOGO.png] - Mantener tu logo aquí -->
     <img src="LOGO.png" width="100px" id="Logo" alt="Logo">
     <a href="Proyecto intermodular.html" id="Proyectos">Proyecto intermodular</a>
 </header>
@@ -43,209 +44,246 @@
 <hr>
 
     <div id="ingenieria" class="seccion-contenido">
-        <h2><b>Ingeniería del Software y Fases de Desarrollo</b></h2>
-        <p>La <b>ingeniería del software</b> es la aplicación práctica del conocimiento científico al diseño y
-            construcción de programas informáticos, así como a la documentación asociada requerida para desarrollarlos,
-            operarlos y mantenerlos.</p>
-        <p>A diferencia de la simple escritura de código, esta disciplina aplica un enfoque sistemático, cuantificable y
-            estructurado. Sus objetivos principales son: Garantizar la calidad, Controlar el proceso (costes y plazos),
-            Facilitar el mantenimiento y Satisfacer los requisitos del cliente.</p>
-
-        <h3>Fases de desarrollo de una aplicación informática:</h3>
-        <p>El desarrollo estructurado se divide en una serie de etapas secuenciales o iterativas conocidas como el Ciclo
-            de Vida del Desarrollo del Software.</p>
-        <h2>2.1. Análisis (Investigación y Definición)</h2>
-    <p>Es la fase de investigación y definición. El objetivo aquí no es programar nada, sino entender perfectamente el problema que el software debe resolver.</p>
-    <ul>
-        <li><strong>Recopilación de información:</strong> Se hacen reuniones y entrevistas con el cliente o los futuros usuarios para saber qué necesitan.</li>
-        <li><strong>Estudio de viabilidad:</strong> Se analiza si el proyecto es posible a nivel técnico, económico (si hay presupuesto) y temporal (si da tiempo a hacerlo).</li>
-        <li><strong>Definición de Requisitos Funcionales:</strong> Qué debe hacer el sistema exactamente (ej. "El usuario debe poder registrarse con un email", "El sistema debe calcular el IVA").</li>
-        <li><strong>Definición de Requisitos No Funcionales:</strong> Cómo debe comportarse el sistema (ej. "Debe cargar en menos de 2 segundos", "Debe ser seguro", "Debe ser compatible con Windows 10").</li>
-        <li><strong>Entregable:</strong> Todo esto se plasma en un Documento de Especificación de Requisitos (ERS), que actúa como un contrato detallado de lo que se va a construir.</li>
-    </ul>
-
-    <h2>2.2. Diseño</h2>
-    <p>Una vez que se sabe qué hay que hacer, en esta fase se define cómo se va a hacer a nivel técnico. Es como hacer los planos de una casa antes de poner ladrillos.</p>
-    <ul>
-        <li><strong>Diseño de la Base de Datos:</strong> Se decide cómo se va a almacenar la información. Aquí se crean los Modelos Entidad-Relación para estructurar las tablas, claves y conexiones de los datos.</li>
-        <li><strong>Diseño de Arquitectura:</strong> Se define la estructura general del software (si tendrá un servidor central, si estará en la nube, cómo se comunicarán los módulos).</li>
-        <li><strong>Diseño de Interfaces (UI/UX):</strong> Se dibujan los bocetos de las pantallas, los menús, y se decide cómo navegará el usuario por la aplicación usando lenguajes de marcado y estilos como HTML5 y CSS.</li>
-        <li><strong>Selección de herramientas:</strong> Se elige el stack tecnológico definitivo (lenguajes de programación, librerías, gestores de bases de datos).</li>
-    </ul>
-
-    <h2>2.3. Codificación (Implementación o Desarrollo)</h2>
-    <p>Es la fase más larga y consiste en traducir todo el diseño anterior a líneas de código que el ordenador pueda ejecutar.</p>
-    <ul>
-        <li><strong>Programación:</strong> Los desarrolladores escriben el código fuente utilizando sus Entornos de Desarrollo Integrado (IDEs, como NetBeans o Visual Studio Code) y el lenguaje elegido (como Java).</li>
-        <li><strong>Control de versiones:</strong> El equipo utiliza herramientas (como Git) para guardar el progreso, mezclar el código de varios programadores sin que se borre nada y poder volver atrás si algo falla.</li>
-        <li><strong>Documentación interna:</strong> Se añaden comentarios al código y se documentan las funciones para que otros programadores puedan entenderlo en el futuro.</li>
-    </ul>
-
-    <h2>2.4. Pruebas (Testing)</h2>
-    <p>Antes de entregar el software, hay que asegurarse de que cumple con los requisitos de la primera fase y de que no tiene fallos críticos.</p>
-    <ul>
-        <li><strong>Pruebas Unitarias:</strong> El propio programador prueba fragmentos pequeños de código (una función concreta) para ver si hace lo que debe.</li>
-        <li><strong>Pruebas de Integración:</strong> Se comprueba que los distintos módulos del programa funcionan bien cuando se conectan entre sí (ej. que la pantalla de login conecte correctamente con la base de datos).</li>
-        <li><strong>Pruebas de Sistema / Estrés:</strong> Se prueba el programa completo, a veces simulando que miles de usuarios entran a la vez para ver si los servidores aguantan.</li>
-        <li><strong>Pruebas de Aceptación (UAT):</strong> El cliente prueba una versión casi final para dar el visto bueno antes del lanzamiento real.</li>
-    </ul>
-    <p>Existen 2 tipos de técnicas de pruebas:</p>
-    <ul>
-        <li><strong>Pruebas de caja blanca:</strong> Se examinan los detalles de cada módulo, para lo que se debe disponer de código fuente.</li>
-        <li><strong>Pruebas de caja negra:</strong> el software se considera como una caja negra que recibe una serie de entradas y proporciona una serie de salidas. El objetivo es validar los requisitos funcionales.</li>
-    </ul>
-
-    <h2>2.5. Despliegue (Implantación)</h2>
-    <p>El software ya está terminado y probado; ahora hay que ponerlo a disposición de los usuarios finales.</p>
-    <ul>
-        <li><strong>Paso a Producción:</strong> El código se sube a los servidores definitivos o se compila en instaladores. A veces esto requiere configurar máquinas virtuales (como Ubuntu dentro de VirtualBox) o servidores web donde se alojará el programa.</li>
-        <li><strong>Migración de datos:</strong> Si el cliente ya usaba un programa antiguo, hay que pasar todos sus datos viejos al nuevo sistema.</li>
-        <li><strong>Formación:</strong> Se entregan los manuales de usuario y, a veces, se dan cursos a los trabajadores que van a usar la aplicación en su día a día.</li>
-    </ul>
-
-    <h2>2.6. Mantenimiento</h2>
-    <p>El ciclo de vida no termina cuando se entrega el software. Esta fase dura todo el tiempo que el programa siga en uso y se divide en varios tipos:</p>
-    <ul>
-        <li><strong>Mantenimiento Correctivo:</strong> Solucionar bugs o errores que los usuarios han descubierto usando el programa en el mundo real.</li>
-        <li><strong>Mantenimiento Adaptativo:</strong> Modificar el programa para que siga funcionando si cambia el entorno (por ejemplo, si sale una nueva versión de Windows o un nuevo navegador).</li>
-        <li><strong>Mantenimiento Perfectivo:</strong> Añadir nuevas funciones o mejoras que el cliente pide meses o años después del lanzamiento original.</li>
-        <li><strong>Mantenimiento Preventivo:</strong> Optimizar el código interno para evitar que el sistema se vuelva lento o falle en el futuro.</li>
-    </ul>
-
-        <h3>3.Perfiles que intervienen:</h3>
+        <h2><b>1. Mostrar información sobre ingeniería del software</b></h2>
+        <p>1.Informacion sobre la ingeniería del software + 2 tipo test: La ingeniería del software es la aplicación práctica del conocimiento científico al diseño y construcción de programas informáticos, así como a la documentación asociada requerida para desarrollarlos, operarlos y mantenerlos.</p>
+        <p>A diferencia de la simple escritura de código, esta disciplina aplica un enfoque sistemático, cuantificable y estructurado. Sus objetivos principales son:</p>
         <ul>
-            <li><b>3.1. Director de Proyecto (Project Manager o PM):</b> Es el líder y responsable último de que el
-                proyecto salga adelante con éxito. No suele programar, su trabajo es de gestión pura. Define el
-                calendario, controla presupuesto y gestiona riesgos.</li>
-            <li><b>3.2. Analista Funcional:</b> Es el traductor oficial entre el "idioma de los negocios" del cliente y
-                el "idioma técnico". Lidera la fase de Análisis. Se sienta con el cliente y redacta el Documento de
-                Requisitos.</li>
-            <li><b>3.3. Arquitecto de Software:</b> Es el perfil técnico con más experiencia. Lidera la fase de Diseño,
-                decide qué tecnologías se van a usar y cómo se van a comunicar los distintos módulos.</li>
-            <li><b>3.4. Programador/Desarrollador (Developer):</b> Es el encargado de la fase de Codificación. Se
-                dividen en Front-end (parte visual), Back-end (lógica de negocio en el servidor) y Full-stack (domina
-                ambos).</li>
-            <li><b>3.5. Analista de Calidad (Tester o QA):</b> Su trabajo es poner a prueba el programa para encontrar
-                cualquier error (bug) antes de que lo vea el cliente. Hace pruebas manuales o automatizadas.</li>
-            <li><b>3.6. Administrador de Bases de Datos (DBA):</b> El guardián de la información. Crea las tablas,
-                asegura consultas rápidas, gestiona permisos y configura copias de seguridad.</li>
-            <li><b>3.7. DevOps / Administrador de Sistemas:</b> Es el puente entre el Desarrollo (Dev) y las Operaciones
-                (Ops). Lidera la fase de Despliegue y gestiona la infraestructura (servidores y redes) donde va a vivir
-                el programa.</li>
+            <li><b>Garantizar la calidad:</b> Crear software fiable, eficiente, escalable y seguro.</li>
+            <li><b>Controlar el proceso:</b> Estimar y respetar los costes, recursos humanos y plazos de entrega.</li>
+            <li><b>Facilitar el mantenimiento:</b> Producir un código estructurado y documentado que permita futuras actualizaciones o resolución de errores sin rehacer el sistema desde cero.</li>
+            <li><b>Satisfacer los requisitos:</b> Asegurar que el producto final resuelve exactamente el problema o la necesidad real del cliente o usuario final.</li>
+        </ul>
+
+        <h2><b>2. Fases de desarrollo de una aplicación informática</b></h2>
+        <p>El desarrollo estructurado se divide en una serie de etapas secuenciales o iterativas conocidas como el Ciclo de Vida del Desarrollo del Software.</p>
+        
+        <h3>2.1. Análisis (Toma de Requisitos)</h3>
+        <p>Es la fase de investigación y definición. El objetivo aquí no es programar nada, sino entender perfectamente el problema que el software debe resolver.</p>
+        <ul>
+            <li><b>Recopilación de información:</b> Se hacen reuniones y entrevistas con el cliente o los futuros usuarios para saber qué necesitan.</li>
+            <li><b>Estudio de viabilidad:</b> Se analiza si el proyecto es posible a nivel técnico, económico (si hay presupuesto) y temporal (si da tiempo a hacerlo).</li>
+            <li><b>Definición de Requisitos Funcionales:</b> Qué debe hacer el sistema exactamente (ej. "El usuario debe poder registrarse con un email", "El sistema debe calcular el IVA").</li>
+            <li><b>Definición de Requisitos No Funcionales:</b> Cómo debe comportarse el sistema (ej. "Debe cargar en menos de 2 segundos", "Debe ser seguro", "Debe ser compatible con Windows 10").</li>
+            <li><b>Entregable:</b> Todo esto se plasma en un Documento de Especificación de Requisitos (ERS), que actúa como un contrato detallado de lo que se va a construir.</li>
+        </ul>
+
+        <h3>2.2. Diseño</h3>
+        <p>Una vez que se sabe qué hay que hacer, en esta fase se define cómo se va a hacer a nivel técnico. Es como hacer los planos de una casa antes de poner ladrillos.</p>
+        <ul>
+            <li><b>Diseño de la Base de Datos:</b> Se decide cómo se va a almacenar la información. Aquí se crean los Modelos Entidad-Relación para estructurar las tablas, claves y conexiones de los datos.</li>
+            <li><b>Diseño de Arquitectura:</b> Se define la estructura general del software (si tendrá un servidor central, si estará en la nube, cómo se comunicarán los módulos).</li>
+            <li><b>Diseño de Interfaces (UI/UX):</b> Se dibujan los bocetos de las pantallas, los menús, y se decide cómo navegará el usuario por la aplicación usando lenguajes de marcado y estilos como HTML5 y CSS.</li>
+            <li><b>Selección de herramientas:</b> Se elige el stack tecnológico definitivo (lenguajes de programación, librerías, gestores de bases de datos).</li>
+        </ul>
+
+        <h3>2.3. Codificación (Implementación o Desarrollo)</h3>
+        <p>Es la fase más larga y consiste en traducir todo el diseño anterior a líneas de código que el ordenador pueda ejecutar.</p>
+        <ul>
+            <li><b>Programación:</b> Los desarrolladores escriben el código fuente utilizando sus Entornos de Desarrollo Integrado (IDEs, como NetBeans o Visual Studio Code) y el lenguaje elegido (como Java).</li>
+            <li><b>Control de versiones:</b> El equipo utiliza herramientas (como Git) para guardar el progreso, mezclar el código de varios programadores sin que se borre nada y poder volver atrás si algo falla.</li>
+            <li><b>Documentación interna:</b> Se añaden comentarios al código y se documentan las funciones para que otros programadores puedan entenderlo en el futuro.</li>
+        </ul>
+
+        <h3>2.4. Pruebas (Testing)</h3>
+        <p>Antes de entregar el software, hay que asegurarse de que cumple con los requisitos de la primera fase y de que no tiene fallos críticos.</p>
+        <ul>
+            <li><b>Pruebas Unitarias:</b> El propio programador prueba fragmentos pequeños de código (una función concreta) para ver si hace lo que debe.</li>
+            <li><b>Pruebas de Integración:</b> Se comprueba que los distintos módulos del programa funcionan bien cuando se conectan entre sí (ej. que la pantalla de login conecte correctamente con la base de datos).</li>
+            <li><b>Pruebas de Sistema / Estrés:</b> Se prueba el programa completo, a veces simulando que miles de usuarios entran a la vez para ver si los servidores aguantan.</li>
+            <li><b>Pruebas de Aceptación (UAT):</b> El cliente prueba una versión casi final para dar el visto bueno antes del lanzamiento real.</li>
+        </ul>
+        <p>Existen 2 tipos de técnicas de pruebas:</p>
+        <ul>
+            <li><b>Pruebas de caja blanca:</b> Se examinan los detalles de cada módulo, para lo que se debe disponer de código fuente.</li>
+            <li><b>Pruebas de caja negra:</b> el software se considera como una caja negra que recibe una serie de entradas y proporciona una serie de salidas. El objetivo es validar los requisitos funcionales.</li>
+        </ul>
+
+        <h3>2.5. Despliegue (Implantación)</h3>
+        <p>El software ya está terminado y probado; ahora hay que ponerlo a disposición de los usuarios finales.</p>
+        <ul>
+            <li><b>Paso a Producción:</b> El código se sube a los servidores definitivos o se compila en instaladores. A veces esto requiere configurar máquinas virtuales (como Ubuntu dentro de VirtualBox) o servidores web donde se alojará el programa.</li>
+            <li><b>Migración de datos:</b> Si el cliente ya usaba un programa antiguo, hay que pasar todos sus datos viejos al nuevo sistema.</li>
+            <li><b>Formación:</b> Se entregan los manuales de usuario y, a veces, se dan cursos a los trabajadores que van a usar la aplicación en su día a día.</li>
+        </ul>
+
+        <h3>2.6. Mantenimiento</h3>
+        <p>El ciclo de vida no termina cuando se entrega el software. Esta fase dura todo el tiempo que el programa siga en uso y se divide en varios tipos:</p>
+        <ul>
+            <li><b>Mantenimiento Correctivo:</b> Solucionar bugs o errores que los usuarios han descubierto usando el programa en el mundo real.</li>
+            <li><b>Mantenimiento Adaptativo:</b> Modificar el programa para que siga funcionando si cambia el entorno (por ejemplo, si sale una nueva versión de Windows o un nuevo navegador).</li>
+            <li><b>Mantenimiento Perfectivo:</b> Añadir nuevas funciones o mejoras que el cliente pide meses o años después del lanzamiento original.</li>
+            <li><b>Mantenimiento Preventivo:</b> Optimizar el código interno para evitar que el sistema se vuelva lento o falle en el futuro.</li>
+        </ul>
+
+        <h2><b>3. Perfiles que intervienen</b></h2>
+        <ul>
+            <li><b>3.1. Director de Proyecto (Project Manager o PM):</b> Es el líder y responsable último de que el proyecto salga adelante con éxito. No suele programar, su trabajo es de gestión pura.
+                <ul>
+                    <li><b>Responsabilidades:</b> Define el calendario de entregas (cuándo se termina cada fase), controla el presupuesto (que no cueste más de lo acordado) y gestiona los riesgos (qué pasa si un programador se da de baja).</li>
+                    <li><b>Día a día:</b> Reparte las tareas al equipo, resuelve bloqueos, modera las reuniones y es la cara visible ante el cliente para informarle de los avances o retrasos.</li>
+                </ul>
+            </li>
+            <li><b>3.2. Analista Funcional (o Analista de Software):</b> Es el traductor oficial entre el "idioma de los negocios" del cliente y el "idioma técnico" de los programadores.
+                <ul>
+                    <li><b>Responsabilidades:</b> Lidera la fase de Análisis. Se sienta con el cliente, le hace las preguntas correctas para descubrir qué necesita realmente y redacta el Documento de Requisitos.</li>
+                    <li><b>Día a día:</b> Detalla cómo debe funcionar cada pantalla o proceso (ej. "Si la contraseña es incorrecta 3 veces, bloquear el usuario") para que luego el programador no tenga que adivinarlo.</li>
+                </ul>
+            </li>
+            <li><b>3.3. Arquitecto de Software:</b> Es el perfil técnico con más experiencia. Toma las grandes decisiones estructurales antes de escribir una sola línea de código.
+                <ul>
+                    <li><b>Responsabilidades:</b> Lidera la fase de Diseño. Decide qué tecnologías se van a usar (por ejemplo, si conviene más hacer una app de escritorio con Java o una aplicación web), cómo se van a comunicar los distintos módulos del programa y cómo hacer que el sistema sea seguro y no colapse si entran muchos usuarios.</li>
+                    <li><b>Día a día:</b> Crea los esquemas técnicos, define los estándares de programación que deberá seguir el equipo y asesora a los programadores cuando se atascan con un problema complejo.</li>
+                </ul>
+            </li>
+            <li><b>3.4. Programador/Desarrollador (Developer):</b> Es el "obrero" del código, el encargado de la fase de Codificación. Traduce los diseños y requisitos a lenguajes que la máquina entienda utilizando sus entornos de desarrollo (como NetBeans o Visual Studio Code). Se dividen en varias especialidades:
+                <ul>
+                    <li><b>Front-end:</b> Programa la parte visual con la que interactúa el usuario (interfaces, botones, menús). Suele trabajar con lenguajes de marcas como HTML5, CSS y JavaScript.</li>
+                    <li><b>Back-end:</b> Programa la "trastienda" o lógica de negocio en el servidor (ej. Java, PHP, Python). Gestiona qué ocurre cuando el usuario pulsa un botón (hacer cálculos, conectar con el banco, buscar datos).</li>
+                    <li><b>Full-stack:</b> Es el programador todoterreno que domina tanto el Front-end como el Back-end.</li>
+                </ul>
+            </li>
+            <li><b>3.5. Analista de Calidad (Tester o QA - Quality Assurance):</b> Es el "destructor" profesional. Su trabajo es poner a prueba el programa para encontrar cualquier error (bug) antes de que lo vea el cliente.
+                <ul>
+                    <li><b>Responsabilidades:</b> Lidera la fase de Pruebas. Lee los requisitos que escribió el Analista y verifica uno por uno que el programa los cumple.</li>
+                    <li><b>Día a día:</b> Hace pruebas manuales (introduciendo datos incorrectos a ver si el programa explota) o escribe scripts (pequeños programas) que automatizan las pruebas para que se ejecuten solas miles de veces. Reporta los fallos encontrados de vuelta a los programadores.</li>
+                </ul>
+            </li>
+            <li><b>3.6. Administrador de Bases de Datos (DBA):</b> El guardián de la información. Casi cualquier aplicación informática necesita guardar datos (usuarios, productos, contraseñas), y este perfil se asegura de que se haga bien.
+                <ul>
+                    <li><b>Responsabilidades:</b> Transforma los diagramas Entidad-Relación en bases de datos reales.</li>
+                    <li><b>Día a día:</b> Crea las tablas, asegura que las consultas a la base de datos sean ultrarrápidas, gestiona los permisos (quién puede ver qué datos) y configura las copias de seguridad diarias para no perder nada si un servidor se rompe.</li>
+                </ul>
+            </li>
+            <li><b>3.7. DevOps / Administrador de Sistemas:</b> Es el puente entre el Desarrollo (Dev) y las Operaciones (Ops). Se encarga de la infraestructura donde va a vivir el programa.
+                <ul>
+                    <li><b>Responsabilidades:</b> Lidera la fase de Despliegue. Gestiona los servidores reales o máquinas virtuales (por ejemplo, servidores Linux/Ubuntu) donde funcionará el sistema.</li>
+                    <li><b>Día a día:</b> Configura redes, particiona discos para servidores, y crea sistemas automatizados para que, cuando un programador termina un código, este pase al servidor de producción de forma segura, rápida y sin requerir que la aplicación se detenga.</li>
+                </ul>
+            </li>
         </ul>
     </div>
     <hr>
 
     <div id="metodologias" class="seccion-contenido">
-        <h2>Modelos de Ciclo de Vida del Software</h2>
-        <p>Según Piattini et al. (2007), el ciclo de vida del software es "la descripción de las distintas formas de
-            desarrollo de un proyecto o aplicación informática, es decir, la orientación que debe seguirse para obtener,
-            a partir de los requerimientos del cliente, sistemas que puedan ser utilizados por dicho cliente".</p>
+        <h2><b>1. ED. Mostrar modelos de ciclo de vida del software.</b></h2>
+        <p>Ciclos de Vida del Software</p>
+        <p>Según Piattini et al. (2007), el ciclo de vida del software es "la descripción de las distintas formas de desarrollo de un proyecto o aplicación informática, es decir, la orientación que debe seguirse para obtener, a partir de los requerimientos del cliente, sistemas que puedan ser utilizados por dicho cliente".</p>
 
         <ul>
             <li><b>Modelo en cascada:</b>
-                Es el modelo de ciclo de vida más primitivo y fundamental. Propone un enfoque sistemático y secuencial:
-                se comienza con el análisis y se continúa a través del diseño, la programación y las pruebas hasta el
-                software terminado y su mantenimiento.
-                <br><i>Funcionamiento y Revisiones:</i> Para pasar de una fase a otra se deben cumplir ciertos objetivos
-                y superar un proceso de revisión formal. Si se detectan errores, se permite volver hacia atrás.
-                <br><i>Ventajas:</i> Fácil de comprender, de planificar y de seguir.
-                <br><i>Inconvenientes:</i> Los proyectos reales rara vez siguen un flujo totalmente lineal; es difícil
-                que el cliente enuncie todos los requisitos al principio; el cliente debe tener mucha paciencia porque
-                no verá una versión funcional hasta muy tarde. Solo se usa hoy en día si no es previsible que los
-                requisitos cambien.
-                <br><img src="foto escala.png"  style="max-width: 40%; margin-top: 10px;">
+                <ul>
+                    <li><b>¿Qué es?</b> Es el modelo de ciclo de vida más primitivo y fundamental. Propone un enfoque sistemático y secuencial: se comienza con el análisis y se continúa a través del diseño, la programación y las pruebas hasta el software terminado y su mantenimiento.</li>
+                    <li><b>Funcionamiento y Revisiones:</b> Para pasar de una fase a otra se deben cumplir ciertos objetivos y superar un proceso de revisión formal (principalmente sobre la documentación). Si se detectan errores de fases anteriores, se permite volver hacia atrás para corregirlos.</li>
+                    <li><b>Ventajas:</b> Es fácil de comprender, de planificar y de seguir.</li>
+                    <li><b>Inconvenientes</b> (según Pressman, 2010):
+                        <ol>
+                            <li>Los proyectos reales rara vez siguen un flujo totalmente lineal; los cambios generan confusión conforme el proyecto avanza.</li>
+                            <li>Es difícil que el cliente enuncie todos los requisitos al principio. Cuanto más tarde se detecte un fallo en una fase previa, más costoso será solucionarlo.</li>
+                            <li>El cliente debe tener mucha paciencia, ya que no dispondrá de una versión funcional del programa hasta que el proyecto esté muy avanzado.</li>
+                        </ol>
+                    </li>
+                    <li><b>¿Cuándo se usa hoy en día?</b> Dado que el software está sometido a continuos cambios, no suele ser apropiado, salvo en aquellos proyectos donde no es previsible que se produzcan cambios en los requisitos.</li>
+                </ul>
+                <!-- [IMAGEN: foto escala.png o imagen del modelo en cascada] -->
+                <img src="foto escala.png"  style="max-width: 40%; margin-top: 10px;">
             </li>
 
             <li><b>Modelo de Proceso Incremental:</b>
-                Un modelo donde el desarrollo de software se concibe mediante la producción de diversos incrementos o
-                entregables parciales. En lugar de esperar al final, se proporciona cierta funcionalidad parcial al
-                cliente y se va aumentando en entregas posteriores.
-                <br><i>Cuándo usarlo:</i> Es muy recomendable cuando los requisitos no están bien definidos desde el
-                principio y es muy probable que cambien, ya que reduce los riesgos de retrasos.
-                <br><img src="foto de modelo incremental.png"  style="max-width: 40%; margin-top: 10px;">
+                <ul>
+                    <li><b>¿Qué es?</b> Un modelo donde el desarrollo de software se concibe mediante la producción de diversos incrementos o entregables parciales.</li>
+                    <li><b>¿Cómo funciona?</b> En lugar de esperar al final del proyecto, se proporciona cierta funcionalidad parcial al cliente y se va aumentando en entregas posteriores. Para elaborar cada incremento, se aplican las actividades clásicas (análisis, diseño, programación, pruebas y mantenimiento).</li>
+                    <li><b>Ventajas / Cuándo usarlo:</b> Es muy recomendable cuando los requisitos no están bien definidos desde el principio y es muy probable que cambien, ya que reduce los riesgos de retrasos y facilita la retroalimentación del cliente.</li>
+                </ul>
+                <!-- [IMAGEN: foto de modelo incremental.png o imagen del modelo incremental] -->
+                <img src="foto de modelo incremental.png"  style="max-width: 40%; margin-top: 10px;">
             </li>
 
             <li><b>Modelos de Proceso Evolutivo (Construcción de Prototipos):</b>
-                Modelos iterativos que se caracterizan por el desarrollo de versiones cada vez más completas del
-                software. Se construye un sistema auxiliar (prototipo) para probar experimentalmente soluciones. El
-                ciclo iterativo es: Comunicación ➔ Planificación ➔ Modelado ➔ Construcción ➔ Despliegue y evaluación.
-                Los prototipos pueden ser desechables o evolutivos.
-                <br><img src="rueda.png"  style="max-width: 40%; margin-top: 10px;">
+                <ul>
+                    <li><b>¿Qué es?</b> Modelos iterativos que se caracterizan por el desarrollo de versiones cada vez más completas del software, entendiendo que los requisitos del negocio cambian con el tiempo.</li>
+                    <li><b>¿Cómo funciona (Prototipos)?</b> Se construye un sistema auxiliar (prototipo) para probar experimentalmente soluciones parciales o la interacción hombre-máquina. El proceso sigue un ciclo iterativo de: Comunicación con el cliente -> Planificación -> Modelado (diseño rápido) -> Construcción del prototipo -> Despliegue y evaluación.</li>
+                    <li><b>Tipos y cuándo usarlo:</b> Los prototipos pueden ser desechables (se usan solo para aclarar ideas y se tiran) o evolutivos (se transforman poco a poco en el sistema real). Es ideal cuando el cliente tiene objetivos generales pero no puede identificar los requisitos en detalle.</li>
+                </ul>
+                <!-- [IMAGEN: rueda.png o imagen del proceso evolutivo/prototipos] -->
+                <img src="rueda.png"  style="max-width: 40%; margin-top: 10px;">
             </li>
 
             <li><b>Modelo en Espiral:</b>
-                Modelo evolutivo diseñado para combinar las mejores características del modelo en cascada y de los
-                prototipos, añadiendo un pilar fundamental: el <b>análisis de riesgo</b>. Se desarrolla en una serie de
-                entregas representadas como vueltas alrededor de una espiral.
-                <br>Cada ciclo se divide en: <i>Planificación</i>, <i>Análisis de riesgo</i>, <i>Ingeniería</i> y
-                <i>Evaluación</i>. Su gran ventaja es que previene problemas graves, pero requiere mucha experiencia en
-                evaluación de riesgos.
-                <br><img src="foto espiral.png" style="max-width: 40%; margin-top: 10px;">
+                <ul>
+                    <li><b>¿Qué es?</b> Un modelo evolutivo avanzado diseñado para combinar las mejores características del modelo en cascada y de los prototipos, añadiendo un pilar fundamental: el análisis de riesgo.</li>
+                    <li><b>¿Cómo funciona?</b> El software se desarrolla en una serie de entregas representadas como vueltas alrededor de una espiral. Cada ciclo o vuelta se divide en cuatro cuadrantes de tareas:
+                        <ul>
+                            <li><b>Planificación:</b> Identificar objetivos, alternativas y restricciones.</li>
+                            <li><b>Análisis de riesgo:</b> Evaluar alternativas para elegir la más ventajosa y prevenir problemas.</li>
+                            <li><b>Ingeniería:</b> Desarrollar el producto (análisis, diseño, código) para obtener una versión más completa.</li>
+                            <li><b>Evaluación:</b> El cliente valora el resultado y se decide si se continúa con la siguiente iteración.</li>
+                        </ul>
+                    </li>
+                    <li><b>Ventajas e Inconvenientes:</b> Su gran ventaja es que previene problemas graves gracias al control continuo de riesgos. Su principal inconveniente es que requiere mucha experiencia en la evaluación de riesgos para tener éxito.</li>
+                </ul>
+                <!-- [IMAGEN: foto espiral.png o imagen del modelo en espiral] -->
+                <img src="foto espiral.png" style="max-width: 40%; margin-top: 10px;">
             </li>
         </ul>
     </div>
     <hr>
 
     <div id="rup-agil" class="seccion-contenido">
-        <h2>Metodologías RUP y Ágil</h2>
+        <h2><b>2. Mostrar las metodologias RUP y agil.</b></h2>
 
         <details
             style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
-            <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">El Proceso Unificado
-                de Rational (RUP)</summary>
+            <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">El Proceso Unificado de Rational (RUP)</summary>
             <div style="margin-top: 10px;">
-                <p>Es una metodología de desarrollo de software estructurada en dos dimensiones:</p>
                 <ul>
-                    <li><b>Dimensión temporal:</b> Se expresa en términos de ciclos, fases, iteraciones e hitos. Cada
-                        ciclo se divide en cuatro fases:
-                        <br>1. <i>Comienzo (Inception):</i> Estudio de viabilidad, alcance, riesgos y planificación
-                        general.
-                        <br>2. <i>Elaboración (Elaboration):</i> Análisis del dominio, arquitectura base y eliminación
-                        de riesgos clave.
-                        <br>3. <i>Construcción (Construction):</i> Desarrollo iterativo e incremental del sistema hasta
-                        la versión lista para producción.
-                        <br>4. <i>Transición (Transition):</i> Puesta a disposición de los usuarios (versión beta y
-                        sistema final).
+                    <li><b>¿Qué es?</b> Es una metodología de desarrollo de software estructurada en dos dimensiones:</li>
+                    <li><b>Dimensión temporal:</b> Se expresa en términos de ciclos, fases, iteraciones e hitos. Cada ciclo se divide secuencialmente en cuatro fases:
+                        <ul>
+                            <li><b>Comienzo (Inception):</b> Estudio de viabilidad, alcance, riesgos y planificación general.</li>
+                            <li><b>Elaboración (Elaboration):</b> Análisis del dominio, arquitectura base y eliminación de riesgos clave.</li>
+                            <li><b>Construcción (Construction):</b> Desarrollo iterativo e incremental del sistema hasta la versión lista para producción.</li>
+                            <li><b>Transición (Transition):</b> Puesta a disposición de los usuarios (versión beta y sistema final).</li>
+                        </ul>
                     </li>
-                    <li><b>Dimensión estática:</b> Describe quién lo hace, qué se produce y cómo mediante cuatro
-                        elementos:
-                        <br>• <i>Perfiles o roles (Workers):</i> Comportamiento y responsabilidades del equipo.
-                        <br>• <i>Actividad (Activity):</i> Unidad de trabajo realizada por un rol.
-                        <br>• <i>Producto intermedio (Artifacts):</i> Información producida o usada (modelos, código,
-                        etc.).
-                        <br>• <i>Flujos de trabajo (Workflows):</i> Secuencias de actividades divididas en Ingeniería y
-                        de Apoyo.
+                    <li><b>Dimensión estática:</b> Describe quién lo hace, qué se produce y cómo mediante cuatro elementos:
+                        <ul>
+                            <li><b>Perfiles o roles (Workers):</b> Comportamiento y responsabilidades del equipo (ej. jefe de proyecto, programadores).</li>
+                            <li><b>Actividad (Activity):</b> Unidad de trabajo realizada por un rol.</li>
+                            <li><b>Producto intermedio (Artifacts):</b> Información producida o usada (modelos, código fuente, ejecutables).</li>
+                            <li><b>Flujos de trabajo (Workflows):</b> Secuencias de actividades divididas en Ingeniería (modelado del negocio, requisitos, análisis/diseño, implementación, pruebas, implantación) y de Apoyo (gestión de configuración, de proyecto y entorno).</li>
+                        </ul>
                     </li>
                 </ul>
+                <!-- [IMAGEN: RUP.png o imagen del proceso RUP] -->
                 <img src="RUP.png" style="max-width: 100%; margin-top: 10px;">
             </div>
         </details>
 
         <details
             style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
-            <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Modelos de
-                Desarrollo Ágil (XP y Scrum)</summary>
+            <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Modelos de Desarrollo Ágil y el Manifiesto Ágil</summary>
             <div style="margin-top: 10px;">
-                <p><b>El Manifiesto Ágil (2001):</b> Firmado por la Alianza Ágil. Se valora más:</p>
                 <ul>
-                    <li>Los individuos y sus interacciones más que los procesos y herramientas.</li>
-                    <li>El software que funciona más que la documentación exhaustiva.</li>
-                    <li>La colaboración con el cliente más que la negociación del contrato.</li>
-                    <li>Responder al cambio más que seguir un plan estricto.</li>
+                    <li><b>Origen:</b> Surgió en 2001 cuando la Alianza Ágil firmó el Manifiesto por el desarrollo ágil.</li>
+                    <li><b>Filosofía (Valores principales):</b> Se valora más:
+                        <ul>
+                            <li>Los individuos y sus interacciones más que los procesos y herramientas.</li>
+                            <li>El software que funciona más que la documentación exhaustiva.</li>
+                            <li>La colaboración con el cliente más que la negociación del contrato.</li>
+                            <li>Responder al cambio más que seguir un plan estricto.</li>
+                        </ul>
+                    </li>
+                    <li><b>Ventaja principal:</b> Mayor facilidad y menor coste para incorporar cambios gracias a entregas frecuentes de software funcional y a la retroalimentación continua del cliente.</li>
                 </ul>
+                <!-- [IMAGEN: Agil.png o imagen del ciclo ágil] -->
                 <img src="Agil.png" style="max-width: 100%; margin-top: 10px;">
 
-                <p><b>Principales Marcos de Trabajo Ágiles:</b></p>
+                <h3><b>Principales Marcos de Trabajo Ágiles: XP y Scrum</b></h3>
                 <ul>
-                    <li><b>Programación Extrema (XP):</b> Formulada por Kent Beck. Sus valores son la simplicidad,
-                        comunicación, retroalimentación, valentía y respeto. Destaca por prácticas como la programación
-                        por parejas y las pruebas unitarias continuas.</li>
-                    <li><b>Scrum:</b> Modelo basado en tres pilares (transparencia, inspección y adaptación). El trabajo
-                        se divide en ciclos cortos llamados <i>sprints</i> (máximo un mes). Incluye reuniones clave como
-                        la sprint planning, las reuniones diarias de 15 minutos, la sprint review y la retrospectiva.
-                    </li>
+                    <li><b>Programación Extrema (XP):</b> Formulada por Kent Beck. Sus valores son la simplicidad, comunicación, retroalimentación, valentía y respeto. Destaca por prácticas como la programación por parejas y las pruebas unitarias continuas.</li>
+                    <li><b>Scrum:</b> Modelo basado en tres pilares (transparencia, inspección y adaptación). El trabajo se divide en ciclos cortos llamados sprints (máximo un mes). Incluye reuniones clave como la sprint planning, las reuniones diarias de 15 minutos (stand-ups), la sprint review (presentación al cliente) y la retrospectiva.</li>
                 </ul>
+                <!-- [IMAGEN: SCRUM.png o imagen del marco Scrum] -->
                 <img src="SCRUM.png" style="max-width: 100%; margin-top: 10px;">
             </div>
         </details>
@@ -255,68 +293,106 @@
     <div id="ides" class="seccion-contenido">
         <h2><b>Guía de Entornos de Desarrollo (IDEs)</b></h2>
 
-        <p><b>Características comunes de los IDE:</b> Todos los entornos de desarrollo como Eclipse, IntelliJ, NetBeans
-            o VS Code, tienen la misión de agrupar todo lo necesario para programar en un solo lugar. Incluyen un editor
-            de texto con colores para el código, un compilador para traducir lo que escribes y un depurador (debugger)
-            para buscar fallos paso a paso.</p>
-        <p><b>Características específicas:</b> Cada uno tiene su especialidad. VS Code es súper ligero y modular
-            mediante extensiones. Eclipse e IntelliJ están muy enfocados en proyectos grandes de Java y análisis
-            avanzado de código. NetBeans destaca por traer de serie un diseñador visual de pantallas, mientras que
-            IntelliJ destaca por su gran inteligencia para autocompletar, aunque consume más recursos.</p>
-
+        <p><b>9. ED. Describir características comunes de los IDE. Describir características específicas de los IDE. CHARLY</b></p>
+        <p><b>Lo que todos comparten:</b> Todos los entornos de desarrollo como Eclipse, IntelliJ, NetBeans o VS Code, tienen la misión de agrupar todo lo necesario para programar en un solo lugar. Incluyen un editor de texto con colores para el código, un compilador para traducir lo que escribes y un depurador (debugger) para buscar fallos paso a paso.</p>
+        <p><b>En qué se diferencian:</b> Cada uno tiene su especialidad. VS Code es súper ligero y modular mediante extensiones. Eclipse e IntelliJ están muy enfocados en proyectos grandes de Java y análisis avanzado de código. NetBeans destaca por traer de serie un diseñador visual de pantallas, mientras que IntelliJ destaca por su gran inteligencia para autocompletar, aunque consume más recursos.</p>
+        
+        <p><b>10. ED. Mostrar cómo generar ejecutables en los diversos IDE. Mostrar cómo ejecutar desde terminal. CHARLY</b></p>
         <div style="background-color: #e2e8f0; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-            <img src="Señal advertencia.png" width="70px">
-            <h3>Requisitos previos comunes:</h3>
-            <ul>
-                <li>Equipo con 4–8 GB de RAM recomendados y al menos 2 GB libres de disco.</li>
-                <li>Para Eclipse, IntelliJ IDEA y NetBeans es obligatorio instalar previamente un <b>JDK (Java
-                        Development Kit)</b> actualizado.</li>
-                <li>Se recomienda instalar <b>Git</b> para el trabajo colaborativo.</li>
-            </ul>
-            <h3>Ejecutar desde la terminal:</h3>
-            <p>Abre la terminal. Utiliza el comando <code>cd</code> para navegar hasta la carpeta exacta donde se
-                encuentra tu archivo .jar compilado. Ejecuta la instrucción nativa de Java indicando el nombre del
-                archivo:
-                <br><code>java -jar nombre_programa.jar</code>
-                <br>Esto pondrá en marcha la aplicación de manera completamente independiente.
-            </p>
+            <p><b>Cómo ejecutar desde la terminal del sistema:</b></p>
+            <p>Una vez que tienes tu archivo compilado o tu archivo .jar listo, puedes olvidarte del entorno de desarrollo y ejecutar la aplicación directamente desde la consola de comandos de tu sistema operativo:</p>
+            <ol>
+                <li>Abre la terminal.</li>
+                <li>Utiliza el comando cd para navegar hasta la carpeta exacta donde se encuentra tu archivo .jar compilado.</li>
+                <li>Ejecuta la instrucción nativa de Java indicando el nombre del archivo: <code>java -jar nombre_programa.jar</code></li>
+            </ol>
+            <p>Esto pondrá en marcha la aplicación de manera completamente independiente y verás el resultado directamente en pantalla.</p>
         </div>
-    </details>
+
+        <p><b>6. Instalar IDEs usados actualmente tanto por motivos pedagógicos como profesionales. --Marcelo</b></p>
+        <p><b>4. ED. Mostrar cómo añadir módulos de interés actual en los diversos IDE. Mostrar cómo eliminar módulos. -Marcelo</b></p>
+        <p><b>5. ED.Mostrar cómo personalizar la visualización en los diversos IDE. Mostrar cómo automatizar acciones mediante atajos en los diversos IDE. Manuel</b></p>
+        <p><b>6. ED.Mostrar cómo configurar el sistema de actualización de los IDE. Manuel</b></p>
+        <p><b>7. ED. Mostrar cómo exportar/importar un proyecto de NetBeans a Eclipse. Manuel</b></p>
+        <p><b>8.ED. Describir las ventajas e inconvenientes de los diversos IDE. Manuel</b></p>
 
         <!-- DESPLEGABLE VS CODE -->
         <details>
             <summary>Visual Studio / VS Code</summary>
             <div class="ide-content">
-                <p><b>Instalación:</b> Descargar desde su web oficial. Marcar la opción "Abrir con Code" y agregar al
-                    PATH.</p>
-                <img src="InstalacionVS.png" alt="Instalación de VS Code" class="img-tutorial">
-                <p><b>Módulos (Extensiones):</b> Abrir vista con <code>Ctrl + Shift + X</code>, buscar (ej. Extension
-                    Pack for Java) e Instalar. Para eliminar, hacer clic en el engranaje y seleccionar Uninstall.</p>
-                <img src="1AñadirModuloVS.jpeg" width="650"><br>
-                <img src="2AñadirModuloVS.jpeg" width="650"><br>
-                <hr>
-                    <p>ELIMINAR</p>
-                <img src="1EliminarModuloVS.jpeg" width="650"><br>
-                <p><b>Personalización y Atajos:</b> Cambiar tema con <code>Ctrl + K, Ctrl + T</code>. Formatear código
-                    (<code>Shift + Alt + F</code>).</p>
+                <p><b>Instalación:</b></p>
+                <p><b>Descarga:</b> descargar Visual Studio Code desde https://code.visualstudio.com/</p>
+                <p><b>Instalación:</b></p>
+                <ol>
+                    <li>Ejecutar el instalador descargado.</li>
+                    <li>Aceptar la licencia.</li>
+                    <!-- [IMAGEN: InstalacionVS.png] -->
+                    <img src="InstalacionVS.png" alt="Instalación de VS Code" class="img-tutorial">
+                    <li>Marcar las opciones recomendadas: agregar al PATH y "Abrir con Code"</li>
+                    <li>Pulsar Siguiente e Instalar.</li>
+                    <li>Al finalizar, abrir el IDE.</li>
+                </ol>
+                
+                <p><b>Añadir extensiones (módulos):</b></p>
+                <ol>
+                    <li>Abrir la vista Extensiones con Ctrl + Shift + X o pulsando el icono de bloques en la barra de actividad.</li>
+                    <!-- [IMAGEN: 1AñadirModuloVS.jpeg] -->
+                    <img src="1AñadirModuloVS.jpeg" width="650"><br>
+                    <li>Usar el buscador para localizar la extensión deseada (por ejemplo, Extension Pack for Java, Live Server, etc.).</li>
+                    <li>Pulsar el botón Install en la página de la extensión. Al finalizar, el botón cambia a un engranaje de gestión (Manage).</li>
+                    <!-- [IMAGEN: 2AñadirModuloVS.jpeg] -->
+                    <img src="2AñadirModuloVS.jpeg" width="650"><br>
+                    <li>Si se necesita una versión concreta, hacer clic derecho sobre la extensión y elegir Install Another Version.</li>
+                </ol>
+
+                <p><b>Eliminar extensiones:</b></p>
+                <ol>
+                    <li>En la misma vista Extensiones, localizar la extensión instalada.</li>
+                    <li>Seleccionar Uninstall en el menú desplegable.</li>
+                    <!-- [IMAGEN: 1EliminarModuloVS.jpeg] -->
+                    <img src="1EliminarModuloVS.jpeg" width="650"><br>
+                    <li>Alternativamente, desde la paleta de comandos (Ctrl + Shift + P) se puede ejecutar Extensions: Show Installed Extensions y usar el botón de la x para desinstalar.</li>
+                </ol>
+
+                <p><b>Personalización Visual:</b></p>
+                <p><b>Cambiar Tema:</b> Presiona Ctrl + K y luego Ctrl + T. Usar las flechas para visualizar y pulsa Enter.</p>
+                <!-- [IMAGENES: Personalizacion 1VS.png y Personalizacion 2VS.png] -->
                 <img src="Personalizacion 1VS.png" width="650"><br>
                 <img src="Personalizacion 2VS.png" width="650"><br>
-                <img src="Formateo1.png" width="650"><br>
-                <img src="Formate2.png" width="650">
-
-                <p><b>Actualizaciones:</b> Ruta de configuracion y Control de extensiones.</i>.</p>
-                <p>--RUTA DE CONFIGURACION--</p>
-                <p>Para abrir ajustes(Ctrl +) y escribimos update</p>
-                <img src="punto6_1.png" width="500"><br>
-
-                <p>--CONTROL DEL IDE--</p>
                 
-                <p></p>
+                <p><b>ATAJOS:</b></p>
+                <ul>
+                    <li><b>Dar formato al código</b> Shift + Alt + F</li>
+                    <!-- [IMAGEN: Formateo1.png] -->
+                    <img src="Formateo1.png" width="650"><br>
+                    <li><b>Autocompletar</b> Escribe ! y pulsa Tab</li>
+                    <!-- [IMAGEN: Formate2.png] -->
+                    <img src="Formate2.png" width="650"><br>
+                    <li><b>Arriba/Abajo</b> Mover línea actual Alt + Flecha Arriba/Abajo código</li>
+                    <li><b>Duplicar línea</b> Shift + Alt + Flecha Arriba/Abajo</li>
+                </ul>
+
+                <p><b>1.VISUAL STUDIO (Actualizaciones)</b></p>
+                <p>Por defecto, este editor descarga e instala las actualizaciones del núcleo en segundo plano.</p>
+                <ul>
+                    <li><b>Ruta de configuración:</b> Presiona Ctrl + , para abrir los Ajustes y escribe update mode en el buscador.</li>
+                    <!-- [IMAGEN: punto6_1.png] -->
+                    <img src="punto6_1.png" width="500"><br>
+                    <li><b>Control del IDE (Update: Mode):</b>
+                        <ul>
+                            <li><b>default:</b> Actualización automática y silenciosa (recomendado).</li>
+                            <li><b>start:</b> Busca nuevas versiones únicamente al arrancar el programa.</li>
+                            <li><b>manual / none:</b> Desactiva por completo la búsqueda automática.</li>
+                        </ul>
+                    </li>
+                    <li><b>Control de Extensiones:</b> En el mismo buscador de ajustes, escribe extensions auto update para elegir si los plugins (como los de HTML o Java) se actualizan por su cuenta o requieren tu permiso.</li>
+                </ul>
+
+                <p><b>Generar ejecutables:</b></p>
+                <p>Visual Studio Code: Al ser un editor basado en extensiones y no un entorno cerrado, normalmente requiere herramientas de automatización externas como Maven o Gradle, o bien usar extensiones específicas de empaquetado de Java para generar el archivo distribuible.</p>
                 <hr>
-                <p><b>Ventajas:</b> Muy ligero y de arranque rápido, excelente para web: HTML/CSS y tiene miles de
-                    extensiones para cualquier lenguaje.</p>
-                <p><b>Desventajas:</b> No es un IDE puro, requiere instalar y configurar extensiones para que Java
-                    funcione bien.</p>
+                <p><b>Ventajas:</b> Muy ligero y de arranque rápido, excelente para web: HTML/CSS y tiene miles de extensiones para cualquier lenguaje.</p>
+                <p><b>Desventajas:</b> No es un IDE puro, requiere instalar y configurar extensiones para que Java funcione bien.</p>
             </div>
         </details>
 
@@ -324,37 +400,85 @@
         <details>
             <summary>Eclipse</summary>
             <div class="ide-content">
-                <p><b>Instalación:</b> Requiere JDK. Descargar <i>Eclipse IDE for Java Developers</i> desde eclipse.org.
-                </p>
-                <img src="1. InstalacionEclipse.jpeg" alt="Instalación de Eclipse" class="img-tutorial" width="400"><br>
-                <img src="2InstalacionEclipse.jpeg" alt="Instalación de Eclipse" class="img-tutorial" width="600"><br>
-                <img src="3InstalacionEclipse.jpeg" alt="Instalación de Eclipse" class="img-tutorial" width="600"><br>
+                <p><b>Instalación:</b></p>
+                <p><b>Descarga:</b> https://www.eclipse.org/downloads/ -> Eclipse IDE for Java Developers.</p>
+                <p><b>Instalación:</b></p>
+                <ol>
+                    <li>Ejecutar Eclipse Installer.</li>
+                    <li>Elegir Eclipse IDE for Java Developers.</li>
+                    <!-- [IMAGEN: 1. InstalacionEclipse.jpeg] -->
+                    <img src="1. InstalacionEclipse.jpeg" alt="Instalación de Eclipse" class="img-tutorial" width="400"><br>
+                    <li>Seleccionar la carpeta de instalación.</li>
+                    <!-- [IMAGEN: 2InstalacionEclipse.jpeg] -->
+                    <img src="2InstalacionEclipse.jpeg" alt="Instalación de Eclipse" class="img-tutorial" width="600"><br>
+                    <li>Abrir Eclipse desde el acceso directo creado.</li>
+                    <!-- [IMAGEN: 3InstalacionEclipse.jpeg] -->
+                    <img src="3InstalacionEclipse.jpeg" alt="Instalación de Eclipse" class="img-tutorial" width="600"><br>
+                </ol>
 
-                <p><b>Módulos:</b> Instalar desde <i>Help > Install New Software</i> o <i>Eclipse Marketplace</i>. Para
-                    eliminar: <i>Help > About Eclipse > Installation Details</i>.</p>
+                <p><b>Añadir plugins (módulos):</b></p>
+                <ol>
+                    <li>Ir al menú Help > Install New Software....</li>
+                    <!-- [IMAGEN: AñadirModulo1Eclipse.png] -->
                     <img src="AñadirModulo1Eclipse.png" class="img-tutorial" width="600"><br>
+                    <li>Pulsar Add... e introducir un nombre y la URL del sitio de actualización del plugin.</li>
+                    <!-- [IMAGEN: AñadirModulo2Eclipse.png] -->
                     <img src="AñadirModulo2Eclipse.png" alt="Instalación de Eclipse" class="img-tutorial" width="600"><br>
+                    <li>Marcar el plugin en la lista, aceptar la licencia y finalizar. Eclipse pedirá reiniciar el entorno.</li>
+                    <!-- [IMAGEN: AñadirModulo3Eclipse.png y AñadirModulo4Eclipse.png] -->
                     <img src="AñadirModulo3Eclipse.png" alt="Instalación de Eclipse" class="img-tutorial" width="600"><br>
                     <img src="AñadirModulo4Eclipse.png" alt="Instalación de Eclipse" class="img-tutorial" width="600"><br>
-<hr>
-<p>--ELIMINAR--</p>
+                </ol>
+                
+                <p><b>Eliminar plugins:</b></p>
+                <ol>
+                    <li>Ir a Help > About Eclipse (o Help > About) y pulsar Installation Details.</li>
+                    <!-- [IMAGENES: EliminarModuloEclipse1.png y EliminarModuloEclipse2.png] -->
                     <img src="EliminarModuloEclipse1.png" width="600"><br>
                     <img src="EliminarModuloEclipse2.png" width="600"><br>
+                    <li>En la pestaña Installed Software, seleccionar el plugin que se desea quitar.</li>
+                    <!-- [IMAGEN: EliminarModuloEclipse3.png] -->
                     <img src="EliminarModuloEclipse3.png" width="600"><br>
+                    <li>Pulsar Uninstall..., confirmar con Finish y reiniciar Eclipse cuando se solicite.</li>
+                    <!-- [IMAGEN: EliminarModuloEclipse4.png] -->
                     <img src="EliminarModuloEclipse4.png" width="600"><br>
-                <p><b>Personalización y Atajos:</b> Tema en <i>Window > Preferences > General > Appearance</i>. Syso
-                    autocompletar (<code>Ctrl + Espacio</code>), Formatear (<code>Ctrl + Shift + F</code>).</p>
-                    <img src="punto5eclipse_1.png" width="600"><br>
-                    <p>--IMPRIMIR POR CONSOLA--</p>
+                    <li>Otra vía es Help > Software Updates, donde se puede disable (deshabilitar) el plugin; para una eliminación permanente se recomienda el método de Installation Details.</li>
+                </ol>
+
+                <p><b>Personalización Visual:</b></p>
+                <p><b>Cambiar Tema (Oscuro/Claro):</b> Ve a Window > Preferences > General > Appearance. Selecciona el tema en el desplegable.</p>
+                <!-- [IMAGEN: punto5eclipse_1.png] -->
+                <img src="punto5eclipse_1.png" width="600"><br>
+                
+                <p><b>ATAJOS:</b></p>
+                <ul>
+                    <li><b>Imprimir por consola:</b> Escribe syso y pulsa Ctrl + Espacio. System.out.println("¡El proyecto está bien configurado!");</li>
+                    <!-- [IMAGEN: punto5eclipse_2.png] -->
                     <img src="punto5eclipse_2.png" width="650"><br>
-                    <p>--DAR FORMATO AL CODIGO--</p>
+                    <li><b>Formatear código:</b> Ctrl + Shift + F</li>
+                    <!-- [IMAGEN: punto5eclipse_3.png] -->
                     <img src="punto5eclipse_3.png" width="550"><br>
-                <p><b>Actualizaciones:</b> En <i>Window > Preferences > Install/Update > Automatic Updates</i>.</p>
-                <p><b>Generar Ejecutable:</b> Clic derecho en proyecto > Export > Java > Runnable JAR file.</p>
+                    <li><b>Auto-importar librerías:</b> Ctrl + Shift + O</li>
+                    <li><b>Generar Getters/Setters y Constructores:</b> Alt + Shift + S, luego pulsa R o O</li>
+                    <li><b>Autocompletar o sugerencias:</b> Ctrl + Espacio</li>
+                    <li><b>Renombrado inteligente:</b> Alt + Shift + R</li>
+                </ul>
+
+                <p><b>2. ECLIPSE (Actualizaciones)</b></p>
+                <p>El sistema de Eclipse es más tradicional y te permite programar los chequeos para que no consuman recursos mientras picas código.</p>
+                <ul>
+                    <li><b>Ruta de configuración:</b> Ve al menú superior Window > Preferences > Install/Update > Automatic Updates.</li>
+                    <li><b>Activación general:</b> Marca la casilla Automatically find new updates and notify me.</li>
+                    <li><b>Frecuencia (Update schedule):</b> Puedes indicar que busque cada vez que abres el entorno o fijar un día y hora específicos en los que sepas que no vas a estar programando.</li>
+                    <li><b>Gestión de descargas (Download options):</b> Elige si prefieres que el IDE solo lance un aviso cuando haya algo nuevo, o si prefieres que lo descargue en segundo plano y te pida reiniciar al terminar.</li>
+                </ul>
+
+                <p><b>Generar Ejecutable:</b></p>
+                <p>Eclipse: Haces clic derecho sobre el proyecto en el explorador, seleccionas Export, buscas la categoría Java y eliges Runnable JAR file. Esto te permite empaquetar tu código junto con las librerías necesarias en un único archivo .jar ejecutable.</p>
+                
                 <hr>
                 <p><b>Ventajas:</b> Listo para compilar Java y Gestión sólida de proyectos y espacios de trabajo.</p>
-                <p><b>Desventajas:</b> Interfaz visualmente anticuada. Instalación de plugins lenta y Rendimiento pesado
-                    si hay muchos proyectos abiertos.</p>
+                <p><b>Desventajas:</b> Interfaz visualmente anticuada. Instalación de plugins lenta y Rendimiento pesado si hay muchos proyectos abiertos.</p>
             </div>
         </details>
 
@@ -362,29 +486,67 @@
         <details>
             <summary>IntelliJ IDEA</summary>
             <div class="ide-content">
-                <p><b>Instalación:</b> Descargar edición Community (gratis) o Ultimate.</p>
-                <img src="1InstalacionIntellij.jpeg" alt="Instalación de IntelliJ" class="img-tutorial" width="500"><br>
-                <img src="2InstalacionIntellij.jpeg"width="500"><br>
-                <p><b>Módulos:</b> En <i>Settings > Plugins > Marketplace</i>. Para eliminar, pestaña Installed y
-                    Uninstall.</p>
+                <p><b>Instalación:</b></p>
+                <p><b>Descarga:</b> https://www.jetbrains.com/idea/download/</p>
+                <p><b>Instalación:</b></p>
+                <ol>
+                    <li>Ejecutar el instalador y elegir la carpeta de instalacion.</li>
+                    <!-- [IMAGEN: 1InstalacionIntellij.jpeg] -->
+                    <img src="1InstalacionIntellij.jpeg" alt="Instalación de IntelliJ" class="img-tutorial" width="500"><br>
+                    <li>Finalizar y abrir IntelliJ IDEA.</li>
+                    <!-- [IMAGEN: 2InstalacionIntellij.jpeg] -->
+                    <img src="2InstalacionIntellij.jpeg"width="500"><br>
+                </ol>
+
+                <p><b>Añadir plugins (módulos):</b></p>
+                <ol>
+                    <li>Abrir Settings con Ctrl + Alt + S y seleccionar Plugins.</li>
+                    <!-- [IMAGEN: AñadirModuloIntellij1.png] -->
                     <img src="AñadirModuloIntellij1.png" width="500"><br>
+                    <li>Ir a la pestaña Marketplace y buscar el plugin por nombre.</li>
+                    <!-- [IMAGEN: AñadirModuloIntellij2.png] -->
                     <img src="AñadirModuloIntellij2.png" width="500"><br>
-                    <hr>
-                    <p>--ELIMINAR--</p>
+                    <li>Pulsar Install y, cuando termine, reiniciar el IDE si se solicita.</li>
+                </ol>
+
+                <p><b>Eliminar plugins:</b></p>
+                <ol>
+                    <li>En Settings > Plugins, abrir la pestaña Installed.</li>
+                    <li>Localizar el plugin que se quiere quitar. Si está en la lista de Disabled, expandirla y seleccionar Uninstall.</li>
+                    <!-- [IMAGEN: EliminarModuloIntellij1.png] -->
                     <img src="EliminarModuloIntellij1.png" width="500"><br>
+                    <li>Confirmar la desinstalación y reiniciar IntelliJ IDEA.</li>
+                    <!-- [IMAGEN: EliminarModuloIntellij2.png] -->
                     <img src="EliminarModuloIntellij2.png" width="500"><br>
+                    <li>Los plugins que vienen bundled (integrados) solo se pueden deshabilitar, no desinstalar por completo.</li>
+                </ol>
             
-                <p><b>Personalización y Atajos:</b> Tema en <i>File > Settings > Appearance & Behavior</i>. Solucionar
-                    errores (<code>Alt + Enter</code>), Generar código (<code>Alt + Insert</code>).</p>
-                <p><b>Actualizaciones:</b> <i>Settings > Appearance & Behavior > System Settings > Updates</i>.</p>
+                <p><b>Personalización Visual:</b></p>
+                <p><b>Cambiar Tema:</b> Ve a File > Settings (Ctrl + Alt + S) > Appearance & Behavior > Appearance</p>
                 
-                <p><b>Generar Ejecutable:</b> <i>File > Project Structure > Artifacts</i>, configurar nuevo artefacto
-                    JAR indicando la Main Class. Luego compilar en <i>Build > Build Artifacts</i>.</p>
+                <p><b>ATAJOS:</b></p>
+                <ul>
+                    <li><b>Imprimir por consola:</b> Escribe sout y pulsa Tab o Enter</li>
+                    <li><b>Generar método principal (Main):</b> Escribe psvm o main y pulsa Tab</li>
+                    <li><b>Solucionar cualquier error / Importar:</b> Alt + Enter</li>
+                    <li><b>Formatear código:</b> Ctrl + Alt + L</li>
+                    <li><b>Generar código:</b> Alt + Insert</li>
+                </ul>
+
+                <p><b>3. INTELLIJ IDEA (Actualizaciones)</b></p>
+                <p>JetBrains separa las actualizaciones del propio entorno de las actualizaciones de sus plugins.</p>
+                <ul>
+                    <li><b>Ruta de configuración:</b> Ve a File > Settings (Ctrl + Alt + S) > Appearance & Behavior > System Settings > Updates.</li>
+                    <li><b>Actualizaciones del núcleo:</b> Marca Check IDE updates for y asegúrate de tener seleccionado el canal Release en el desplegable. Este es el canal de versiones estables;</li>
+                    <li><b>Actualizaciones de Plugins:</b> Marca la casilla Check plugin updates para mantener tu entorno Java al día.</li>
+                    <li><b>Excepción (JetBrains Toolbox):</b> Si instalaste IntelliJ a través del gestor externo JetBrains Toolbox, las opciones de actualización dentro del IDE aparecerán bloqueadas. En ese caso, todo se configura directamente desde la aplicación de Toolbox en la barra de tareas de Windows.</li>
+                </ul>
+                
+                <p><b>Generar Ejecutable:</b></p>
+                <p>IntelliJ IDEA: Vas al menú superior, seleccionas File > Project Structure > Artifacts, y configuras la creación de un nuevo artefacto de tipo JAR indicando la clase principal (Main Class). Después, compilas el proyecto desde la opción Build > Build Artifacts.</p>
                 <hr>
-                <p><b>Ventajas:</b> Autocompletado y análisis de código superior, solución automática de errores (Alt +
-                    Enter) y una Interfaz moderna, limpia y atajos potentes.</p>
-                <p><b>Desventajas:</b> Alto consumo de recursos, Tarda en arrancar mientras indexa los archivos. Y su
-                    versión final es de pago.</p>
+                <p><b>Ventajas:</b> Autocompletado y análisis de código superior, solución automática de errores (Alt + Enter) y una Interfaz moderna, limpia y atajos potentes.</p>
+                <p><b>Desventajas:</b> Alto consumo de recursos, Tarda en arrancar mientras indexa los archivos. Y su versión final es de pago</p>
             </div>
         </details>
 
@@ -392,30 +554,67 @@
         <details>
             <summary>NetBeans</summary>
             <div class="ide-content">
-                <p><b>Instalación:</b> Desde apache.org, requiere JDK.</p>
-                <img src="1.InstalacionNetbeans.jpeg" alt="Instalación de NetBeans" class="img-tutorial" width="400"><br>
-                <img src="2InstalacionNetbeans.jpeg" alt="Instalación de NetBeans" class="img-tutorial" width="400"><br>
+                <p><b>Instalación:</b></p>
+                <p><b>Enlace de descarga:</b> https://www.codelerity.com/netbeans/</p>
+                <p><b>Instalación:</b></p>
+                <ol>
+                    <li>Descargamos.</li>
+                    <!-- [IMAGEN: 1.InstalacionNetbeans.jpeg] -->
+                    <img src="1.InstalacionNetbeans.jpeg" alt="Instalación de NetBeans" class="img-tutorial" width="400"><br>
+                    <li>Ejecutar el instalador.</li>
+                    <li>Pulsar Instalar y finalizar.</li>
+                    <!-- [IMAGEN: 2InstalacionNetbeans.jpeg] -->
+                    <img src="2InstalacionNetbeans.jpeg" alt="Instalación de NetBeans" class="img-tutorial" width="400"><br>
+                </ol>
 
-                <p><b>Módulos:</b> En <i>Tools > Plugins</i>. Pestaña Available Plugins para instalar, pestaña Installed
-                    para eliminar.</p>
+                <p><b>Añadir módulos (plugins):</b></p>
+                <ol>
+                    <li>Ir a Tools > Plugins (o Herramientas > Plugins).</li>
+                    <!-- [IMAGEN: AñadirModuloNetbeans1.png y AñadirModuloNetbeans2.png] -->
                     <img src="AñadirModuloNetbeans1.png" width="200"><br>
                     <img src="AñadirModuloNetbeans2.png" width="500"><br>
+                    <li>En la pestaña Available Plugins, buscar el módulo o plugin deseado.</li>
+                    <!-- [IMAGEN: AñadirModuloNetbeans3.png] -->
                     <img src="AñadirModuloNetbeans3.png" width="500"><br>
+                    <li>Marcarlo y pulsar Install; seguir el asistente, aceptar la licencia y reiniciar NetBeans al finalizar.</li>
+                    <!-- [IMAGEN: AñadirModuloNetbeans4.png] -->
                     <img src="AñadirModuloNetbeans4.png" width="500"><br>
-                    <hr>
-                    <p>ELIMINAR</p>
+                </ol>
+                    
+                <p><b>Eliminar módulos:</b></p>
+                <ol>
+                    <li>Abrir Tools > Plugins y ir a la pestaña Installed.</li>
+                    <!-- [IMAGEN: EliminarModuloNetbeans1.png y EliminarModuloNetbeans2.png] -->
                     <img src="EliminarModuloNetbeans1.png" width="500"><br>
                     <img src="EliminarModuloNetbeans2.png" width="500"><br>
+                    <li>Seleccionar el módulo o plugin que se quiere quitar.</li>
+                    <li>Pulsar Uninstall (desinstalar) para eliminarlo físicamente, o Deactivate (desactivar) para mantenerlo instalado pero inactivo.</li>
+                    <!-- [IMAGEN: EliminarModuloNetbeans3.png] -->
                     <img src="EliminarModuloNetbeans3.png" width="500"><br>
+                    <li>Confirmar la acción y reiniciar el IDE cuando se indique.</li>
+                    <!-- [IMAGEN: EliminarModuloNetbeans4.png] -->
                     <img src="EliminarModuloNetbeans4.png" width="500"><br>
-                <p><b>Generar Ejecutable:</b> Al compilar y construir el proyecto (botón Build), se genera
-                    automáticamente un archivo <code>.jar</code> dentro de la carpeta <i>dist</i> de tu directorio de
-                    trabajo.</p>
-                <p><b>Exportar a Eclipse:</b> Ve a File > Export Project > To ZIP... y guarda el archivo. Luego en
-                    Eclipse: Importar <i>Archive File</i> (marcando SOLO la carpeta src).</p>
+                </ol>
+
+                <p><b>1. EXPORTAR DE NETBEANS</b></p>
+                <ul>
+                    <li>Ve a File > Export Project > To ZIP... y guarda el archivo.</li>
+                    <li>Crea un proyecto nuevo vacío: File > New > Java Project.</li>
+                </ul>
+                <p><b>2. IMPORTAR A ECLIPSE</b></p>
+                <ul>
+                    <li>Crea un proyecto nuevo vacío: File > New > Java Project.</li>
+                    <li>Haz clic derecho en la carpeta src del nuevo proyecto > Import</li>
+                    <li>Selecciona General > Archive File > pulsa Next.</li>
+                    <li>Busca y selecciona el ZIP que guardaste.</li>
+                    <li><b>Atención:</b> En la ventana de importación, despliega el ZIP y marca SOLO la carpeta src</li>
+                    <li>Pulsa Finish.</li>
+                </ul>
+
+                <p><b>Generar Ejecutable:</b></p>
+                <p>NetBeans: Al compilar y construir el proyecto (pulsando el botón de Build o mediante el menú Run), NetBeans genera automáticamente de forma predeterminada un archivo ejecutable .jar dentro de la carpeta dist de tu directorio de trabajo.</p>
                 <hr>
-                <p><b>Ventajas:</b> Integración nativa con servidores y bases de datos y un Excelente editor visual para
-                    crear interfaces gráficas de escritorio.</p>
+                <p><b>Ventajas:</b> Integración nativa con servidores y bases de datos y un Excelente editor visual para crear interfaces gráficas de escritorio.</p>
                 <p><b>Desventajas:</b> Uso en declive, interfaz desfasada y alto consumo de recursos.</p>
             </div>
         </details>
@@ -583,15 +782,15 @@
                         software como una caja negra que recibe entradas y proporciona salidas.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q6b" name="t2q6"><label for="t2q6b">B) Se examinan
+                <div class="opcion-test"><input type="radio" id="t2q6b" name="t2q6b"><label for="t2q6b">B) Se examinan
                         los detalles de cada módulo, para lo que se debe disponer del código fuente.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q6c" name="t2q6"><label for="t2q6c">C) Tienen como
+                <div class="opcion-test"><input type="radio" id="t2q6c" name="t2q6c"><label for="t2q6c">C) Tienen como
                         único objetivo validar los requisitos funcionales.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q6d" name="t2q6"><label for="t2q6d">D) Solo se
+                <div class="opcion-test"><input type="radio" id="t2q6d" name="t2q6d"><label for="t2q6d">D) Solo se
                         realizan tras comprobar que la salida obtenida coincide con la esperada sin mirar el
                         código.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
@@ -600,19 +799,19 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>7. Durante la fase de explotación ¿Cómo se conocen comúnmente las comprobaciones en las
                         instalaciones del cliente?</b></p>
-                <div class="opcion-test"><input type="radio" id="t2q7a" name="t2q7"><label for="t2q7a">A) Pruebas
+                <div class="opcion-test"><input type="radio" id="t2q7a" name="t2q7a"><label for="t2q7a">A) Pruebas
                         estructurales.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q7b" name="t2q7"><label for="t2q7b">B) Pruebas de
+                <div class="opcion-test"><input type="radio" id="t2q7b" name="t2q7b"><label for="t2q7b">B) Pruebas de
                         integración.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q7c" name="t2q7"><label for="t2q7c">C) Pruebas de
+                <div class="opcion-test"><input type="radio" id="t2q7c" name="t2q7c"><label for="t2q7c">C) Pruebas de
                         caja blanca.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q7d" name="t2q7"><label for="t2q7d">D) Pruebas
+                <div class="opcion-test"><input type="radio" id="t2q7d" name="t2q7d"><label for="t2q7d">D) Pruebas
                         beta.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
@@ -620,19 +819,19 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>8. Si un software debe modificarse para funcionar correctamente porque el entorno externo ha
                         cambiado, ¿qué tipo de mantenimiento se está realizando?</b></p>
-                <div class="opcion-test"><input type="radio" id="t2q8a" name="t2q8"><label for="t2q8a">A) Mantenimiento
+                <div class="opcion-test"><input type="radio" id="t2q8a" name="t2q8a"><label for="t2q8a">A) Mantenimiento
                         correctivo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q8b" name="t2q8"><label for="t2q8b">B) Mantenimiento
+                <div class="opcion-test"><input type="radio" id="t2q8b" name="t2q8b"><label for="t2q8b">B) Mantenimiento
                         evolutivo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q8c" name="t2q8"><label for="t2q8c">C) Mantenimiento
+                <div class="opcion-test"><input type="radio" id="t2q8c" name="t2q8c"><label for="t2q8c">C) Mantenimiento
                         adaptativo.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t2q8d" name="t2q8"><label for="t2q8d">D) Mantenimiento
+                <div class="opcion-test"><input type="radio" id="t2q8d" name="t2q8d"><label for="t2q8d">D) Mantenimiento
                         perfectivo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -644,21 +843,21 @@
             <summary>Test 3: Perfiles que intervienen</summary>
             <form action="#" method="get" class="formulario-test">
                 <p><b>1. ¿Cuál de las siguientes afirmaciones describe mejor el cometido del "Jefe de proyecto"?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q1a" name="t3q1"><label for="t3q1a">A) Es el
+                <div class="opcion-test"><input type="radio" id="t3q1a" name="t3q1a"><label for="t3q1a">A) Es el
                         encargado de definir las líneas maestras del diseño y la arquitectura del sistema.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q1b" name="t3q1"><label for="t3q1b">B) Se trata del
+                <div class="opcion-test"><input type="radio" id="t3q1b" name="t3q1b"><label for="t3q1b">B) Se trata del
                         máximo responsable de que el proyecto salga adelante, llevando a cabo tareas de gestión como la
                         planificación, ejecución, seguimiento y control.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q1c" name="t3q1"><label for="t3q1c">C) Su labor
+                <div class="opcion-test"><input type="radio" id="t3q1c" name="t3q1c"><label for="t3q1c">C) Su labor
                         principal consiste en crear un modelo claro y consistente del problema con la ayuda del
                         cliente.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q1d" name="t3q1"><label for="t3q1d">D) Es la persona
+                <div class="opcion-test"><input type="radio" id="t3q1d" name="t3q1d"><label for="t3q1d">D) Es la persona
                         responsable de empaquetar los programas y gestionar las versiones de la aplicación.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -666,20 +865,20 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>2. ¿A quiénes se hace referencia con el término "Expertos del dominio" en el proceso de
                         desarrollo?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q2a" name="t3q2"><label for="t3q2a">A) A las personas
+                <div class="opcion-test"><input type="radio" id="t3q2a" name="t3q2a"><label for="t3q2a">A) A las personas
                         que trabajan en la empresa u organismo para el que se desarrolla la aplicación y que conocen en
                         detalle los requisitos que esta debe satisfacer.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q2b" name="t3q2"><label for="t3q2b">B) A los
+                <div class="opcion-test"><input type="radio" id="t3q2b" name="t3q2b"><label for="t3q2b">B) A los
                         programadores senior que dominan múltiples lenguajes de programación.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q2c" name="t3q2"><label for="t3q2c">C) A los
+                <div class="opcion-test"><input type="radio" id="t3q2c" name="t3q2c"><label for="t3q2c">C) A los
                         arquitectos de software encargados de diseñar la base de datos.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q2d" name="t3q2"><label for="t3q2d">D) A los
+                <div class="opcion-test"><input type="radio" id="t3q2d" name="t3q2d"><label for="t3q2d">D) A los
                         encargados de probar la calidad de la aplicación antes de su entrega al usuario final.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -687,38 +886,38 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>3. El rol encargado de crear un modelo que se corresponda con la visión del problema de los
                         expertos del dominio suele recibir también otro nombre. ¿Cuál es?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q3a" name="t3q3"><label for="t3q3a">A) Analista
+                <div class="opcion-test"><input type="radio" id="t3q3a" name="t3q3a"><label for="t3q3a">A) Analista
                         orgánico.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q3b" name="t3q3"><label for="t3q3b">B) Analista
+                <div class="opcion-test"><input type="radio" id="t3q3b" name="t3q3b"><label for="t3q3b">B) Analista
                         técnico.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q3c" name="t3q3"><label for="t3q3c">C) Analista
+                <div class="opcion-test"><input type="radio" id="t3q3c" name="t3q3c"><label for="t3q3c">C) Analista
                         funcional.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q3d" name="t3q3"><label for="t3q3d">D) Arquitecto de
+                <div class="opcion-test"><input type="radio" id="t3q3d" name="t3q3d"><label for="t3q3d">D) Arquitecto de
                         sistemas.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>4. Una vez que el analista ha realizado su trabajo, ¿qué rol debe tomarlo como referencia?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q4a" name="t3q4"><label for="t3q4a">A) El
+                <div class="opcion-test"><input type="radio" id="t3q4a" name="t3q4a"><label for="t3q4a">A) El
                         Diseñador.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q4b" name="t3q4"><label for="t3q4b">B) El
+                <div class="opcion-test"><input type="radio" id="t3q4b" name="t3q4b"><label for="t3q4b">B) El
                         Programador.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q4c" name="t3q4"><label for="t3q4c">C) El
+                <div class="opcion-test"><input type="radio" id="t3q4c" name="t3q4c"><label for="t3q4c">C) El
                         Probador.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q4d" name="t3q4"><label for="t3q4d">D) El
+                <div class="opcion-test"><input type="radio" id="t3q4d" name="t3q4d"><label for="t3q4d">D) El
                         Arquitecto.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
@@ -726,58 +925,58 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>5. ¿Qué otro nombre se utiliza para referirse al rol del "Diseñador", quien detalla el sistema lo
                         suficiente para acometer la tarea de programación?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q5a" name="t3q5"><label for="t3q5a">A) Analista
+                <div class="opcion-test"><input type="radio" id="t3q5a" name="t3q5a"><label for="t3q5a">A) Analista
                         funcional.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q5b" name="t3q5"><label for="t3q5b">B) Analista
+                <div class="opcion-test"><input type="radio" id="t3q5b" name="t3q5b"><label for="t3q5b">B) Analista
                         orgánico o analista técnico.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q5c" name="t3q5"><label for="t3q5c">C) Experto del
+                <div class="opcion-test"><input type="radio" id="t3q5c" name="t3q5c"><label for="t3q5c">C) Experto del
                         dominio.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q5d" name="t3q5"><label for="t3q5d">D) Encargado de
+                <div class="opcion-test"><input type="radio" id="t3q5d" name="t3q5d"><label for="t3q5d">D) Encargado de
                         la implantación.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>6. ¿Cuál es la función principal del rol de "Programador"?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q6a" name="t3q6"><label for="t3q6a">A) Escribir el
+                <div class="opcion-test"><input type="radio" id="t3q6a" name="t3q6a"><label for="t3q6a">A) Escribir el
                         código fuente partiendo del diseño detallado realizado por el diseñador.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q6b" name="t3q6"><label for="t3q6b">B) Definir las
+                <div class="opcion-test"><input type="radio" id="t3q6b" name="t3q6b"><label for="t3q6b">B) Definir las
                         líneas maestras del diseño a partir de los requisitos del analista.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q6c" name="t3q6"><label for="t3q6c">C) Probar los
+                <div class="opcion-test"><input type="radio" id="t3q6c" name="t3q6c"><label for="t3q6c">C) Probar los
                         programas para garantizar la calidad de la aplicación creada.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q6d" name="t3q6"><label for="t3q6d">D) Planificar el
+                <div class="opcion-test"><input type="radio" id="t3q6d" name="t3q6d"><label for="t3q6d">D) Planificar el
                         proyecto y realizar su seguimiento.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>7. ¿De qué otra tarea se responsabiliza el "Encargado de la implantación"?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q7a" name="t3q7"><label for="t3q7a">A) De decidir, en
+                <div class="opcion-test"><input type="radio" id="t3q7a" name="t3q7a"><label for="t3q7a">A) De decidir, en
                         último término, si los programas están en condiciones de ser entregados.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q7b" name="t3q7"><label for="t3q7b">B) De gestionar
+                <div class="opcion-test"><input type="radio" id="t3q7b" name="t3q7b"><label for="t3q7b">B) De gestionar
                         la configuración y las diferentes versiones que vayan surgiendo de la aplicación a partir de los
                         cambios.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q7c" name="t3q7"><label for="t3q7c">C) De establecer
+                <div class="opcion-test"><input type="radio" id="t3q7c" name="t3q7c"><label for="t3q7c">C) De establecer
                         las reuniones de comunicación con los expertos del dominio.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q7d" name="t3q7"><label for="t3q7d">D) De crear la
+                <div class="opcion-test"><input type="radio" id="t3q7d" name="t3q7d"><label for="t3q7d">D) De crear la
                         arquitectura del sistema.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -785,19 +984,19 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>8. Sobre la distribución de roles en el equipo de desarrollo, ¿cuál de las siguientes afirmaciones
                         es correcta?</b></p>
-                <div class="opcion-test"><input type="radio" id="t3q8a" name="t3q8"><label for="t3q8a">A) Cada rol debe
+                <div class="opcion-test"><input type="radio" id="t3q8a" name="t3q8a"><label for="t3q8a">A) Cada rol debe
                         ser obligatoriamente desempeñado por una sola persona para evitar redundancias.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q8b" name="t3q8"><label for="t3q8b">B) Una persona no
+                <div class="opcion-test"><input type="radio" id="t3q8b" name="t3q8b"><label for="t3q8b">B) Una persona no
                         puede desempeñar varios roles bajo ninguna circunstancia.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q8c" name="t3q8"><label for="t3q8c">C) Un rol siempre
+                <div class="opcion-test"><input type="radio" id="t3q8c" name="t3q8c"><label for="t3q8c">C) Un rol siempre
                         debe ser ejecutado conjuntamente por el equipo de desarrollo al completo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t3q8d" name="t3q8"><label for="t3q8d">D) Cada rol puede
+                <div class="opcion-test"><input type="radio" id="t3q8d" name="t3q8d"><label for="t3q8d">D) Cada rol puede
                         ser desempeñado por una o varias personas, e incluso una misma persona puede desempeñar varios
                         roles diferentes.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
@@ -810,133 +1009,133 @@
             <summary>Test 4: Modelos de ciclo de vida</summary>
             <form action="#" method="get" class="formulario-test">
                 <p><b>1. ¿Qué determina un ciclo de vida del software?</b></p>
-                <div class="opcion-test"><input type="radio" id="t4q1a" name="t4q1"><label for="t4q1a">A) El precio
+                <div class="opcion-test"><input type="radio" id="t4q1a" name="t4q1a"><label for="t4q1a">A) El precio
                         final que se le cobrará al cliente.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q1b" name="t4q1"><label for="t4q1b">B) El orden en el
+                <div class="opcion-test"><input type="radio" id="t4q1b" name="t4q1b"><label for="t4q1b">B) El orden en el
                         que se hacen las tareas y los requisitos para pasar a la siguiente fase.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q1c" name="t4q1"><label for="t4q1c">C) El lenguaje de
+                <div class="opcion-test"><input type="radio" id="t4q1c" name="t4q1c"><label for="t4q1c">C) El lenguaje de
                         programación que hay que utilizar obligatoriamente.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q1d" name="t4q1"><label for="t4q1d">D) El número de
+                <div class="opcion-test"><input type="radio" id="t4q1d" name="t4q1d"><label for="t4q1d">D) El número de
                         ordenadores necesarios para el proyecto.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>2. ¿Cómo es el flujo de trabajo en el modelo en cascada (o clásico)?</b></p>
-                <div class="opcion-test"><input type="radio" id="t4q2a" name="t4q2"><label for="t4q2a">A) Sistemático y
+                <div class="opcion-test"><input type="radio" id="t4q2a" name="t4q2a"><label for="t4q2a">A) Sistemático y
                         secuencial, completando una fase para pasar a la siguiente.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q2b" name="t4q2"><label for="t4q2b">B) Totalmente
+                <div class="opcion-test"><input type="radio" id="t4q2b" name="t4q2b"><label for="t4q2b">B) Totalmente
                         desordenado y aleatorio.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q2c" name="t4q2"><label for="t4q2c">C) Entregando el
+                <div class="opcion-test"><input type="radio" id="t4q2c" name="t4q2c"><label for="t4q2c">C) Entregando el
                         programa en trozos pequeños cada semana.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q2d" name="t4q2"><label for="t4q2d">D) Basado
+                <div class="opcion-test"><input type="radio" id="t4q2d" name="t4q2d"><label for="t4q2d">D) Basado
                         únicamente en el análisis de riesgos diarios.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>3. ¿Cuál de estos es un problema importante del modelo en cascada?</b></p>
-                <div class="opcion-test"><input type="radio" id="t4q3a" name="t4q3"><label for="t4q3a">A) Es un modelo
+                <div class="opcion-test"><input type="radio" id="t4q3a" name="t4q3a"><label for="t4q3a">A) Es un modelo
                         muy difícil de entender y planificar.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q3b" name="t4q3"><label for="t4q3b">B) El cliente
+                <div class="opcion-test"><input type="radio" id="t4q3b" name="t4q3b"><label for="t4q3b">B) El cliente
                         debe tener paciencia porque no ve el programa funcionando hasta muy tarde.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q3c" name="t4q3"><label for="t4q3c">C) No permite
+                <div class="opcion-test"><input type="radio" id="t4q3c" name="t4q3c"><label for="t4q3c">C) No permite
                         hacer ninguna revisión formal.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q3d" name="t4q3"><label for="t4q3d">D) Obliga a
+                <div class="opcion-test"><input type="radio" id="t4q3d" name="t4q3d"><label for="t4q3d">D) Obliga a
                         entregar el software en múltiples versiones desde el primer día.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>4. ¿En qué consiste el modelo de proceso incremental?</b></p>
-                <div class="opcion-test"><input type="radio" id="t4q4a" name="t4q4"><label for="t4q4a">A) En incrementar
+                <div class="opcion-test"><input type="radio" id="t4q4a" name="t4q4a"><label for="t4q4a">A) En incrementar
                         el número de programadores cada día.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q4b" name="t4q4"><label for="t4q4b">B) En hacer una
+                <div class="opcion-test"><input type="radio" id="t4q4b" name="t4q4b"><label for="t4q4b">B) En hacer una
                         sola entrega al final del proyecto, pero más grande.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q4c" name="t4q4"><label for="t4q4c">C) En
+                <div class="opcion-test"><input type="radio" id="t4q4c" name="t4q4c"><label for="t4q4c">C) En
                         proporcionar cierta funcionalidad al cliente e ir aumentándola en entregas posteriores.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q4d" name="t4q4"><label for="t4q4d">D) En aumentar el
+                <div class="opcion-test"><input type="radio" id="t4q4d" name="t4q4d"><label for="t4q4d">D) En aumentar el
                         precio del software con cada fallo detectado.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>5. ¿Cuándo es muy recomendable usar el modelo incremental?</b></p>
-                <div class="opcion-test"><input type="radio" id="t4q5a" name="t4q5"><label for="t4q5a">A) Cuando los
+                <div class="opcion-test"><input type="radio" id="t4q5a" name="t4q5a"><label for="t4q5a">A) Cuando los
                         requisitos no están bien definidos y es muy probable que haya cambios.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q5b" name="t4q5"><label for="t4q5b">B) Cuando estamos
+                <div class="opcion-test"><input type="radio" id="t4q5b" name="t4q5b"><label for="t4q5b">B) Cuando estamos
                         100% seguros de que el cliente no va a cambiar de opinión.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q5c" name="t4q5"><label for="t4q5c">C) Cuando el
+                <div class="opcion-test"><input type="radio" id="t4q5c" name="t4q5c"><label for="t4q5c">C) Cuando el
                         proyecto dura menos de dos días.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q5d" name="t4q5"><label for="t4q5d">D) Solamente
+                <div class="opcion-test"><input type="radio" id="t4q5d" name="t4q5d"><label for="t4q5d">D) Solamente
                         cuando se desarrolla un prototipo desechable.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>6. ¿Qué es un prototipo en el desarrollo evolutivo?</b></p>
-                <div class="opcion-test"><input type="radio" id="t4q6a" name="t4q6"><label for="t4q6a">A) El programa
+                <div class="opcion-test"><input type="radio" id="t4q6a" name="t4q6a"><label for="t4q6a">A) El programa
                         final y definitivo que se le vende al cliente.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q6b" name="t4q6"><label for="t4q6b">B) El ordenador
+                <div class="opcion-test"><input type="radio" id="t4q6b" name="t4q6b"><label for="t4q6b">B) El ordenador
                         donde el cliente instalará el programa.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q6c" name="t4q6"><label for="t4q6c">C) Un sistema
+                <div class="opcion-test"><input type="radio" id="t4q6c" name="t4q6c"><label for="t4q6c">C) Un sistema
                         auxiliar que permite probar soluciones a las necesidades del usuario.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q6d" name="t4q6"><label for="t4q6d">D) El documento
+                <div class="opcion-test"><input type="radio" id="t4q6d" name="t4q6d"><label for="t4q6d">D) El documento
                         impreso donde se explican todos los errores del sistema.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>7. ¿Cuál es el objetivo principal de construir un prototipo?</b></p>
-                <div class="opcion-test"><input type="radio" id="t4q7a" name="t4q7"><label for="t4q7a">A) Evitar tener
+                <div class="opcion-test"><input type="radio" id="t4q7a" name="t4q7a"><label for="t4q7a">A) Evitar tener
                         que comunicarse con el cliente durante el desarrollo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q7b" name="t4q7"><label for="t4q7b">B) Que las y los
+                <div class="opcion-test"><input type="radio" id="t4q7b" name="t4q7b"><label for="t4q7b">B) Que las y los
                         desarrolladores entiendan mejor y exactamente qué tienen que hacer.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q7c" name="t4q7"><label for="t4q7c">C) Saltarse la
+                <div class="opcion-test"><input type="radio" id="t4q7c" name="t4q7c"><label for="t4q7c">C) Saltarse la
                         fase de programación por completo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q7d" name="t4q7"><label for="t4q7d">D) Reducir a cero
+                <div class="opcion-test"><input type="radio" id="t4q7d" name="t4q7d"><label for="t4q7d">D) Reducir a cero
                         el coste económico del proyecto.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -944,19 +1143,19 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>8. ¿Qué elemento nuevo y fundamental añade el modelo en espiral que no tenían los anteriores?</b>
                 </p>
-                <div class="opcion-test"><input type="radio" id="t4q8a" name="t4q8"><label for="t4q8a">A) El análisis de
+                <div class="opcion-test"><input type="radio" id="t4q8a" name="t4q8a"><label for="t4q8a">A) El análisis de
                         riesgo dentro de la planificación de cada iteración o vuelta.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q8b" name="t4q8"><label for="t4q8b">B) La eliminación
+                <div class="opcion-test"><input type="radio" id="t4q8b" name="t4q8b"><label for="t4q8b">B) La eliminación
                         de todas las pruebas de software.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q8c" name="t4q8"><label for="t4q8c">C) El uso de
+                <div class="opcion-test"><input type="radio" id="t4q8c" name="t4q8c"><label for="t4q8c">C) El uso de
                         herramientas de diseño gráfico avanzado en 3D.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t4q8d" name="t4q8"><label for="t4q8d">D) La prohibición
+                <div class="opcion-test"><input type="radio" id="t4q8d" name="t4q8d"><label for="t4q8d">D) La prohibición
                         total de hacer cambios en el código.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -968,76 +1167,76 @@
             <summary>Test 5: Metodologías RUP y Ágil</summary>
             <form action="#" method="get" class="formulario-test">
                 <p><b>1. ¿Qué diferencia principal hay entre un ciclo de vida y una metodología?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q1a" name="t5q1"><label for="t5q1a">A) Son
+                <div class="opcion-test"><input type="radio" id="t5q1a" name="t5q1a"><label for="t5q1a">A) Son
                         exactamente lo mismo y se usan para lo mismo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q1b" name="t5q1"><label for="t5q1b">B) El ciclo de
+                <div class="opcion-test"><input type="radio" id="t5q1b" name="t5q1b"><label for="t5q1b">B) El ciclo de
                         vida solo sirve para hardware y la metodología para software.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q1c" name="t5q1"><label for="t5q1c">C) El ciclo de
+                <div class="opcion-test"><input type="radio" id="t5q1c" name="t5q1c"><label for="t5q1c">C) El ciclo de
                         vida indica qué hay que obtener, mientras que la metodología indica el cómo hacerlo.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q1d" name="t5q1"><label for="t5q1d">D) La metodología
+                <div class="opcion-test"><input type="radio" id="t5q1d" name="t5q1d"><label for="t5q1d">D) La metodología
                         no requiere herramientas, pero el ciclo de vida sí.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>2. ¿Qué son las herramientas CASE?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q2a" name="t5q2"><label for="t5q2a">A) Herramientas
+                <div class="opcion-test"><input type="radio" id="t5q2a" name="t5q2a"><label for="t5q2a">A) Herramientas
                         de hardware para arreglar servidores.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q2b" name="t5q2"><label for="t5q2b">B) Herramientas
+                <div class="opcion-test"><input type="radio" id="t5q2b" name="t5q2b"><label for="t5q2b">B) Herramientas
                         que permiten automatizar las tareas de desarrollo de software.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q2c" name="t5q2"><label for="t5q2c">C) Manuales de
+                <div class="opcion-test"><input type="radio" id="t5q2c" name="t5q2c"><label for="t5q2c">C) Manuales de
                         programación de los años 80.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q2d" name="t5q2"><label for="t5q2d">D) Un tipo de
+                <div class="opcion-test"><input type="radio" id="t5q2d" name="t5q2d"><label for="t5q2d">D) Un tipo de
                         metodología antigua.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>3. En la metodología orientada a objetos, ¿en qué se centra principalmente la atención?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q3a" name="t5q3"><label for="t5q3a">A) En los datos
+                <div class="opcion-test"><input type="radio" id="t5q3a" name="t5q3a"><label for="t5q3a">A) En los datos
                         sobre los que hay que operar (los objetos).</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q3b" name="t5q3"><label for="t5q3b">B) Exclusivamente
+                <div class="opcion-test"><input type="radio" id="t5q3b" name="t5q3b"><label for="t5q3b">B) Exclusivamente
                         en los procesos matemáticos.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q3c" name="t5q3"><label for="t5q3c">C) En la
+                <div class="opcion-test"><input type="radio" id="t5q3c" name="t5q3c"><label for="t5q3c">C) En la
                         documentación del sistema operativo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q3d" name="t5q3"><label for="t5q3d">D) En los
+                <div class="opcion-test"><input type="radio" id="t5q3d" name="t5q3d"><label for="t5q3d">D) En los
                         contratos con el cliente.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>4. ¿Qué es UML?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q4a" name="t5q4"><label for="t5q4a">A) Un tipo de
+                <div class="opcion-test"><input type="radio" id="t5q4a" name="t5q4a"><label for="t5q4a">A) Un tipo de
                         servidor web.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q4b" name="t5q4"><label for="t5q4b">B) Un lenguaje
+                <div class="opcion-test"><input type="radio" id="t5q4b" name="t5q4b"><label for="t5q4b">B) Un lenguaje
                         gráfico con normas para visualizar, construir y documentar un sistema.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q4c" name="t5q4"><label for="t5q4c">C) Un tipo de
+                <div class="opcion-test"><input type="radio" id="t5q4c" name="t5q4c"><label for="t5q4c">C) Un tipo de
                         base de datos relacional.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q4d" name="t5q4"><label for="t5q4d">D) La primera
+                <div class="opcion-test"><input type="radio" id="t5q4d" name="t5q4d"><label for="t5q4d">D) La primera
                         metodología artesanal inventada.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -1045,76 +1244,76 @@
             <form action="#" method="get" class="formulario-test">
                 <p><b>5. ¿Cuáles son las cuatro fases temporales en las que se divide el Proceso Unificado de Rational
                         (RUP)?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q5a" name="t5q5"><label for="t5q5a">A) Inicio, Medio,
+                <div class="opcion-test"><input type="radio" id="t5q5a" name="t5q5a"><label for="t5q5a">A) Inicio, Medio,
                         Fin y Reinicio.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q5b" name="t5q5"><label for="t5q5b">B) Planificación,
+                <div class="opcion-test"><input type="radio" id="t5q5b" name="t5q5b"><label for="t5q5b">B) Planificación,
                         Diseño, Instalación y Borrado.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q5c" name="t5q5"><label for="t5q5c">C) Comienzo,
+                <div class="opcion-test"><input type="radio" id="t5q5c" name="t5q5c"><label for="t5q5c">C) Comienzo,
                         Elaboración, Construcción y Transición.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q5d" name="t5q5"><label for="t5q5d">D) Presentación,
+                <div class="opcion-test"><input type="radio" id="t5q5d" name="t5q5d"><label for="t5q5d">D) Presentación,
                         Nudo, Desenlace y Evaluación.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>6. ¿Qué documento histórico firmó el grupo conocido como Alianza Ágil en el año 2001?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q6a" name="t5q6"><label for="t5q6a">A) El Tratado de
+                <div class="opcion-test"><input type="radio" id="t5q6a" name="t5q6a"><label for="t5q6a">A) El Tratado de
                         Programación Estructurada.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q6b" name="t5q6"><label for="t5q6b">B) El Manifiesto
+                <div class="opcion-test"><input type="radio" id="t5q6b" name="t5q6b"><label for="t5q6b">B) El Manifiesto
                         por el desarrollo ágil de software.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q6c" name="t5q6"><label for="t5q6c">C) La
+                <div class="opcion-test"><input type="radio" id="t5q6c" name="t5q6c"><label for="t5q6c">C) La
                         Constitución del Proceso Unificado.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q6d" name="t5q6"><label for="t5q6d">D) El Contrato de
+                <div class="opcion-test"><input type="radio" id="t5q6d" name="t5q6d"><label for="t5q6d">D) El Contrato de
                         Herramientas CASE.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>7. Según el Manifiesto Ágil, ¿qué elemento se valora MÁS?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q7a" name="t5q7"><label for="t5q7a">A) La
+                <div class="opcion-test"><input type="radio" id="t5q7a" name="t5q7a"><label for="t5q7a">A) La
                         documentación exhaustiva en papel.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q7b" name="t5q7"><label for="t5q7b">B) Los procesos
+                <div class="opcion-test"><input type="radio" id="t5q7b" name="t5q7b"><label for="t5q7b">B) Los procesos
                         burocráticos y las herramientas.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q7c" name="t5q7"><label for="t5q7c">C) Los individuos
+                <div class="opcion-test"><input type="radio" id="t5q7c" name="t5q7c"><label for="t5q7c">C) Los individuos
                         y sus interacciones.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q7d" name="t5q7"><label for="t5q7d">D) La negociación
+                <div class="opcion-test"><input type="radio" id="t5q7d" name="t5q7d"><label for="t5q7d">D) La negociación
                         del contrato antes de empezar.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
             </form>
             <form action="#" method="get" class="formulario-test">
                 <p><b>8. ¿Cuál es una de las principales ventajas de los modelos de desarrollo ágil?</b></p>
-                <div class="opcion-test"><input type="radio" id="t5q8a" name="t5q8"><label for="t5q8a">A) Mayor
+                <div class="opcion-test"><input type="radio" id="t5q8a" name="t5q8a"><label for="t5q8a">A) Mayor
                         facilidad para incorporar cambios con menor coste.</label>
                     <div class="feedback correcto">✅ ¡Correcto!</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q8b" name="t5q8"><label for="t5q8b">B) El cliente no
+                <div class="opcion-test"><input type="radio" id="t5q8b" name="t5q8b"><label for="t5q8b">B) El cliente no
                         ve el software hasta el final del proyecto.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q8c" name="t5q8"><label for="t5q8c">C) Solo se
+                <div class="opcion-test"><input type="radio" id="t5q8c" name="t5q8c"><label for="t5q8c">C) Solo se
                         permiten usar lenguajes de programación antiguos.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
-                <div class="opcion-test"><input type="radio" id="t5q8d" name="t5q8"><label for="t5q8d">D) Nunca se
+                <div class="opcion-test"><input type="radio" id="t5q8d" name="t5q8d"><label for="t5q8d">D) Nunca se
                         trabaja en equipo, cada uno trabaja solo.</label>
                     <div class="feedback incorrecto">❌ Incorrecto.</div>
                 </div>
@@ -1122,7 +1321,7 @@
         </details>
     </div>
 
-<a href="Entorno de Desarrollo.html" id="Volver">⬆️ Subir</a>
+<a href="#" class="boton-subir">⬆️ Subir</a>
 <footer id="PieDePagina">
     <p>&copy; 2026 Jamie Robert, Manuel Pardo, Marcelo Marlon, Charly.</p>
 </footer>
