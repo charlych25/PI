@@ -54,28 +54,63 @@
         <h3>Fases de desarrollo de una aplicación informática:</h3>
         <p>El desarrollo estructurado se divide en una serie de etapas secuenciales o iterativas conocidas como el Ciclo
             de Vida del Desarrollo del Software.</p>
-        <ul>
-            <li><b>2.1. Análisis (Toma de Requisitos):</b> Es la fase de investigación y definición. El objetivo aquí no
-                es programar nada, sino entender perfectamente el problema que el software debe resolver. Incluye la
-                recopilación de información, estudio de viabilidad, y definición de Requisitos Funcionales y No
-                Funcionales. El entregable es el Documento de Especificación de Requisitos (ERS).</li>
-            <li><b>2.2. Diseño:</b> Una vez que se sabe qué hay que hacer, en esta fase se define cómo se va a hacer a
-                nivel técnico. Se crea el Diseño de la Base de Datos (Modelos Entidad-Relación), Diseño de Arquitectura,
-                Diseño de Interfaces (UI/UX) y la Selección de herramientas (stack tecnológico).</li>
-            <li><b>2.3. Codificación (Implementación o Desarrollo):</b> Es la fase más larga y consiste en traducir todo
-                el diseño anterior a líneas de código que el ordenador pueda ejecutar. Incluye Programación en los IDEs,
-                Control de versiones (Git) y Documentación interna del código.</li>
-            <li><b>2.4. Pruebas (Testing):</b> Antes de entregar el software, hay que asegurarse de que cumple con los
-                requisitos y no tiene fallos críticos. Se dividen en Pruebas Unitarias, Pruebas de Integración, Pruebas
-                de Sistema/Estrés y Pruebas de Aceptación (UAT). Técnicas: Pruebas de caja blanca (mirando el código) y
-                Pruebas de caja negra (validando funcionalidad sin ver código).</li>
-            <li><b>2.5. Despliegue (Implantación):</b> El software ya está terminado y probado; ahora hay que ponerlo a
-                disposición de los usuarios finales. Incluye Paso a Producción, Migración de datos de sistemas antiguos
-                y Formación (manuales y cursos).</li>
-            <li><b>2.6. Mantenimiento:</b> Dura todo el tiempo que el programa siga en uso y se divide en: Correctivo
-                (solucionar bugs), Adaptativo (modificar si cambia el entorno), Perfectivo (añadir mejoras) y Preventivo
-                (optimizar código interno).</li>
-        </ul>
+        <h2>2.1. Análisis (Investigación y Definición)</h2>
+    <p>Es la fase de investigación y definición. El objetivo aquí no es programar nada, sino entender perfectamente el problema que el software debe resolver.</p>
+    <ul>
+        <li><strong>Recopilación de información:</strong> Se hacen reuniones y entrevistas con el cliente o los futuros usuarios para saber qué necesitan.</li>
+        <li><strong>Estudio de viabilidad:</strong> Se analiza si el proyecto es posible a nivel técnico, económico (si hay presupuesto) y temporal (si da tiempo a hacerlo).</li>
+        <li><strong>Definición de Requisitos Funcionales:</strong> Qué debe hacer el sistema exactamente (ej. "El usuario debe poder registrarse con un email", "El sistema debe calcular el IVA").</li>
+        <li><strong>Definición de Requisitos No Funcionales:</strong> Cómo debe comportarse el sistema (ej. "Debe cargar en menos de 2 segundos", "Debe ser seguro", "Debe ser compatible con Windows 10").</li>
+        <li><strong>Entregable:</strong> Todo esto se plasma en un Documento de Especificación de Requisitos (ERS), que actúa como un contrato detallado de lo que se va a construir.</li>
+    </ul>
+
+    <h2>2.2. Diseño</h2>
+    <p>Una vez que se sabe qué hay que hacer, en esta fase se define cómo se va a hacer a nivel técnico. Es como hacer los planos de una casa antes de poner ladrillos.</p>
+    <ul>
+        <li><strong>Diseño de la Base de Datos:</strong> Se decide cómo se va a almacenar la información. Aquí se crean los Modelos Entidad-Relación para estructurar las tablas, claves y conexiones de los datos.</li>
+        <li><strong>Diseño de Arquitectura:</strong> Se define la estructura general del software (si tendrá un servidor central, si estará en la nube, cómo se comunicarán los módulos).</li>
+        <li><strong>Diseño de Interfaces (UI/UX):</strong> Se dibujan los bocetos de las pantallas, los menús, y se decide cómo navegará el usuario por la aplicación usando lenguajes de marcado y estilos como HTML5 y CSS.</li>
+        <li><strong>Selección de herramientas:</strong> Se elige el stack tecnológico definitivo (lenguajes de programación, librerías, gestores de bases de datos).</li>
+    </ul>
+
+    <h2>2.3. Codificación (Implementación o Desarrollo)</h2>
+    <p>Es la fase más larga y consiste en traducir todo el diseño anterior a líneas de código que el ordenador pueda ejecutar.</p>
+    <ul>
+        <li><strong>Programación:</strong> Los desarrolladores escriben el código fuente utilizando sus Entornos de Desarrollo Integrado (IDEs, como NetBeans o Visual Studio Code) y el lenguaje elegido (como Java).</li>
+        <li><strong>Control de versiones:</strong> El equipo utiliza herramientas (como Git) para guardar el progreso, mezclar el código de varios programadores sin que se borre nada y poder volver atrás si algo falla.</li>
+        <li><strong>Documentación interna:</strong> Se añaden comentarios al código y se documentan las funciones para que otros programadores puedan entenderlo en el futuro.</li>
+    </ul>
+
+    <h2>2.4. Pruebas (Testing)</h2>
+    <p>Antes de entregar el software, hay que asegurarse de que cumple con los requisitos de la primera fase y de que no tiene fallos críticos.</p>
+    <ul>
+        <li><strong>Pruebas Unitarias:</strong> El propio programador prueba fragmentos pequeños de código (una función concreta) para ver si hace lo que debe.</li>
+        <li><strong>Pruebas de Integración:</strong> Se comprueba que los distintos módulos del programa funcionan bien cuando se conectan entre sí (ej. que la pantalla de login conecte correctamente con la base de datos).</li>
+        <li><strong>Pruebas de Sistema / Estrés:</strong> Se prueba el programa completo, a veces simulando que miles de usuarios entran a la vez para ver si los servidores aguantan.</li>
+        <li><strong>Pruebas de Aceptación (UAT):</strong> El cliente prueba una versión casi final para dar el visto bueno antes del lanzamiento real.</li>
+    </ul>
+    <p>Existen 2 tipos de técnicas de pruebas:</p>
+    <ul>
+        <li><strong>Pruebas de caja blanca:</strong> Se examinan los detalles de cada módulo, para lo que se debe disponer de código fuente.</li>
+        <li><strong>Pruebas de caja negra:</strong> el software se considera como una caja negra que recibe una serie de entradas y proporciona una serie de salidas. El objetivo es validar los requisitos funcionales.</li>
+    </ul>
+
+    <h2>2.5. Despliegue (Implantación)</h2>
+    <p>El software ya está terminado y probado; ahora hay que ponerlo a disposición de los usuarios finales.</p>
+    <ul>
+        <li><strong>Paso a Producción:</strong> El código se sube a los servidores definitivos o se compila en instaladores. A veces esto requiere configurar máquinas virtuales (como Ubuntu dentro de VirtualBox) o servidores web donde se alojará el programa.</li>
+        <li><strong>Migración de datos:</strong> Si el cliente ya usaba un programa antiguo, hay que pasar todos sus datos viejos al nuevo sistema.</li>
+        <li><strong>Formación:</strong> Se entregan los manuales de usuario y, a veces, se dan cursos a los trabajadores que van a usar la aplicación en su día a día.</li>
+    </ul>
+
+    <h2>2.6. Mantenimiento</h2>
+    <p>El ciclo de vida no termina cuando se entrega el software. Esta fase dura todo el tiempo que el programa siga en uso y se divide en varios tipos:</p>
+    <ul>
+        <li><strong>Mantenimiento Correctivo:</strong> Solucionar bugs o errores que los usuarios han descubierto usando el programa en el mundo real.</li>
+        <li><strong>Mantenimiento Adaptativo:</strong> Modificar el programa para que siga funcionando si cambia el entorno (por ejemplo, si sale una nueva versión de Windows o un nuevo navegador).</li>
+        <li><strong>Mantenimiento Perfectivo:</strong> Añadir nuevas funciones o mejoras que el cliente pide meses o años después del lanzamiento original.</li>
+        <li><strong>Mantenimiento Preventivo:</strong> Optimizar el código interno para evitar que el sistema se vuelva lento o falle en el futuro.</li>
+    </ul>
 
         <h3>Perfiles que intervienen:</h3>
         <ul>
