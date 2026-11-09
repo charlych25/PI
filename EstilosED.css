@@ -47,21 +47,6 @@ header h1 {
     letter-spacing: normal;
 }
 
-#Proyectos{
-    text-decoration: none;
-    background-color: #F97316;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    display: inline-block;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    top: 20px;
-    right: 20px;
-    position: absolute;
-}
-
 #Entornos{
     text-decoration: none;
     background-color: #F97316;
@@ -78,6 +63,21 @@ header h1 {
 }
 
 #Index{
+    text-decoration: none;
+    background-color: #F97316;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+#Proyectos {
     text-decoration: none;
     background-color: #F97316;
     color: white;
