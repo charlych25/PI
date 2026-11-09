@@ -77,6 +77,21 @@ header h1 {
     position: absolute;
 }
 
+#Inicio{
+    text-decoration: none;
+    background-color: #F97316;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
 #Proyecto:hover{
     background-color: hsla(222, 47%, 11%, 0);
 }
