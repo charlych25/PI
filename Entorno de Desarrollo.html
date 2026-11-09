@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link href="EstilosED.css" rel="stylesheet">
@@ -13,517 +14,989 @@
             padding: 15px;
             margin-bottom: 10px;
         }
+
         summary {
             font-weight: bold;
             font-size: 1.2rem;
             cursor: pointer;
             color: #F97316;
         }
+
         .ide-content {
             margin-top: 15px;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>CodeDesk <span class="subtitulo">| Entornos de Desarrollo</span></h1>
-    <img src="LOGO.png" width="100px" id="Logo" alt="Logo">
-    <a href="Proyecto intermodular.html" id="Proyectos">Proyecto intermodular</a>
-</header>
+    <header>
+        <h1>CodeDesk <span class="subtitulo">| Entornos de Desarrollo</span></h1>
+        <img src="LOGO.png" width="100px" id="Logo" alt="Logo">
+        <a href="Proyecto intermodular.html" id="Proyectos">Proyecto intermodular</a>
+    </header>
 
-<div id="Encabezado">
-    <ul>
-        <li><a href="#ingenieria">Ingeniería del Software</a></li>
-        <li><a href="#metodologias">Ciclos y Metodologías</a></li>
-        <li><a href="#ides">Herramientas IDE</a></li>
-        <li><a href="#evaluacion">Tests de Evaluación</a></li>
-    </ul>
-</div>
-<hr>
-
-<div id="ingenieria" class="seccion-contenido">
-    <h2><b>Ingeniería del Software y Fases de Desarrollo</b></h2>
-    <p>La <b>ingeniería del software</b> es la aplicación práctica del conocimiento científico al diseño y construcción de programas. A diferencia de la simple escritura de código, aplica un enfoque estructurado para garantizar la calidad, controlar el proceso, facilitar el mantenimiento y satisfacer requisitos.</p>
-    
-    <h3>Fases del Ciclo de Vida:</h3>
-    <ul>
-        <li><b>Análisis de Requisitos:</b> Recolección de información. Resultado: Documento de especificación.</li>
-        <li><b>Diseño:</b> Arquitectura del sistema, diseño UI/UX y modelado de base de datos.</li>
-        <li><b>Implementación:</b> Programación pura utilizando IDEs y control de versiones.</li>
-        <li><b>Pruebas:</b> Evaluación para detectar bugs (unitarias, integración, sistema).</li>
-        <li><b>Despliegue:</b> Instalación en el entorno de producción.</li>
-        <li><b>Mantenimiento:</b> Corrección de errores y adición de funcionalidades.</li>
-    </ul>
-
-    <h3>Perfiles Profesionales:</h3>
-    <ul>
-        <li><b>Jefe de Proyecto (Project Manager):</b> Máximo responsable, gestiona la planificación, ejecución y control.</li>
-        <li><b>Analista:</b> Se comunica con los expertos del dominio para entender y definir los requisitos.</li>
-        <li><b>Arquitecto:</b> Define la estructura general y la tecnología a utilizar.</li>
-        <li><b>Programador:</b> Escribe el código basándose en el diseño detallado.</li>
-        <li><b>Tester (QA):</b> Diseña y ejecuta pruebas para detectar fallos antes del lanzamiento.</li>
-        <li><b>Administradores:</b> De Sistemas (gestionan la infraestructura) y de Bases de Datos (optimizan el almacenamiento).</li>
-    </ul>
-</div>
-<hr>
-
-<div id="metodologias" class="seccion-contenido">
-    <h3>Modelos de Ciclo de Vida del Software</h3>
-<p>El ciclo de vida define el orden de las tareas y los criterios para avanzar entre fases. La elección correcta es vital para el éxito del proyecto.</p>
-
-<ul>
-    <li><b>Modelo en Cascada (Clásico):</b> Enfoque sistemático y secuencial (Análisis ➔ Diseño ➔ Programación ➔ Pruebas ➔ Mantenimiento). 
-        <br><em>Ventajas:</em> Fácil de planificar. 
-        <br><em>Inconvenientes:</em> El cliente no ve resultados hasta el final y los cambios tardíos son muy costosos. Ideal solo cuando los requisitos son totalmente estables.
-        <img src="Modelo en cascada.png">
-    </li>
-    <li><b>Modelo Incremental:</b> Divide el software en entregas parciales para que el cliente disponga de versiones funcionales antes de finalizar todo el proyecto.</li>
-    <img src="Modelo incremental.png">
-    <li><b>Modelos Evolutivos (Prototipos y Espiral):</b> Permiten que el software evolucione con el tiempo, integrando prototipos de prueba y un exhaustivo análisis de riesgos en cada iteración.</li>
-    <img src="Modelo evolutivo.png">
-    <img src="Modelo en espiral.png">
-</ul>
-</div>
-<hr>
-
-<div id="rup-agil" class="seccion-contenido">
-    <h2>Metodologías: RUP y Desarrollo Ágil</h2>
-    <p>Las metodologías establecen el <em>cómo</em> llevar a cabo las tareas de desarrollo apoyándose en herramientas CASE.</p>
-
-    <details style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
-        <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Proceso Unificado de Rational (RUP)</summary>
-        <div style="margin-top: 10px;">
-            <p>Se describe en dos dimensiones:</p>
-            <ul>
-                <li><b>Dimensión Temporal (Fases):</b> 
-                    <br>1. <i>Comienzo (Inception):</i> Viabilidad y alcance.
-                    <br>2. <i>Elaboración (Elaboration):</i> Arquitectura base y eliminación de riesgos.
-                    <br>3. <i>Construcción (Construction):</i> Desarrollo iterativo e incremental del producto.
-                    <br>4. <i>Transición (Transition):</i> Puesta en producción y entrega al usuario.
-                </li>
-                <li><b>Dimensión Estática:</b> 
-                    <br>Define los roles (trabajadores), las actividades, los productos intermedios (artifacts) y los flujos de trabajo (ingeniería y apoyo).
-                    <img src="RUP.png">
-                </li>
-            </ul>
-        </div>
-    </details>
-
-    <details style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
-        <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Modelos de Desarrollo Ágil y Scrum / XP</summary>
-        <div style="margin-top: 10px;">
-            <p>Basados en el <b>Manifiesto Ágil (2001)</b>, valoran a los individuos y su interacción por encima de los procesos y priorizan el software funcional frente a la documentación exhaustiva.</p>
-            <img src="Agil.png">
-            <ul>
-                <li><b>Programación Extrema (XP):</b> Destaca por la simplicidad, la retroalimentación continua y prácticas como la <em>programación por parejas</em> y las historias de usuario.</li>
-                <li><b>Scrum:</b> Marco basado en la transparencia, inspección y adaptación. Organiza el trabajo en ciclos cortos llamados <b>sprints</b>, con reuniones diarias de 15 minutos, planificación (*sprint planning*) y revisiones (*sprint review*).</li>
-                <img src="SCRUM.png">
-            </ul>
-        </div>
-    </details>
-</div>
-<hr>
-
-<div id="ides" class="seccion-contenido">
-    <h2><b>Guía de Entornos de Desarrollo (IDEs)</b></h2>
-    <p>Todos los IDEs agrupan un editor de texto, compilador y depurador (debugger). A continuación, analizamos los más importantes. <i>(Haz clic para desplegar)</i></p>
-    
-    <div style="background-color: #e2e8f0; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-        <img src="Señal advertencia.png" width="70px" >
-        <h3>Requisitos previos comunes:</h3>
+    <div id="Encabezado">
         <ul>
-            <li>Equipo con 4–8 GB de RAM recomendados y al menos 2 GB libres de disco.</li>
-            <li>Para Eclipse, IntelliJ IDEA y NetBeans es obligatorio instalar previamente un <b>JDK (Java Development Kit)</b> actualizado.</li>
-            <li>Se recomienda instalar <b>Git</b> para el trabajo colaborativo.</li>
+            <li><a href="#ingenieria">Ingeniería del Software</a></li>
+            <li><a href="#metodologias">Ciclos y Metodologías</a></li>
+            <li><a href="#ides">Herramientas IDE</a></li>
+            <li><a href="#evaluacion">Tests de Evaluación</a></li>
         </ul>
-        <h3>Ejecutar desde la terminal:</h3>
-        <p>Una vez generado el archivo ejecutable (.jar) en cualquier IDE, puedes ejecutarlo sin depender del entorno abriendo la terminal, navegando a la carpeta correspondiente y usando el comando nativo: <br><code>java -jar nombre_programa.jar</code></p>
     </div>
+    <hr>
 
-    <!-- DESPLEGABLE VS CODE -->
-    <details>
-        <summary>Visual Studio / VS Code</summary>
-        <div class="ide-content">
-            <p><b>Instalación:</b> Descargar desde su web oficial. Marcar la opción "Abrir con Code" y agregar al PATH.</p>
-            <!-- Aquí va la imagen de instalación de VS Code -->
-            <img src="InstalacionVS.png" alt="Instalación de VS Code" class="img-tutorial">
-            
-            <p><b>Módulos (Extensiones):</b> Abrir vista con <code>Ctrl + Shift + X</code>, buscar (ej. Extension Pack for Java) e Instalar. Para eliminar, hacer clic en el engranaje y seleccionar Uninstall.</p>
-            <p><b>Personalización y Atajos:</b> Cambiar tema con <code>Ctrl + K, Ctrl + T</code>. Formatear código (<code>Shift + Alt + F</code>).</p>
-            <p><b>Actualizaciones:</b> En Ajustes, buscar <code>update mode</code> (default, start, manual).</p>
-            <p><b>Ventajas:</b> Muy ligero, excelente para web y miles de extensiones.</p>
-            <p><b>Desventajas:</b> VS Code no es un IDE puro, requiere extensiones para Java.</p>
+    <div id="ingenieria" class="seccion-contenido">
+        <h2><b>Ingeniería del Software y Fases de Desarrollo</b></h2>
+        <p>La <b>ingeniería del software</b> es la aplicación práctica del conocimiento científico al diseño y
+            construcción de programas. A diferencia de la simple escritura de código, aplica un enfoque estructurado
+            para garantizar la calidad, controlar el proceso, facilitar el mantenimiento y satisfacer requisitos.</p>
+
+        <h3>Fases del Ciclo de Vida:</h3>
+        <ul>
+            <li><b>Análisis de Requisitos:</b> Recolección de información. Resultado: Documento de especificación.</li>
+            <li><b>Diseño:</b> Arquitectura del sistema, diseño UI/UX y modelado de base de datos.</li>
+            <li><b>Implementación:</b> Programación pura utilizando IDEs y control de versiones.</li>
+            <li><b>Pruebas:</b> Evaluación para detectar bugs (unitarias, integración, sistema).</li>
+            <li><b>Despliegue:</b> Instalación en el entorno de producción.</li>
+            <li><b>Mantenimiento:</b> Corrección de errores y adición de funcionalidades.</li>
+        </ul>
+
+        <h3>Perfiles Profesionales:</h3>
+        <ul>
+            <li><b>Jefe de Proyecto (Project Manager):</b> Máximo responsable, gestiona la planificación, ejecución y
+                control.</li>
+            <li><b>Analista:</b> Se comunica con los expertos del dominio para entender y definir los requisitos.</li>
+            <li><b>Arquitecto:</b> Define la estructura general y la tecnología a utilizar.</li>
+            <li><b>Programador:</b> Escribe el código basándose en el diseño detallado.</li>
+            <li><b>Tester (QA):</b> Diseña y ejecuta pruebas para detectar fallos antes del lanzamiento.</li>
+            <li><b>Administradores:</b> De Sistemas (gestionan la infraestructura) y de Bases de Datos (optimizan el
+                almacenamiento).</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div id="metodologias" class="seccion-contenido">
+        <h3>Modelos de Ciclo de Vida del Software</h3>
+        <p>El ciclo de vida define el orden de las tareas y los criterios para avanzar entre fases. La elección correcta
+            es vital para el éxito del proyecto.</p>
+
+        <ul>
+            <li><b>Modelo en Cascada (Clásico):</b> Enfoque sistemático y secuencial (Análisis ➔ Diseño ➔ Programación ➔
+                Pruebas ➔ Mantenimiento).
+                <br><em>Ventajas:</em> Fácil de planificar.
+                <br><em>Inconvenientes:</em> El cliente no ve resultados hasta el final y los cambios tardíos son muy
+                costosos. Ideal solo cuando los requisitos son totalmente estables.
+                <img src="Modelo en cascada.png">
+            </li>
+            <li><b>Modelo Incremental:</b> Divide el software en entregas parciales para que el cliente disponga de
+                versiones funcionales antes de finalizar todo el proyecto.</li>
+            <img src="Modelo incremental.png">
+            <li><b>Modelos Evolutivos (Prototipos y Espiral):</b> Permiten que el software evolucione con el tiempo,
+                integrando prototipos de prueba y un exhaustivo análisis de riesgos en cada iteración.</li>
+            <img src="Modelo evolutivo.png">
+            <img src="Modelo en espiral.png">
+        </ul>
+    </div>
+    <hr>
+
+    <div id="rup-agil" class="seccion-contenido">
+        <h2>Metodologías: RUP y Desarrollo Ágil</h2>
+        <p>Las metodologías establecen el <em>cómo</em> llevar a cabo las tareas de desarrollo apoyándose en
+            herramientas CASE.</p>
+
+        <details
+            style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
+            <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Proceso Unificado de
+                Rational (RUP)</summary>
+            <div style="margin-top: 10px;">
+                <p>Se describe en dos dimensiones:</p>
+                <ul>
+                    <li><b>Dimensión Temporal (Fases):</b>
+                        <br>1. <i>Comienzo (Inception):</i> Viabilidad y alcance.
+                        <br>2. <i>Elaboración (Elaboration):</i> Arquitectura base y eliminación de riesgos.
+                        <br>3. <i>Construcción (Construction):</i> Desarrollo iterativo e incremental del producto.
+                        <br>4. <i>Transición (Transition):</i> Puesta en producción y entrega al usuario.
+                    </li>
+                    <li><b>Dimensión Estática:</b>
+                        <br>Define los roles (trabajadores), las actividades, los productos intermedios (artifacts) y
+                        los flujos de trabajo (ingeniería y apoyo).
+                        <img src="RUP.png">
+                    </li>
+                </ul>
+            </div>
+        </details>
+
+        <details
+            style="background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
+            <summary style="font-weight: bold; font-size: 1.1rem; color: #F97316; cursor: pointer;">Modelos de
+                Desarrollo Ágil y Scrum / XP</summary>
+            <div style="margin-top: 10px;">
+                <p>Basados en el <b>Manifiesto Ágil (2001)</b>, valoran a los individuos y su interacción por encima de
+                    los procesos y priorizan el software funcional frente a la documentación exhaustiva.</p>
+                <img src="Agil.png">
+                <ul>
+                    <li><b>Programación Extrema (XP):</b> Destaca por la simplicidad, la retroalimentación continua y
+                        prácticas como la <em>programación por parejas</em> y las historias de usuario.</li>
+                    <li><b>Scrum:</b> Marco basado en la transparencia, inspección y adaptación. Organiza el trabajo en
+                        ciclos cortos llamados <b>sprints</b>, con reuniones diarias de 15 minutos, planificación
+                        (*sprint planning*) y revisiones (*sprint review*).</li>
+                    <img src="SCRUM.png">
+                </ul>
+            </div>
+        </details>
+    </div>
+    <hr>
+
+    <div id="ides" class="seccion-contenido">
+        <h2><b>Guía de Entornos de Desarrollo (IDEs)</b></h2>
+        <p>Todos los IDEs agrupan un editor de texto, compilador y depurador (debugger). A continuación, analizamos los
+            más importantes. <i>(Haz clic para desplegar)</i></p>
+
+        <div style="background-color: #e2e8f0; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+            <img src="Señal advertencia.png" width="70px">
+            <h3>Requisitos previos comunes:</h3>
+            <ul>
+                <li>Equipo con 4–8 GB de RAM recomendados y al menos 2 GB libres de disco.</li>
+                <li>Para Eclipse, IntelliJ IDEA y NetBeans es obligatorio instalar previamente un <b>JDK (Java
+                        Development Kit)</b> actualizado.</li>
+                <li>Se recomienda instalar <b>Git</b> para el trabajo colaborativo.</li>
+            </ul>
+            <h3>Ejecutar desde la terminal:</h3>
+            <p>Una vez generado el archivo ejecutable (.jar) en cualquier IDE, puedes ejecutarlo sin depender del
+                entorno abriendo la terminal, navegando a la carpeta correspondiente y usando el comando nativo:
+                <br><code>java -jar nombre_programa.jar</code></p>
         </div>
-    </details>
 
-    <!-- DESPLEGABLE ECLIPSE -->
-    <details>
-        <summary>Eclipse</summary>
-        <div class="ide-content">
-            <p><b>Instalación:</b> Requiere JDK. Descargar <i>Eclipse IDE for Java Developers</i> desde eclipse.org.</p>
-            <!-- Aquí va la imagen de instalación de Eclipse -->
-            <img src="Captura de pantalla 2026-11-09 103735.png" alt="Instalación de Eclipse" class="img-tutorial">
+        <!-- DESPLEGABLE VS CODE -->
+        <details>
+            <summary>Visual Studio / VS Code</summary>
+            <div class="ide-content">
+                <p><b>Instalación:</b> Descargar desde su web oficial. Marcar la opción "Abrir con Code" y agregar al
+                    PATH.</p>
+                <!-- Aquí va la imagen de instalación de VS Code -->
+                <img src="InstalacionVS.png" alt="Instalación de VS Code" class="img-tutorial">
 
-            <p><b>Módulos:</b> Instalar desde <i>Help > Install New Software</i> o <i>Eclipse Marketplace</i>. Para eliminar: <i>Help > About Eclipse > Installation Details</i>.</p>
-            <p><b>Personalización y Atajos:</b> Tema en <i>Window > Preferences > General > Appearance</i>. Syso autocompletar (<code>Ctrl + Espacio</code>), Formatear (<code>Ctrl + Shift + F</code>).</p>
-            <p><b>Actualizaciones:</b> En <i>Window > Preferences > Install/Update > Automatic Updates</i>.</p>
-            <p><b>Ventajas:</b> Listo para Java, gestión sólida de proyectos.</p>
-            <p><b>Desventajas:</b> Interfaz anticuada, pesado con muchos proyectos.</p>
-            <p><b>Generar Ejecutable:</b> Clic derecho en proyecto > Export > Java > Runnable JAR file.</p>
-        </div>
-    </details>
+                <p><b>Módulos (Extensiones):</b> Abrir vista con <code>Ctrl + Shift + X</code>, buscar (ej. Extension
+                    Pack for Java) e Instalar. Para eliminar, hacer clic en el engranaje y seleccionar Uninstall.</p>
+                <p><b>Personalización y Atajos:</b> Cambiar tema con <code>Ctrl + K, Ctrl + T</code>. Formatear código
+                    (<code>Shift + Alt + F</code>).</p>
+                <p><b>Actualizaciones:</b> En Ajustes, buscar <code>update mode</code> (default, start, manual).</p>
+                <p><b>Ventajas:</b> Muy ligero, excelente para web y miles de extensiones.</p>
+                <p><b>Desventajas:</b> VS Code no es un IDE puro, requiere extensiones para Java.</p>
+            </div>
+        </details>
 
-    <!-- DESPLEGABLE INTELLIJ -->
-    <details>
-        <summary>IntelliJ IDEA</summary>
-        <div class="ide-content">
-            <p><b>Instalación:</b> Descargar edición Community (gratis) o Ultimate.</p>
-            <!-- Aquí va la imagen de instalación de IntelliJ -->
-            <img src="intelligen.png" alt="Instalación de IntelliJ" class="img-tutorial">
+        <!-- DESPLEGABLE ECLIPSE -->
+        <details>
+            <summary>Eclipse</summary>
+            <div class="ide-content">
+                <p><b>Instalación:</b> Requiere JDK. Descargar <i>Eclipse IDE for Java Developers</i> desde eclipse.org.
+                </p>
+                <!-- Aquí va la imagen de instalación de Eclipse -->
+                <img src="Captura de pantalla 2026-11-09 103735.png" alt="Instalación de Eclipse" class="img-tutorial">
 
-            <p><b>Módulos:</b> En <i>Settings > Plugins > Marketplace</i>. Para eliminar, pestaña Installed y Uninstall.</p>
-            <p><b>Personalización y Atajos:</b> Tema en <i>File > Settings > Appearance & Behavior</i>. Solucionar errores (<code>Alt + Enter</code>), Generar código (<code>Alt + Insert</code>).</p>
-            <p><b>Actualizaciones:</b> <i>Settings > Appearance & Behavior > System Settings > Updates</i>.</p>
-            <p><b>Ventajas:</b> Autocompletado superior, interfaz moderna.</p>
-            <p><b>Desventajas:</b> Alto consumo de recursos, versión completa de pago.</p>
-            <p><b>Generar Ejecutable:</b> <i>File > Project Structure > Artifacts</i>, configurar nuevo artefacto JAR indicando la Main Class. Luego compilar en <i>Build > Build Artifacts</i>.</p>
-        </div>
-    </details>
+                <p><b>Módulos:</b> Instalar desde <i>Help > Install New Software</i> o <i>Eclipse Marketplace</i>. Para
+                    eliminar: <i>Help > About Eclipse > Installation Details</i>.</p>
+                <p><b>Personalización y Atajos:</b> Tema en <i>Window > Preferences > General > Appearance</i>. Syso
+                    autocompletar (<code>Ctrl + Espacio</code>), Formatear (<code>Ctrl + Shift + F</code>).</p>
+                <p><b>Actualizaciones:</b> En <i>Window > Preferences > Install/Update > Automatic Updates</i>.</p>
+                <p><b>Ventajas:</b> Listo para Java, gestión sólida de proyectos.</p>
+                <p><b>Desventajas:</b> Interfaz anticuada, pesado con muchos proyectos.</p>
+                <p><b>Generar Ejecutable:</b> Clic derecho en proyecto > Export > Java > Runnable JAR file.</p>
+            </div>
+        </details>
 
-    <!-- DESPLEGABLE NETBEANS -->
-    <details>
-        <summary>NetBeans</summary>
-        <div class="ide-content">
-            <p><b>Instalación:</b> Desde apache.org, requiere JDK.</p>
-            <!-- Aquí va la imagen de instalación de NetBeans -->
-            <img src="netbeans.png" alt="Instalación de NetBeans" class="img-tutorial">
+        <!-- DESPLEGABLE INTELLIJ -->
+        <details>
+            <summary>IntelliJ IDEA</summary>
+            <div class="ide-content">
+                <p><b>Instalación:</b> Descargar edición Community (gratis) o Ultimate.</p>
+                <!-- Aquí va la imagen de instalación de IntelliJ -->
+                <img src="intelligen.png" alt="Instalación de IntelliJ" class="img-tutorial">
 
-            <p><b>Módulos:</b> En <i>Tools > Plugins</i>. Pestaña Available Plugins para instalar, pestaña Installed para eliminar.</p>
-            <p><b>Ventajas:</b> Excelente editor visual para interfaces gráficas.</p>
-            <p><b>Desventajas:</b> Interfaz desfasada, uso en declive.</p>
-            <p><b>Exportar a Eclipse:</b> <i>File > Export Project > To ZIP</i>. Luego en Eclipse: Importar <i>Archive File</i> (solo carpeta src).</p>
-            <p><b>Generar Ejecutable:</b> Al compilar y construir el proyecto (botón Build), se genera automáticamente un archivo <code>.jar</code> dentro de la carpeta <i>dist</i> de tu directorio de trabajo.</p>
-        </div>
-    </details>
-</div>
-<hr>
+                <p><b>Módulos:</b> En <i>Settings > Plugins > Marketplace</i>. Para eliminar, pestaña Installed y
+                    Uninstall.</p>
+                <p><b>Personalización y Atajos:</b> Tema en <i>File > Settings > Appearance & Behavior</i>. Solucionar
+                    errores (<code>Alt + Enter</code>), Generar código (<code>Alt + Insert</code>).</p>
+                <p><b>Actualizaciones:</b> <i>Settings > Appearance & Behavior > System Settings > Updates</i>.</p>
+                <p><b>Ventajas:</b> Autocompletado superior, interfaz moderna.</p>
+                <p><b>Desventajas:</b> Alto consumo de recursos, versión completa de pago.</p>
+                <p><b>Generar Ejecutable:</b> <i>File > Project Structure > Artifacts</i>, configurar nuevo artefacto
+                    JAR indicando la Main Class. Luego compilar en <i>Build > Build Artifacts</i>.</p>
+            </div>
+        </details>
 
-<div id="evaluacion" class="seccion-contenido">
-    <h2><b>Tests de Evaluación</b></h2>
-    <p>Pon a prueba tus conocimientos sobre los diferentes apartados teóricos de CodeDesk. <i>(Haz clic en cada test para desplegarlo)</i></p>
-    
-    <!-- ==========================================
+        <!-- DESPLEGABLE NETBEANS -->
+        <details>
+            <summary>NetBeans</summary>
+            <div class="ide-content">
+                <p><b>Instalación:</b> Desde apache.org, requiere JDK.</p>
+                <!-- Aquí va la imagen de instalación de NetBeans -->
+                <img src="netbeans.png" alt="Instalación de NetBeans" class="img-tutorial">
+
+                <p><b>Módulos:</b> En <i>Tools > Plugins</i>. Pestaña Available Plugins para instalar, pestaña Installed
+                    para eliminar.</p>
+                <p><b>Ventajas:</b> Excelente editor visual para interfaces gráficas.</p>
+                <p><b>Desventajas:</b> Interfaz desfasada, uso en declive.</p>
+                <p><b>Exportar a Eclipse:</b> <i>File > Export Project > To ZIP</i>. Luego en Eclipse: Importar
+                    <i>Archive File</i> (solo carpeta src).</p>
+                <p><b>Generar Ejecutable:</b> Al compilar y construir el proyecto (botón Build), se genera
+                    automáticamente un archivo <code>.jar</code> dentro de la carpeta <i>dist</i> de tu directorio de
+                    trabajo.</p>
+            </div>
+        </details>
+    </div>
+    <hr>
+
+    <div id="evaluacion" class="seccion-contenido">
+        <h2><b>Tests de Evaluación</b></h2>
+        <p>Pon a prueba tus conocimientos sobre los diferentes apartados teóricos de CodeDesk. <i>(Haz clic en cada test
+                para desplegarlo)</i></p>
+
+        <!-- ==========================================
          TEST 1: INGENIERÍA DEL SOFTWARE (2 PREGUNTAS)
          ========================================== -->
-    <details class="caja-test">
-        <summary>Test 1: Ingeniería del software</summary>
-        
-        <form action="#" method="get" class="formulario-test">
-            <p><b>1. ¿Cuál es el objetivo fundamental de la ingeniería del software?</b></p>
-            <div class="opcion-test"><input type="radio" id="t1q1a" name="t1q1"><label for="t1q1a">A) Aumentar el coste de producción de las aplicaciones informáticas para mejorar la rentabilidad.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t1q1b" name="t1q1"><label for="t1q1b">B) Regular de alguna manera el desarrollo de software, estableciendo claramente las tareas necesarias y realizando controles para asegurar que la calidad de los programas sea aceptable.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t1q1c" name="t1q1"><label for="t1q1c">C) Desarrollar exclusivamente el hardware necesario para que las aplicaciones informáticas funcionen sin errores.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t1q1d" name="t1q1"><label for="t1q1d">D) Programar directamente las aplicaciones de forma artesanal sin requerir planificación previa.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+        <details class="caja-test">
+            <summary>Test 1: Ingeniería del software</summary>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>2. ¿Qué definición propuso Fritz Bauer para la ingeniería del software?</b></p>
-            <div class="opcion-test"><input type="radio" id="t1q2a" name="t1q2"><label for="t1q2a">A) El establecimiento y uso de principios de ingeniería para llegar a un obtener un software rentable, que sea fiable y que funcione eficientemente en máquinas reales.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t1q2b" name="t1q2"><label for="t1q2b">B) El conjunto de conocimientos orientados a la invención y utilización de técnicas para el aprovechamiento de los recursos naturales.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t1q2c" name="t1q2"><label for="t1q2c">C) Una disciplina surgida a partir de la ingeniería de sistemas enfocada exclusivamente en el diseño de interfaces de usuario.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t1q2d" name="t1q2"><label for="t1q2d">D) Un conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
-    </details>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>1. ¿Cuál es el objetivo fundamental de la ingeniería del software?</b></p>
+                <div class="opcion-test"><input type="radio" id="t1q1a" name="t1q1"><label for="t1q1a">A) Aumentar el
+                        coste de producción de las aplicaciones informáticas para mejorar la rentabilidad.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t1q1b" name="t1q1"><label for="t1q1b">B) Regular de
+                        alguna manera el desarrollo de software, estableciendo claramente las tareas necesarias y
+                        realizando controles para asegurar que la calidad de los programas sea aceptable.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t1q1c" name="t1q1"><label for="t1q1c">C) Desarrollar
+                        exclusivamente el hardware necesario para que las aplicaciones informáticas funcionen sin
+                        errores.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t1q1d" name="t1q1"><label for="t1q1d">D) Programar
+                        directamente las aplicaciones de forma artesanal sin requerir planificación previa.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-    <!-- ==========================================
+            <form action="#" method="get" class="formulario-test">
+                <p><b>2. ¿Qué definición propuso Fritz Bauer para la ingeniería del software?</b></p>
+                <div class="opcion-test"><input type="radio" id="t1q2a" name="t1q2"><label for="t1q2a">A) El
+                        establecimiento y uso de principios de ingeniería para llegar a un obtener un software rentable,
+                        que sea fiable y que funcione eficientemente en máquinas reales.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t1q2b" name="t1q2"><label for="t1q2b">B) El conjunto de
+                        conocimientos orientados a la invención y utilización de técnicas para el aprovechamiento de los
+                        recursos naturales.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t1q2c" name="t1q2"><label for="t1q2c">C) Una disciplina
+                        surgida a partir de la ingeniería de sistemas enfocada exclusivamente en el diseño de interfaces
+                        de usuario.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t1q2d" name="t1q2"><label for="t1q2d">D) Un conjunto de
+                        programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una
+                        computadora.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
+        </details>
+
+        <!-- ==========================================
          TEST 2: FASES DE DESARROLLO (8 PREGUNTAS)
          ========================================== -->
-    <details class="caja-test">
-        <summary>Test 2: Fases de desarrollo</summary>
-        
-        <form action="#" method="get" class="formulario-test">
-            <p><b>1. ¿Qué nombre reciben las tareas adicionales, de menor carácter técnico y relacionadas con la gestión, como el seguimiento del proyecto o la administración de riesgos?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q1a" name="t2q1"><label for="t2q1a">A) Actividades estructurales.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q1b" name="t2q1"><label for="t2q1b">B) Actividades sombrilla.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q1c" name="t2q1"><label for="t2q1c">C) Actividades de validación.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q1d" name="t2q1"><label for="t2q1d">D) Actividades de explotación.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+        <details class="caja-test">
+            <summary>Test 2: Fases de desarrollo</summary>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>2. ¿Qué describe exactamente la "Extensibilidad"?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q2a" name="t2q2"><label for="t2q2a">A) La capacidad del sistema para manejar aumentos de carga sin disminuir el rendimiento.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q2b" name="t2q2"><label for="t2q2b">B) El grado en que una aplicación funciona sin fallos.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q2c" name="t2q2"><label for="t2q2c">C) La capacidad del software para añadir nuevas funcionalidades y componentes.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q2d" name="t2q2"><label for="t2q2d">D) El grado con que una aplicación protege la información contra el acceso indebido.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>1. ¿Qué nombre reciben las tareas adicionales, de menor carácter técnico y relacionadas con la
+                        gestión, como el seguimiento del proyecto o la administración de riesgos?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q1a" name="t2q1"><label for="t2q1a">A) Actividades
+                        estructurales.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q1b" name="t2q1"><label for="t2q1b">B) Actividades
+                        sombrilla.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q1c" name="t2q1"><label for="t2q1c">C) Actividades de
+                        validación.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q1d" name="t2q1"><label for="t2q1d">D) Actividades de
+                        explotación.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>3. Documento que sirve de base para la siguiente etapa de diseño. ¿Cómo se llama este documento?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q3a" name="t2q3"><label for="t2q3a">A) Especificación de requisitos del software (ERS).</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q3b" name="t2q3"><label for="t2q3b">B) Desarrollo conjunto de aplicaciones (JAD).</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q3c" name="t2q3"><label for="t2q3c">C) Diagrama de casos de uso.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q3d" name="t2q3"><label for="t2q3d">D) Modelo o maqueta del sistema.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>2. ¿Qué describe exactamente la "Extensibilidad"?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q2a" name="t2q2"><label for="t2q2a">A) La capacidad
+                        del sistema para manejar aumentos de carga sin disminuir el rendimiento.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q2b" name="t2q2"><label for="t2q2b">B) El grado en
+                        que una aplicación funciona sin fallos.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q2c" name="t2q2"><label for="t2q2c">C) La capacidad
+                        del software para añadir nuevas funcionalidades y componentes.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q2d" name="t2q2"><label for="t2q2d">D) El grado con
+                        que una aplicación protege la información contra el acceso indebido.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>4. ¿Cuál es el objetivo principal de la etapa de diseño dentro del desarrollo de una aplicación informática?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q4a" name="t2q4"><label for="t2q4a">A) Escribir el código fuente correspondiente siguiendo normas homogéneas.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q4b" name="t2q4"><label for="t2q4b">B) Determinar cómo se ha de solucionar el problema planteado, partiendo de la ERS.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q4c" name="t2q4"><label for="t2q4c">C) Analizar las necesidades de los usuarios potenciales mediante entrevistas.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q4d" name="t2q4"><label for="t2q4d">D) Comprobar que el software es realmente el que el usuario desea.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>3. Documento que sirve de base para la siguiente etapa de diseño. ¿Cómo se llama este
+                        documento?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q3a" name="t2q3"><label for="t2q3a">A) Especificación
+                        de requisitos del software (ERS).</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q3b" name="t2q3"><label for="t2q3b">B) Desarrollo
+                        conjunto de aplicaciones (JAD).</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q3c" name="t2q3"><label for="t2q3c">C) Diagrama de
+                        casos de uso.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q3d" name="t2q3"><label for="t2q3d">D) Modelo o
+                        maqueta del sistema.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>5. ¿Para qué se utilizan los "Sangrados"?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q5a" name="t2q5"><label for="t2q5a">A) Para aclarar determinadas porciones de código por su alto nivel de complejidad.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q5b" name="t2q5"><label for="t2q5b">B) Para separar los distintos elementos y métodos del programa.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q5c" name="t2q5"><label for="t2q5c">C) Para facilitar la legibilidad del código.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q5d" name="t2q5"><label for="t2q5d">D) Para declarar las variables y parámetros.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>4. ¿Cuál es el objetivo principal de la etapa de diseño dentro del desarrollo de una aplicación
+                        informática?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q4a" name="t2q4"><label for="t2q4a">A) Escribir el
+                        código fuente correspondiente siguiendo normas homogéneas.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q4b" name="t2q4"><label for="t2q4b">B) Determinar
+                        cómo se ha de solucionar el problema planteado, partiendo de la ERS.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q4c" name="t2q4"><label for="t2q4c">C) Analizar las
+                        necesidades de los usuarios potenciales mediante entrevistas.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q4d" name="t2q4"><label for="t2q4d">D) Comprobar que
+                        el software es realmente el que el usuario desea.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>6. ¿Qué característica define a las pruebas de "caja blanca" o pruebas estructurales?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q6a" name="t2q6"><label for="t2q6a">A) Consideran al software como una caja negra que recibe entradas y proporciona salidas.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q6b" name="t2q6"><label for="t2q6b">B) Se examinan los detalles de cada módulo, para lo que se debe disponer del código fuente.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q6c" name="t2q6"><label for="t2q6c">C) Tienen como único objetivo validar los requisitos funcionales.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q6d" name="t2q6"><label for="t2q6d">D) Solo se realizan tras comprobar que la salida obtenida coincide con la esperada sin mirar el código.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>5. ¿Para qué se utilizan los "Sangrados"?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q5a" name="t2q5"><label for="t2q5a">A) Para aclarar
+                        determinadas porciones de código por su alto nivel de complejidad.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q5b" name="t2q5"><label for="t2q5b">B) Para separar
+                        los distintos elementos y métodos del programa.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q5c" name="t2q5"><label for="t2q5c">C) Para facilitar
+                        la legibilidad del código.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q5d" name="t2q5"><label for="t2q5d">D) Para declarar
+                        las variables y parámetros.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>7. Durante la fase de explotación ¿Cómo se conocen comúnmente las comprobaciones en las instalaciones del cliente?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q7a" name="t2q7"><label for="t2q7a">A) Pruebas estructurales.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q7b" name="t2q7"><label for="t2q7b">B) Pruebas de integración.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q7c" name="t2q7"><label for="t2q7c">C) Pruebas de caja blanca.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q7d" name="t2q7"><label for="t2q7d">D) Pruebas beta.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>6. ¿Qué característica define a las pruebas de "caja blanca" o pruebas estructurales?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q6a" name="t2q6"><label for="t2q6a">A) Consideran al
+                        software como una caja negra que recibe entradas y proporciona salidas.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q6b" name="t2q6"><label for="t2q6b">B) Se examinan
+                        los detalles de cada módulo, para lo que se debe disponer del código fuente.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q6c" name="t2q6"><label for="t2q6c">C) Tienen como
+                        único objetivo validar los requisitos funcionales.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q6d" name="t2q6"><label for="t2q6d">D) Solo se
+                        realizan tras comprobar que la salida obtenida coincide con la esperada sin mirar el
+                        código.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>8. Si un software debe modificarse para funcionar correctamente porque el entorno externo ha cambiado, ¿qué tipo de mantenimiento se está realizando?</b></p>
-            <div class="opcion-test"><input type="radio" id="t2q8a" name="t2q8"><label for="t2q8a">A) Mantenimiento correctivo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q8b" name="t2q8"><label for="t2q8b">B) Mantenimiento evolutivo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q8c" name="t2q8"><label for="t2q8c">C) Mantenimiento adaptativo.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t2q8d" name="t2q8"><label for="t2q8d">D) Mantenimiento perfectivo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
-    </details>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>7. Durante la fase de explotación ¿Cómo se conocen comúnmente las comprobaciones en las
+                        instalaciones del cliente?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q7a" name="t2q7"><label for="t2q7a">A) Pruebas
+                        estructurales.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q7b" name="t2q7"><label for="t2q7b">B) Pruebas de
+                        integración.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q7c" name="t2q7"><label for="t2q7c">C) Pruebas de
+                        caja blanca.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q7d" name="t2q7"><label for="t2q7d">D) Pruebas
+                        beta.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+            </form>
 
-    <!-- ==========================================
+            <form action="#" method="get" class="formulario-test">
+                <p><b>8. Si un software debe modificarse para funcionar correctamente porque el entorno externo ha
+                        cambiado, ¿qué tipo de mantenimiento se está realizando?</b></p>
+                <div class="opcion-test"><input type="radio" id="t2q8a" name="t2q8"><label for="t2q8a">A) Mantenimiento
+                        correctivo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q8b" name="t2q8"><label for="t2q8b">B) Mantenimiento
+                        evolutivo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q8c" name="t2q8"><label for="t2q8c">C) Mantenimiento
+                        adaptativo.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t2q8d" name="t2q8"><label for="t2q8d">D) Mantenimiento
+                        perfectivo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
+        </details>
+
+        <!-- ==========================================
          TEST 3: PERFILES QUE INTERVIENEN (8 PREGUNTAS)
          ========================================== -->
-    <details class="caja-test">
-        <summary>Test 3: Perfiles que intervienen</summary>
-        
-        <form action="#" method="get" class="formulario-test">
-            <p><b>1. ¿Cuál de las siguientes afirmaciones describe mejor el cometido del "Jefe de proyecto"?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q1a" name="t3q1"><label for="t3q1a">A) Es el encargado de definir las líneas maestras del diseño y la arquitectura del sistema.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q1b" name="t3q1"><label for="t3q1b">B) Se trata del máximo responsable de que el proyecto salga adelante, llevando a cabo tareas de gestión como la planificación, ejecución, seguimiento y control.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q1c" name="t3q1"><label for="t3q1c">C) Su labor principal consiste en crear un modelo claro y consistente del problema con la ayuda del cliente.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q1d" name="t3q1"><label for="t3q1d">D) Es la persona responsable de empaquetar los programas y gestionar las versiones de la aplicación.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+        <details class="caja-test">
+            <summary>Test 3: Perfiles que intervienen</summary>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>2. ¿A quiénes se hace referencia con el término "Expertos del dominio" en el proceso de desarrollo?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q2a" name="t3q2"><label for="t3q2a">A) A las personas que trabajan en la empresa u organismo para el que se desarrolla la aplicación y que conocen en detalle los requisitos que esta debe satisfacer.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q2b" name="t3q2"><label for="t3q2b">B) A los programadores senior que dominan múltiples lenguajes de programación.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q2c" name="t3q2"><label for="t3q2c">C) A los arquitectos de software encargados de diseñar la base de datos.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q2d" name="t3q2"><label for="t3q2d">D) A los encargados de probar la calidad de la aplicación antes de su entrega al usuario final.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>1. ¿Cuál de las siguientes afirmaciones describe mejor el cometido del "Jefe de proyecto"?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q1a" name="t3q1"><label for="t3q1a">A) Es el
+                        encargado de definir las líneas maestras del diseño y la arquitectura del sistema.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q1b" name="t3q1"><label for="t3q1b">B) Se trata del
+                        máximo responsable de que el proyecto salga adelante, llevando a cabo tareas de gestión como la
+                        planificación, ejecución, seguimiento y control.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q1c" name="t3q1"><label for="t3q1c">C) Su labor
+                        principal consiste en crear un modelo claro y consistente del problema con la ayuda del
+                        cliente.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q1d" name="t3q1"><label for="t3q1d">D) Es la persona
+                        responsable de empaquetar los programas y gestionar las versiones de la aplicación.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>3. El rol encargado de crear un modelo que se corresponda con la visión del problema de los expertos del dominio suele recibir también otro nombre. ¿Cuál es?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q3a" name="t3q3"><label for="t3q3a">A) Analista orgánico.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q3b" name="t3q3"><label for="t3q3b">B) Analista técnico.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q3c" name="t3q3"><label for="t3q3c">C) Analista funcional.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q3d" name="t3q3"><label for="t3q3d">D) Arquitecto de sistemas.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>2. ¿A quiénes se hace referencia con el término "Expertos del dominio" en el proceso de
+                        desarrollo?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q2a" name="t3q2"><label for="t3q2a">A) A las personas
+                        que trabajan en la empresa u organismo para el que se desarrolla la aplicación y que conocen en
+                        detalle los requisitos que esta debe satisfacer.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q2b" name="t3q2"><label for="t3q2b">B) A los
+                        programadores senior que dominan múltiples lenguajes de programación.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q2c" name="t3q2"><label for="t3q2c">C) A los
+                        arquitectos de software encargados de diseñar la base de datos.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q2d" name="t3q2"><label for="t3q2d">D) A los
+                        encargados de probar la calidad de la aplicación antes de su entrega al usuario final.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>4. Una vez que el analista ha realizado su trabajo, ¿qué rol debe tomarlo como referencia?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q4a" name="t3q4"><label for="t3q4a">A) El Diseñador.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q4b" name="t3q4"><label for="t3q4b">B) El Programador.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q4c" name="t3q4"><label for="t3q4c">C) El Probador.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q4d" name="t3q4"><label for="t3q4d">D) El Arquitecto.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>3. El rol encargado de crear un modelo que se corresponda con la visión del problema de los
+                        expertos del dominio suele recibir también otro nombre. ¿Cuál es?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q3a" name="t3q3"><label for="t3q3a">A) Analista
+                        orgánico.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q3b" name="t3q3"><label for="t3q3b">B) Analista
+                        técnico.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q3c" name="t3q3"><label for="t3q3c">C) Analista
+                        funcional.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q3d" name="t3q3"><label for="t3q3d">D) Arquitecto de
+                        sistemas.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>5. ¿Qué otro nombre se utiliza para referirse al rol del "Diseñador", quien detalla el sistema lo suficiente para acometer la tarea de programación?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q5a" name="t3q5"><label for="t3q5a">A) Analista funcional.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q5b" name="t3q5"><label for="t3q5b">B) Analista orgánico o analista técnico.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q5c" name="t3q5"><label for="t3q5c">C) Experto del dominio.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q5d" name="t3q5"><label for="t3q5d">D) Encargado de la implantación.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>4. Una vez que el analista ha realizado su trabajo, ¿qué rol debe tomarlo como referencia?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q4a" name="t3q4"><label for="t3q4a">A) El
+                        Diseñador.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q4b" name="t3q4"><label for="t3q4b">B) El
+                        Programador.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q4c" name="t3q4"><label for="t3q4c">C) El
+                        Probador.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q4d" name="t3q4"><label for="t3q4d">D) El
+                        Arquitecto.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>6. ¿Cuál es la función principal del rol de "Programador"?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q6a" name="t3q6"><label for="t3q6a">A) Escribir el código fuente partiendo del diseño detallado realizado por el diseñador.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q6b" name="t3q6"><label for="t3q6b">B) Definir las líneas maestras del diseño a partir de los requisitos del analista.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q6c" name="t3q6"><label for="t3q6c">C) Probar los programas para garantizar la calidad de la aplicación creada.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q6d" name="t3q6"><label for="t3q6d">D) Planificar el proyecto y realizar su seguimiento.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>5. ¿Qué otro nombre se utiliza para referirse al rol del "Diseñador", quien detalla el sistema lo
+                        suficiente para acometer la tarea de programación?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q5a" name="t3q5"><label for="t3q5a">A) Analista
+                        funcional.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q5b" name="t3q5"><label for="t3q5b">B) Analista
+                        orgánico o analista técnico.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q5c" name="t3q5"><label for="t3q5c">C) Experto del
+                        dominio.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q5d" name="t3q5"><label for="t3q5d">D) Encargado de
+                        la implantación.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>7. ¿De qué otra tarea se responsabiliza el "Encargado de la implantación"?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q7a" name="t3q7"><label for="t3q7a">A) De decidir, en último término, si los programas están en condiciones de ser entregados.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q7b" name="t3q7"><label for="t3q7b">B) De gestionar la configuración y las diferentes versiones que vayan surgiendo de la aplicación a partir de los cambios.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q7c" name="t3q7"><label for="t3q7c">C) De establecer las reuniones de comunicación con los expertos del dominio.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q7d" name="t3q7"><label for="t3q7d">D) De crear la arquitectura del sistema.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>6. ¿Cuál es la función principal del rol de "Programador"?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q6a" name="t3q6"><label for="t3q6a">A) Escribir el
+                        código fuente partiendo del diseño detallado realizado por el diseñador.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q6b" name="t3q6"><label for="t3q6b">B) Definir las
+                        líneas maestras del diseño a partir de los requisitos del analista.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q6c" name="t3q6"><label for="t3q6c">C) Probar los
+                        programas para garantizar la calidad de la aplicación creada.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q6d" name="t3q6"><label for="t3q6d">D) Planificar el
+                        proyecto y realizar su seguimiento.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>8. Sobre la distribución de roles en el equipo de desarrollo, ¿cuál de las siguientes afirmaciones es correcta?</b></p>
-            <div class="opcion-test"><input type="radio" id="t3q8a" name="t3q8"><label for="t3q8a">A) Cada rol debe ser obligatoriamente desempeñado por una sola persona para evitar redundancias.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q8b" name="t3q8"><label for="t3q8b">B) Una persona no puede desempeñar varios roles bajo ninguna circunstancia.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q8c" name="t3q8"><label for="t3q8c">C) Un rol siempre debe ser ejecutado conjuntamente por el equipo de desarrollo al completo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t3q8d" name="t3q8"><label for="t3q8d">D) Cada rol puede ser desempeñado por una o varias personas, e incluso una misma persona puede desempeñar varios roles diferentes.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-        </form>
-    </details>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>7. ¿De qué otra tarea se responsabiliza el "Encargado de la implantación"?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q7a" name="t3q7"><label for="t3q7a">A) De decidir, en
+                        último término, si los programas están en condiciones de ser entregados.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q7b" name="t3q7"><label for="t3q7b">B) De gestionar
+                        la configuración y las diferentes versiones que vayan surgiendo de la aplicación a partir de los
+                        cambios.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q7c" name="t3q7"><label for="t3q7c">C) De establecer
+                        las reuniones de comunicación con los expertos del dominio.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q7d" name="t3q7"><label for="t3q7d">D) De crear la
+                        arquitectura del sistema.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-    <!-- ==========================================
+            <form action="#" method="get" class="formulario-test">
+                <p><b>8. Sobre la distribución de roles en el equipo de desarrollo, ¿cuál de las siguientes afirmaciones
+                        es correcta?</b></p>
+                <div class="opcion-test"><input type="radio" id="t3q8a" name="t3q8"><label for="t3q8a">A) Cada rol debe
+                        ser obligatoriamente desempeñado por una sola persona para evitar redundancias.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q8b" name="t3q8"><label for="t3q8b">B) Una persona no
+                        puede desempeñar varios roles bajo ninguna circunstancia.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q8c" name="t3q8"><label for="t3q8c">C) Un rol siempre
+                        debe ser ejecutado conjuntamente por el equipo de desarrollo al completo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t3q8d" name="t3q8"><label for="t3q8d">D) Cada rol puede
+                        ser desempeñado por una o varias personas, e incluso una misma persona puede desempeñar varios
+                        roles diferentes.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+            </form>
+        </details>
+
+        <!-- ==========================================
          TEST 4: MODELOS DE CICLO DE VIDA (8 PREGUNTAS)
          ========================================== -->
-    <details class="caja-test">
-        <summary>Test 4: Modelos de ciclo de vida</summary>
-        
-        <form action="#" method="get" class="formulario-test">
-            <p><b>1. ¿Qué determina un ciclo de vida del software?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q1a" name="t4q1"><label for="t4q1a">A) El precio final que se le cobrará al cliente.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q1b" name="t4q1"><label for="t4q1b">B) El orden en el que se hacen las tareas y los requisitos para pasar a la siguiente fase.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q1c" name="t4q1"><label for="t4q1c">C) El lenguaje de programación que hay que utilizar obligatoriamente.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q1d" name="t4q1"><label for="t4q1d">D) El número de ordenadores necesarios para el proyecto.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+        <details class="caja-test">
+            <summary>Test 4: Modelos de ciclo de vida</summary>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>2. ¿Cómo es el flujo de trabajo en el modelo en cascada (o clásico)?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q2a" name="t4q2"><label for="t4q2a">A) Sistemático y secuencial, completando una fase para pasar a la siguiente.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q2b" name="t4q2"><label for="t4q2b">B) Totalmente desordenado y aleatorio.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q2c" name="t4q2"><label for="t4q2c">C) Entregando el programa en trozos pequeños cada semana.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q2d" name="t4q2"><label for="t4q2d">D) Basado únicamente en el análisis de riesgos diarios.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>1. ¿Qué determina un ciclo de vida del software?</b></p>
+                <div class="opcion-test"><input type="radio" id="t4q1a" name="t4q1"><label for="t4q1a">A) El precio
+                        final que se le cobrará al cliente.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q1b" name="t4q1"><label for="t4q1b">B) El orden en el
+                        que se hacen las tareas y los requisitos para pasar a la siguiente fase.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q1c" name="t4q1"><label for="t4q1c">C) El lenguaje de
+                        programación que hay que utilizar obligatoriamente.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q1d" name="t4q1"><label for="t4q1d">D) El número de
+                        ordenadores necesarios para el proyecto.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>3. ¿Cuál de estos es un problema importante del modelo en cascada?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q3a" name="t4q3"><label for="t4q3a">A) Es un modelo muy difícil de entender y planificar.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q3b" name="t4q3"><label for="t4q3b">B) El cliente debe tener paciencia porque no ve el programa funcionando hasta muy tarde.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q3c" name="t4q3"><label for="t4q3c">C) No permite hacer ninguna revisión formal.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q3d" name="t4q3"><label for="t4q3d">D) Obliga a entregar el software en múltiples versiones desde el primer día.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>2. ¿Cómo es el flujo de trabajo en el modelo en cascada (o clásico)?</b></p>
+                <div class="opcion-test"><input type="radio" id="t4q2a" name="t4q2"><label for="t4q2a">A) Sistemático y
+                        secuencial, completando una fase para pasar a la siguiente.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q2b" name="t4q2"><label for="t4q2b">B) Totalmente
+                        desordenado y aleatorio.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q2c" name="t4q2"><label for="t4q2c">C) Entregando el
+                        programa en trozos pequeños cada semana.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q2d" name="t4q2"><label for="t4q2d">D) Basado
+                        únicamente en el análisis de riesgos diarios.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>4. ¿En qué consiste el modelo de proceso incremental?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q4a" name="t4q4"><label for="t4q4a">A) En incrementar el número de programadores cada día.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q4b" name="t4q4"><label for="t4q4b">B) En hacer una sola entrega al final del proyecto, pero más grande.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q4c" name="t4q4"><label for="t4q4c">C) En proporcionar cierta funcionalidad al cliente e ir aumentándola en entregas posteriores.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q4d" name="t4q4"><label for="t4q4d">D) En aumentar el precio del software con cada fallo detectado.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>3. ¿Cuál de estos es un problema importante del modelo en cascada?</b></p>
+                <div class="opcion-test"><input type="radio" id="t4q3a" name="t4q3"><label for="t4q3a">A) Es un modelo
+                        muy difícil de entender y planificar.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q3b" name="t4q3"><label for="t4q3b">B) El cliente
+                        debe tener paciencia porque no ve el programa funcionando hasta muy tarde.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q3c" name="t4q3"><label for="t4q3c">C) No permite
+                        hacer ninguna revisión formal.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q3d" name="t4q3"><label for="t4q3d">D) Obliga a
+                        entregar el software en múltiples versiones desde el primer día.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>5. ¿Cuándo es muy recomendable usar el modelo incremental?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q5a" name="t4q5"><label for="t4q5a">A) Cuando los requisitos no están bien definidos y es muy probable que haya cambios.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q5b" name="t4q5"><label for="t4q5b">B) Cuando estamos 100% seguros de que el cliente no va a cambiar de opinión.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q5c" name="t4q5"><label for="t4q5c">C) Cuando el proyecto dura menos de dos días.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q5d" name="t4q5"><label for="t4q5d">D) Solamente cuando se desarrolla un prototipo desechable.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>4. ¿En qué consiste el modelo de proceso incremental?</b></p>
+                <div class="opcion-test"><input type="radio" id="t4q4a" name="t4q4"><label for="t4q4a">A) En incrementar
+                        el número de programadores cada día.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q4b" name="t4q4"><label for="t4q4b">B) En hacer una
+                        sola entrega al final del proyecto, pero más grande.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q4c" name="t4q4"><label for="t4q4c">C) En
+                        proporcionar cierta funcionalidad al cliente e ir aumentándola en entregas posteriores.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q4d" name="t4q4"><label for="t4q4d">D) En aumentar el
+                        precio del software con cada fallo detectado.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>6. ¿Qué es un prototipo en el desarrollo evolutivo?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q6a" name="t4q6"><label for="t4q6a">A) El programa final y definitivo que se le vende al cliente.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q6b" name="t4q6"><label for="t4q6b">B) El ordenador donde el cliente instalará el programa.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q6c" name="t4q6"><label for="t4q6c">C) Un sistema auxiliar que permite probar soluciones a las necesidades del usuario.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q6d" name="t4q6"><label for="t4q6d">D) El documento impreso donde se explican todos los errores del sistema.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>5. ¿Cuándo es muy recomendable usar el modelo incremental?</b></p>
+                <div class="opcion-test"><input type="radio" id="t4q5a" name="t4q5"><label for="t4q5a">A) Cuando los
+                        requisitos no están bien definidos y es muy probable que haya cambios.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q5b" name="t4q5"><label for="t4q5b">B) Cuando estamos
+                        100% seguros de que el cliente no va a cambiar de opinión.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q5c" name="t4q5"><label for="t4q5c">C) Cuando el
+                        proyecto dura menos de dos días.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q5d" name="t4q5"><label for="t4q5d">D) Solamente
+                        cuando se desarrolla un prototipo desechable.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>7. ¿Cuál es el objetivo principal de construir un prototipo?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q7a" name="t4q7"><label for="t4q7a">A) Evitar tener que comunicarse con el cliente durante el desarrollo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q7b" name="t4q7"><label for="t4q7b">B) Que las y los desarrolladores entiendan mejor y exactamente qué tienen que hacer.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q7c" name="t4q7"><label for="t4q7c">C) Saltarse la fase de programación por completo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q7d" name="t4q7"><label for="t4q7d">D) Reducir a cero el coste económico del proyecto.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>6. ¿Qué es un prototipo en el desarrollo evolutivo?</b></p>
+                <div class="opcion-test"><input type="radio" id="t4q6a" name="t4q6"><label for="t4q6a">A) El programa
+                        final y definitivo que se le vende al cliente.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q6b" name="t4q6"><label for="t4q6b">B) El ordenador
+                        donde el cliente instalará el programa.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q6c" name="t4q6"><label for="t4q6c">C) Un sistema
+                        auxiliar que permite probar soluciones a las necesidades del usuario.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q6d" name="t4q6"><label for="t4q6d">D) El documento
+                        impreso donde se explican todos los errores del sistema.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>8. ¿Qué elemento nuevo y fundamental añade el modelo en espiral que no tenían los anteriores?</b></p>
-            <div class="opcion-test"><input type="radio" id="t4q8a" name="t4q8"><label for="t4q8a">A) El análisis de riesgo dentro de la planificación de cada iteración o vuelta.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q8b" name="t4q8"><label for="t4q8b">B) La eliminación de todas las pruebas de software.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q8c" name="t4q8"><label for="t4q8c">C) El uso de herramientas de diseño gráfico avanzado en 3D.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t4q8d" name="t4q8"><label for="t4q8d">D) La prohibición total de hacer cambios en el código.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
-    </details>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>7. ¿Cuál es el objetivo principal de construir un prototipo?</b></p>
+                <div class="opcion-test"><input type="radio" id="t4q7a" name="t4q7"><label for="t4q7a">A) Evitar tener
+                        que comunicarse con el cliente durante el desarrollo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q7b" name="t4q7"><label for="t4q7b">B) Que las y los
+                        desarrolladores entiendan mejor y exactamente qué tienen que hacer.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q7c" name="t4q7"><label for="t4q7c">C) Saltarse la
+                        fase de programación por completo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q7d" name="t4q7"><label for="t4q7d">D) Reducir a cero
+                        el coste económico del proyecto.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-    <!-- ==========================================
+            <form action="#" method="get" class="formulario-test">
+                <p><b>8. ¿Qué elemento nuevo y fundamental añade el modelo en espiral que no tenían los anteriores?</b>
+                </p>
+                <div class="opcion-test"><input type="radio" id="t4q8a" name="t4q8"><label for="t4q8a">A) El análisis de
+                        riesgo dentro de la planificación de cada iteración o vuelta.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q8b" name="t4q8"><label for="t4q8b">B) La eliminación
+                        de todas las pruebas de software.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q8c" name="t4q8"><label for="t4q8c">C) El uso de
+                        herramientas de diseño gráfico avanzado en 3D.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t4q8d" name="t4q8"><label for="t4q8d">D) La prohibición
+                        total de hacer cambios en el código.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
+        </details>
+
+        <!-- ==========================================
          TEST 5: METODOLOGÍAS RUP Y ÁGIL (8 PREGUNTAS)
          ========================================== -->
-    <details class="caja-test">
-        <summary>Test 5: Metodologías RUP y Ágil</summary>
-        
-        <form action="#" method="get" class="formulario-test">
-            <p><b>1. ¿Qué diferencia principal hay entre un ciclo de vida y una metodología?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q1a" name="t5q1"><label for="t5q1a">A) Son exactamente lo mismo y se usan para lo mismo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q1b" name="t5q1"><label for="t5q1b">B) El ciclo de vida solo sirve para hardware y la metodología para software.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q1c" name="t5q1"><label for="t5q1c">C) El ciclo de vida indica qué hay que obtener, mientras que la metodología indica el cómo hacerlo.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q1d" name="t5q1"><label for="t5q1d">D) La metodología no requiere herramientas, pero el ciclo de vida sí.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+        <details class="caja-test">
+            <summary>Test 5: Metodologías RUP y Ágil</summary>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>2. ¿Qué son las herramientas CASE?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q2a" name="t5q2"><label for="t5q2a">A) Herramientas de hardware para arreglar servidores.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q2b" name="t5q2"><label for="t5q2b">B) Herramientas que permiten automatizar las tareas de desarrollo de software.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q2c" name="t5q2"><label for="t5q2c">C) Manuales de programación de los años 80.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q2d" name="t5q2"><label for="t5q2d">D) Un tipo de metodología antigua.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>1. ¿Qué diferencia principal hay entre un ciclo de vida y una metodología?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q1a" name="t5q1"><label for="t5q1a">A) Son
+                        exactamente lo mismo y se usan para lo mismo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q1b" name="t5q1"><label for="t5q1b">B) El ciclo de
+                        vida solo sirve para hardware y la metodología para software.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q1c" name="t5q1"><label for="t5q1c">C) El ciclo de
+                        vida indica qué hay que obtener, mientras que la metodología indica el cómo hacerlo.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q1d" name="t5q1"><label for="t5q1d">D) La metodología
+                        no requiere herramientas, pero el ciclo de vida sí.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>3. En la metodología orientada a objetos, ¿en qué se centra principalmente la atención?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q3a" name="t5q3"><label for="t5q3a">A) En los datos sobre los que hay que operar (los objetos).</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q3b" name="t5q3"><label for="t5q3b">B) Exclusivamente en los procesos matemáticos.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q3c" name="t5q3"><label for="t5q3c">C) En la documentación del sistema operativo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q3d" name="t5q3"><label for="t5q3d">D) En los contratos con el cliente.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>2. ¿Qué son las herramientas CASE?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q2a" name="t5q2"><label for="t5q2a">A) Herramientas
+                        de hardware para arreglar servidores.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q2b" name="t5q2"><label for="t5q2b">B) Herramientas
+                        que permiten automatizar las tareas de desarrollo de software.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q2c" name="t5q2"><label for="t5q2c">C) Manuales de
+                        programación de los años 80.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q2d" name="t5q2"><label for="t5q2d">D) Un tipo de
+                        metodología antigua.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>4. ¿Qué es UML?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q4a" name="t5q4"><label for="t5q4a">A) Un tipo de servidor web.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q4b" name="t5q4"><label for="t5q4b">B) Un lenguaje gráfico con normas para visualizar, construir y documentar un sistema.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q4c" name="t5q4"><label for="t5q4c">C) Un tipo de base de datos relacional.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q4d" name="t5q4"><label for="t5q4d">D) La primera metodología artesanal inventada.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>3. En la metodología orientada a objetos, ¿en qué se centra principalmente la atención?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q3a" name="t5q3"><label for="t5q3a">A) En los datos
+                        sobre los que hay que operar (los objetos).</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q3b" name="t5q3"><label for="t5q3b">B) Exclusivamente
+                        en los procesos matemáticos.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q3c" name="t5q3"><label for="t5q3c">C) En la
+                        documentación del sistema operativo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q3d" name="t5q3"><label for="t5q3d">D) En los
+                        contratos con el cliente.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>5. ¿Cuáles son las cuatro fases temporales en las que se divide el Proceso Unificado de Rational (RUP)?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q5a" name="t5q5"><label for="t5q5a">A) Inicio, Medio, Fin y Reinicio.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q5b" name="t5q5"><label for="t5q5b">B) Planificación, Diseño, Instalación y Borrado.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q5c" name="t5q5"><label for="t5q5c">C) Comienzo, Elaboración, Construcción y Transición.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q5d" name="t5q5"><label for="t5q5d">D) Presentación, Nudo, Desenlace y Evaluación.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>4. ¿Qué es UML?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q4a" name="t5q4"><label for="t5q4a">A) Un tipo de
+                        servidor web.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q4b" name="t5q4"><label for="t5q4b">B) Un lenguaje
+                        gráfico con normas para visualizar, construir y documentar un sistema.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q4c" name="t5q4"><label for="t5q4c">C) Un tipo de
+                        base de datos relacional.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q4d" name="t5q4"><label for="t5q4d">D) La primera
+                        metodología artesanal inventada.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>6. ¿Qué documento histórico firmó el grupo conocido como Alianza Ágil en el año 2001?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q6a" name="t5q6"><label for="t5q6a">A) El Tratado de Programación Estructurada.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q6b" name="t5q6"><label for="t5q6b">B) El Manifiesto por el desarrollo ágil de software.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q6c" name="t5q6"><label for="t5q6c">C) La Constitución del Proceso Unificado.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q6d" name="t5q6"><label for="t5q6d">D) El Contrato de Herramientas CASE.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>5. ¿Cuáles son las cuatro fases temporales en las que se divide el Proceso Unificado de Rational
+                        (RUP)?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q5a" name="t5q5"><label for="t5q5a">A) Inicio, Medio,
+                        Fin y Reinicio.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q5b" name="t5q5"><label for="t5q5b">B) Planificación,
+                        Diseño, Instalación y Borrado.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q5c" name="t5q5"><label for="t5q5c">C) Comienzo,
+                        Elaboración, Construcción y Transición.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q5d" name="t5q5"><label for="t5q5d">D) Presentación,
+                        Nudo, Desenlace y Evaluación.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>7. Según el Manifiesto Ágil, ¿qué elemento se valora MÁS?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q7a" name="t5q7"><label for="t5q7a">A) La documentación exhaustiva en papel.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q7b" name="t5q7"><label for="t5q7b">B) Los procesos burocráticos y las herramientas.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q7c" name="t5q7"><label for="t5q7c">C) Los individuos y sus interacciones.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q7d" name="t5q7"><label for="t5q7d">D) La negociación del contrato antes de empezar.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>6. ¿Qué documento histórico firmó el grupo conocido como Alianza Ágil en el año 2001?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q6a" name="t5q6"><label for="t5q6a">A) El Tratado de
+                        Programación Estructurada.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q6b" name="t5q6"><label for="t5q6b">B) El Manifiesto
+                        por el desarrollo ágil de software.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q6c" name="t5q6"><label for="t5q6c">C) La
+                        Constitución del Proceso Unificado.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q6d" name="t5q6"><label for="t5q6d">D) El Contrato de
+                        Herramientas CASE.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-        <form action="#" method="get" class="formulario-test">
-            <p><b>8. ¿Cuál es una de las principales ventajas de los modelos de desarrollo ágil?</b></p>
-            <div class="opcion-test"><input type="radio" id="t5q8a" name="t5q8"><label for="t5q8a">A) Mayor facilidad para incorporar cambios con menor coste.</label><div class="feedback correcto">✅ ¡Correcto!</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q8b" name="t5q8"><label for="t5q8b">B) El cliente no ve el software hasta el final del proyecto.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q8c" name="t5q8"><label for="t5q8c">C) Solo se permiten usar lenguajes de programación antiguos.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-            <div class="opcion-test"><input type="radio" id="t5q8d" name="t5q8"><label for="t5q8d">D) Nunca se trabaja en equipo, cada uno trabaja solo.</label><div class="feedback incorrecto">❌ Incorrecto.</div></div>
-        </form>
-    </details>
-</div>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>7. Según el Manifiesto Ágil, ¿qué elemento se valora MÁS?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q7a" name="t5q7"><label for="t5q7a">A) La
+                        documentación exhaustiva en papel.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q7b" name="t5q7"><label for="t5q7b">B) Los procesos
+                        burocráticos y las herramientas.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q7c" name="t5q7"><label for="t5q7c">C) Los individuos
+                        y sus interacciones.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q7d" name="t5q7"><label for="t5q7d">D) La negociación
+                        del contrato antes de empezar.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
 
-<a href="Entorno de Desarrollo.html" id="Volver">⬆️ Subir</a>
-<footer id="PieDePagina">
-    <p>&copy; 2026 Jamie Robert, Manuel Pardo, Marcelo Marlon, Charly.</p>
-</footer>
+            <form action="#" method="get" class="formulario-test">
+                <p><b>8. ¿Cuál es una de las principales ventajas de los modelos de desarrollo ágil?</b></p>
+                <div class="opcion-test"><input type="radio" id="t5q8a" name="t5q8"><label for="t5q8a">A) Mayor
+                        facilidad para incorporar cambios con menor coste.</label>
+                    <div class="feedback correcto">✅ ¡Correcto!</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q8b" name="t5q8"><label for="t5q8b">B) El cliente no
+                        ve el software hasta el final del proyecto.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q8c" name="t5q8"><label for="t5q8c">C) Solo se
+                        permiten usar lenguajes de programación antiguos.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+                <div class="opcion-test"><input type="radio" id="t5q8d" name="t5q8"><label for="t5q8d">D) Nunca se
+                        trabaja en equipo, cada uno trabaja solo.</label>
+                    <div class="feedback incorrecto">❌ Incorrecto.</div>
+                </div>
+            </form>
+        </details>
+    </div>
+
+    <a href="Entorno de Desarrollo.html" id="Volver">⬆️ Subir</a>
+    <footer id="PieDePagina">
+        <p>&copy; 2026 Jamie Robert, Manuel Pardo, Marcelo Marlon, Charly.</p>
+    </footer>
 </body>
+
 </html>
